@@ -17,7 +17,7 @@ import { Footer } from '../components/Footer'
 
 const Index = () => (
   <Container height="100vh">
-    <Hero />
+    <Hero title="{ alecrem }" />
     <Main>
       <Text color="text">
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
