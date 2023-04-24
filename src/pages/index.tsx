@@ -4,7 +4,7 @@ import {
   Code,
   List,
   ListIcon,
-  ListItem,
+  ListItem
 } from '@chakra-ui/react'
 import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 
@@ -26,7 +26,7 @@ const Index = () => (
 
       <List spacing={3} my={0} color="text">
         <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
           <ChakraLink
             isExternal
             href="https://chakra-ui.com"
@@ -37,7 +37,7 @@ const Index = () => (
           </ChakraLink>
         </ListItem>
         <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
           <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
             Next.js <LinkIcon />
           </ChakraLink>
