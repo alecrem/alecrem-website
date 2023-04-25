@@ -8,10 +8,12 @@ export const Hero = ({ title }: { title: string }) => (
     bgGradient="linear(to-l, heroGradientStart, heroGradientEnd)"
     bgClip="text"
   >
-    <Heading fontSize="6vw">{title}</Heading>
+    <Heading as="h1" fontSize="6vw">
+      {title}
+    </Heading>
   </Flex>
 )
 
 Hero.defaultProps = {
-  title: 'with-chakra-ui-typescript',
+  title: 'with-chakra-ui-typescript'
 }

@@ -1,4 +1,5 @@
 import {
+  Heading,
   Link as ChakraLink,
   Text,
   Code,
@@ -19,27 +20,69 @@ const Index = () => (
   <Container height="100vh">
     <Hero title="{ alecrem }" />
     <Main>
-      <Text color="text">
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>TypeScript</Code>.
-      </Text>
+      <Heading as="h2" color="text" mt={16}>
+        Software engineer: front end, web3, data analysis, machine learning
+      </Heading>
 
+      <Heading as="h3" size="md" color="text">
+        Current occupations:
+      </Heading>
       <List spacing={3} my={0} color="text">
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="cyan.500" />
           <ChakraLink
             isExternal
-            href="https://chakra-ui.com"
+            href="https://limu.ait.kyushu-u.ac.jp/e/"
             flexGrow={1}
             mr={2}
           >
-            Chakra UI <LinkIcon />
+            Kyushu University Laboratory for Image and Media Understanding{' '}
+            <LinkIcon />
           </ChakraLink>
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="cyan.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
+          <ChakraLink
+            isExternal
+            href="https://studiokura.info/en/"
+            flexGrow={1}
+            mr={2}
+          >
+            Studio Kura <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+
+      <Heading as="h3" size="md" color="text">
+        Memberships:
+      </Heading>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          <ChakraLink
+            isExternal
+            href="https://henkaku.org/ja/henkaku-community/"
+            flexGrow={1}
+            mr={2}
+          >
+            Chiba Institute of Technology Henkaku Community <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+
+      <Heading as="h3" size="md" color="text">
+        Publications:
+      </Heading>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          <ChakraLink
+            isExternal
+            href="https://amzn.to/3V7imAm"
+            flexGrow={1}
+            mr={2}
+          >
+            どんどん話せるスペイン語 作文トレーニング (2016) <LinkIcon />
           </ChakraLink>
         </ListItem>
       </List>
@@ -47,9 +90,14 @@ const Index = () => (
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Next ❤️ Chakra</Text>
+      <Text>
+        2023{' '}
+        <ChakraLink href="https://github.com/alecrem/">
+          Alejandro Cremades
+        </ChakraLink>
+      </Text>
     </Footer>
-    <CTA />
+    {/* <CTA /> */}
   </Container>
 )
 
