@@ -2,7 +2,6 @@ import {
   Heading,
   Link as ChakraLink,
   Text,
-  Code,
   List,
   ListIcon,
   ListItem
@@ -17,9 +16,9 @@ import { CTA } from '@/components/CTA'
 import { Footer } from '@/components/Footer'
 
 const Index = () => (
-  <Container height="100vh">
-    <Hero title="{ alecrem }" />
+  <Container>
     <Main>
+      <Hero title="{ alecrem }" />
       <Heading as="h2" color="text" mt={16}>
         Software engineer: front end, web3, data analysis, machine learning
       </Heading>
