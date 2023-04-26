@@ -12,6 +12,7 @@ import { Hero } from '@/components/Hero'
 import { Container } from '@/components/Container'
 import { Main } from '@/components/Main'
 import { DarkModeSwitch } from '@/components/DarkModeSwitch'
+import { Nav } from '@/components/Nav'
 import { Footer } from '@/components/Footer'
 
 const Index = () => (
@@ -26,7 +27,7 @@ const Index = () => (
         <br />
         Front end, web3, data analysis, machine learning
       </Heading>
-
+      <Nav />
       <Heading as="h4" size="md" color="text">
         Current occupations:
       </Heading>
@@ -55,7 +56,6 @@ const Index = () => (
           </ChakraLink>
         </ListItem>
       </List>
-
       <Heading as="h4" size="md" color="text">
         Memberships:
       </Heading>
@@ -72,7 +72,6 @@ const Index = () => (
           </ChakraLink>
         </ListItem>
       </List>
-
       <Heading as="h4" size="md" color="text">
         Publications:
       </Heading>
