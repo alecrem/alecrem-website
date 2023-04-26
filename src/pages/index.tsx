@@ -19,10 +19,15 @@ const Index = () => (
     <Main>
       <Hero title="{ alecrem }" />
       <Heading as="h2" color="text" mt={16}>
-        Software engineer: front end, web3, data analysis, machine learning
+        Alejandro Cremades Rocamora
+      </Heading>
+      <Heading as="h3" size="lg" color="text" mt={16}>
+        Software engineer
+        <br />
+        Front end, web3, data analysis, machine learning
       </Heading>
 
-      <Heading as="h3" size="md" color="text">
+      <Heading as="h4" size="md" color="text">
         Current occupations:
       </Heading>
       <List spacing={3} my={0} color="text">
@@ -51,7 +56,7 @@ const Index = () => (
         </ListItem>
       </List>
 
-      <Heading as="h3" size="md" color="text">
+      <Heading as="h4" size="md" color="text">
         Memberships:
       </Heading>
       <List spacing={3} my={0} color="text">
@@ -68,7 +73,7 @@ const Index = () => (
         </ListItem>
       </List>
 
-      <Heading as="h3" size="md" color="text">
+      <Heading as="h4" size="md" color="text">
         Publications:
       </Heading>
       <List spacing={3} my={0} color="text">
