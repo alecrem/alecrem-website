@@ -1,12 +1,5 @@
 import { FC, useState } from 'react'
-import {
-  Heading,
-  HStack,
-  VStack,
-  Image,
-  IconButton,
-  Flex
-} from '@chakra-ui/react'
+import { IconButton, Flex } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import NavLinksMobile from '@/components/Nav/NavLinksMobile'
 import NavLinksDesktop from '@/components/Nav/NavLinksDesktop'
@@ -16,7 +9,7 @@ const Nav: FC = () => {
   return (
     <>
       <Flex>
-        <Flex position="fixed" top="1rem" right="1rem" align="center">
+        <Flex position="fixed" top="1rem" left="1rem" align="center">
           <IconButton
             aria-label="Open Menu"
             size="lg"
@@ -31,7 +24,7 @@ const Nav: FC = () => {
           w="100vw"
           // Only when menu open
           display={display}
-          bgColor="gray.50"
+          bgColor="gray.900"
           zIndex={20}
           h="100vh"
           pos="fixed"
@@ -40,15 +33,18 @@ const Nav: FC = () => {
           overflowY="auto"
           flexDir="column"
         >
-          <Flex justify="flex-end">
+          <Flex justify="flex-start">
             <IconButton
-              mt={2}
-              mr={2}
+              mt={4}
+              ml={4}
               aria-label="Close Menu"
               size="lg"
               icon={<CloseIcon />}
               onClick={() => changeDisplay('none')}
             />
+          </Flex>
+          <Flex flexDir="column" align="center">
+            <NavLinksMobile />
           </Flex>
         </Flex>
       </Flex>
