@@ -24,7 +24,7 @@ const Nav: FC = () => {
           w="100vw"
           // Only when menu open
           display={display}
-          bgColor="gray.900"
+          bgColor="chakra-body-bg"
           zIndex={20}
           h="100vh"
           pos="fixed"
