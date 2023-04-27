@@ -1,4 +1,4 @@
-import { Link } from '@chakra-ui/react'
+import { Button, Box } from '@chakra-ui/react'
 import { FC } from 'react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
@@ -7,26 +7,34 @@ const NavLinksDesktop: FC = () => {
   const router = useRouter()
   return (
     <>
-      <NextLink passHref href="/" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} href="/" p={4} pr={1}>
-          Home
-        </Link>
-      </NextLink>
-      <NextLink passHref href="/skills" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} p={4} pr={1}>
-          Skills
-        </Link>
-      </NextLink>
-      <NextLink passHref href="/projects" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} p={4} pr={1}>
-          Projects
-        </Link>
-      </NextLink>
-      <NextLink passHref href="/contact" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} p={4} pr={1}>
-          Contact
-        </Link>
-      </NextLink>
+      <Box mr={4}>
+        <NextLink passHref href="/" locale={router.locale}>
+          <Button as="a" variant="solid" aria-label="Home" w="100%">
+            Home
+          </Button>
+        </NextLink>
+      </Box>
+      <Box mr={4}>
+        <NextLink passHref href="/skills" locale={router.locale}>
+          <Button as="a" variant="solid" aria-label="Skills" w="100%">
+            Skills
+          </Button>
+        </NextLink>
+      </Box>
+      <Box mr={4}>
+        <NextLink passHref href="/projects" locale={router.locale}>
+          <Button as="a" variant="solid" aria-label="Projects" w="100%">
+            Projects
+          </Button>
+        </NextLink>
+      </Box>
+      <Box mr={4}>
+        <NextLink passHref href="/contact" locale={router.locale}>
+          <Button as="a" variant="solid" aria-label="Contact" w="100%">
+            Contact
+          </Button>
+        </NextLink>
+      </Box>
     </>
   )
 }

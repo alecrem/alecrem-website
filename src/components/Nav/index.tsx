@@ -53,7 +53,6 @@ const Nav: FC = () => {
         // Desktop only
         display={['none', 'none', 'flex', 'flex']}
         direction="row"
-        pl={'88px'}
       >
         <NavLinksDesktop />
       </Flex>
