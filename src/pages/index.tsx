@@ -29,7 +29,7 @@ const Index = () => (
       </Heading>
       <Nav />
       <Heading as="h4" size="md" color="text">
-        Current occupations:
+        Current occupations
       </Heading>
       <List spacing={3} my={0} color="text">
         <ListItem>
@@ -57,7 +57,7 @@ const Index = () => (
         </ListItem>
       </List>
       <Heading as="h4" size="md" color="text">
-        Memberships:
+        Memberships
       </Heading>
       <List spacing={3} my={0} color="text">
         <ListItem>
@@ -73,7 +73,7 @@ const Index = () => (
         </ListItem>
       </List>
       <Heading as="h4" size="md" color="text">
-        Publications:
+        Publications
       </Heading>
       <List spacing={3} my={0} color="text">
         <ListItem>
