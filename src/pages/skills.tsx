@@ -36,15 +36,15 @@ const Skills = () => (
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="cyan.500" />
-          English: working professional proficiency
+          English: fluent
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="cyan.500" />
-          Japanese: full professional proficiency
+          Japanese: fluent
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color="cyan.500" />
-          Catalan: full professional proficiency
+          Catalan: fluent
         </ListItem>
       </List>
       <Heading as="h4" size="md" color="text">
