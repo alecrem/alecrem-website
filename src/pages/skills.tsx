@@ -6,7 +6,7 @@ import {
   ListIcon,
   ListItem
 } from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+import { CheckCircleIcon } from '@chakra-ui/icons'
 
 import { Hero } from '@/components/Hero'
 import { Container } from '@/components/Container'
@@ -26,6 +26,27 @@ const Skills = () => (
       <Heading as="h3" size="lg" color="text" mt={16}>
         Skills
       </Heading>
+      <Heading as="h4" size="md" color="text">
+        Natural Languages
+      </Heading>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          Spanish: native
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          English: working professional proficiency
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          Japanese: full professional proficiency
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          Catalan: full professional proficiency
+        </ListItem>
+      </List>
       <Heading as="h4" size="md" color="text">
         Web
       </Heading>
