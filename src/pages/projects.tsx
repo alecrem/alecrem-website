@@ -151,6 +151,24 @@ const Projects = () => (
           <ListIcon as={SmallAddIcon} color="cyan.500" />
           <ChakraLink
             isExternal
+            href="https://apps.alecrem.com/koyomito/"
+            flexGrow={1}
+            mr={2}
+          >
+            <b>Koyomito</b> (Alecrem, 2017-2020) <LinkIcon />
+          </ChakraLink>
+          <br />
+          Calendar app for iOS and Android with everything you may want to know
+          about today regarding the Japanese language and culture.
+          <br />
+          <Badge colorScheme="cyan">Ionic</Badge>{' '}
+          <Badge colorScheme="cyan">Angular</Badge>{' '}
+          <Badge colorScheme="cyan">Author</Badge>{' '}
+        </ListItem>
+        <ListItem>
+          <ListIcon as={SmallAddIcon} color="cyan.500" />
+          <ChakraLink
+            isExternal
             href="https://iroiro-connect.com/"
             flexGrow={1}
             mr={2}
