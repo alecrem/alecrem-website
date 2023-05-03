@@ -16,7 +16,7 @@ import { DarkModeSwitch } from '@/components/DarkModeSwitch'
 import { Nav } from '@/components/Nav'
 import { Footer } from '@/components/Footer'
 
-const Skills = () => (
+const Projects = () => (
   <Container>
     <Main>
       <Hero title="{ alecrem }" />
@@ -236,4 +236,4 @@ const Skills = () => (
   </Container>
 )
 
-export default Skills
+export default Projects
