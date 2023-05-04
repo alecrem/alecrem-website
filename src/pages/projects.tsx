@@ -1,232 +1,180 @@
-import {
-  Heading,
-  Link as ChakraLink,
-  Badge,
-  List,
-  ListIcon,
-  ListItem
-} from '@chakra-ui/react'
-import { SmallAddIcon, LinkIcon } from '@chakra-ui/icons'
+import { Heading, SimpleGrid, Link as ChakraLink } from '@chakra-ui/react'
 import { Layout } from '@/components/Layout'
+import { ProjectCard } from '@/components/ProjectCard'
 
 const Projects = () => (
   <Layout title="Projects | alecrem">
     <Heading as="h3" size="lg" color="text" mt={16}>
       Projects
     </Heading>
-    <List spacing={3} my={0} color="text">
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
+    <SimpleGrid
+      spacing={4}
+      templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
+    >
+      <ProjectCard
+        title="OpenLA"
+        url="https://limu.ait.kyushu-u.ac.jp/~openLA/"
+        subheading="Kyushu University Laboratory for Image and Media Understanding, 2022-2023"
+        tags={['Python', 'PyPI', 'Maintainer', 'Open Source']}
+      >
+        Developed and maintained a Python module to help with learning
+        analytics, including the introduction of unit tests to the project.
+        <br />
+        Nominated to the{' '}
         <ChakraLink
           isExternal
-          href="https://limu.ait.kyushu-u.ac.jp/~openLA/"
-          flexGrow={1}
-          mr={2}
+          href="https://www.imsglobal.org/lili/awards.html"
         >
-          <b>OpenLA</b> (Kyushu University, 2022-2023) <LinkIcon />
+          <b>Learning Impact Awards in 2023</b>
         </ChakraLink>
+        .
+      </ProjectCard>
+      <ProjectCard
+        title="Photovoice"
+        subheading="Kyushu University Laboratory for Image and Media Understanding, 2021-2022"
+        tags={['Python', 'ML', 'DL', 'Core Contributor']}
+      >
+        ML and DL applied to learning analytics. Classified and k-means
+        clustered text entries, and used deep learning techniques to caption
+        images.
+      </ProjectCard>
+      <ProjectCard
+        title="Henkaku Nengajo"
+        url="https://nengajo.henkaku.org/"
+        subheading="Chiba Institute of Technology Henkaku Community, 2022"
+        tags={['Next.js', 'React', 'web3', 'Core Contributor', 'Open Source']}
+      >
+        Developed a web3 frontend to Polygon blockchain and other APIs. A
+        platform for community members to make Free-to-mint NFTs available to
+        other community members.
+      </ProjectCard>
+      <ProjectCard
+        title="Henkaku Omise"
+        url="https://omise.henkaku.org/"
+        subheading="Chiba Institute of Technology Henkaku Community, 2022"
+        tags={[
+          'Next.js',
+          'React',
+          'Solidity',
+          'web3',
+          'Contributor',
+          'Open Source'
+        ]}
+      >
+        Contributed to both the development of a web3 frontend and a number of
+        smart contracts it interacts with. The site enables podcast listeners to
+        interact and earn community tokens that can only be earned by
+        contributing or interacting.
+      </ProjectCard>
+      <ProjectCard
+        title="Studio Kura intranet"
+        subheading="Studio Kura, 2012-2023"
+        tags={['Ionic', 'Angular', 'CakePHP', 'Core Contributor']}
+      >
+        Developed the intranet for a business as it grew from 1 person and 1
+        location to dozens of people, a handful of locations, and a number of
+        business lines.
+      </ProjectCard>
+      <ProjectCard
+        title="Studio Kura curriculum"
+        subheading="Studio Kura, 2012-2023"
+        tags={['p5.js', 'Next.js', 'React', 'web3', 'Core Contributor']}
+      >
+        Designed and developed p5.js and web3 activities for kids learning
+        programming in an active learning environment.
+      </ProjectCard>
+      <ProjectCard
+        title="ChallengeHub"
+        url="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s"
+        subheading="Djinn Mentor, 2019-2021"
+        tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder']}
+      >
+        Helped develop a data-driven active learning solution with features such
+        as sharing of teaching materials, real-time learning monitoring, and a
+        chatbot for students to answer challenges.
         <br />
-        Python module to help with learning analytics
-        <br />
-        <Badge colorScheme="cyan">Python</Badge>{' '}
-        <Badge colorScheme="cyan">PyPI</Badge>{' '}
-        <Badge colorScheme="cyan">Maintainer</Badge>{' '}
-        <Badge colorScheme="cyan">Open Source</Badge>
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <b>Photovoice</b> (Kyushu University, 2021-2022)
-        <br />
-        ML and DL applied to learning analytics
-        <br />
-        <Badge colorScheme="cyan">Python</Badge>{' '}
-        <Badge colorScheme="cyan">ML</Badge>{' '}
-        <Badge colorScheme="cyan">DL</Badge>{' '}
-        <Badge colorScheme="cyan">Core Contributor</Badge>{' '}
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
+        One of the 24 startups to participate in{' '}
         <ChakraLink
           isExternal
-          href="https://nengajo.henkaku.org/"
-          flexGrow={1}
-          mr={2}
+          href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s"
         >
-          <b>Henkaku Nengajo</b> (Henkaku, 2022) <LinkIcon />
+          <b>techstars Founder Catalyst Japan 2021</b>
         </ChakraLink>
-        <br />
-        web3 frontend to Polygon blockchain and other APIs
-        <br />
-        <Badge colorScheme="cyan">Next.js</Badge>{' '}
-        <Badge colorScheme="cyan">React</Badge>{' '}
-        <Badge colorScheme="cyan">web3</Badge>{' '}
-        <Badge colorScheme="cyan">Core Contributor</Badge>{' '}
-        <Badge colorScheme="cyan">Open Source</Badge>
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <ChakraLink
-          isExternal
-          href="https://omise.henkaku.org/"
-          flexGrow={1}
-          mr={2}
-        >
-          <b>Henkaku Omise</b> (Henkaku, 2022) <LinkIcon />
-        </ChakraLink>
-        <br />
-        web3 frontend to Polygon blockchain and other APIs
-        <br />
-        <Badge colorScheme="cyan">Next.js</Badge>{' '}
-        <Badge colorScheme="cyan">React</Badge>{' '}
-        <Badge colorScheme="cyan">web3</Badge>{' '}
-        <Badge colorScheme="cyan">Solidity</Badge>{' '}
-        <Badge colorScheme="cyan">Contributor</Badge>{' '}
-        <Badge colorScheme="cyan">Open Source</Badge>
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <b>Studio Kura intranet</b> (Studio Kura, 2012-2023)
-        <br />
-        Management database for a business that grew from 1 person and 1
-        location
-        <br />
-        <Badge colorScheme="cyan">Ionic</Badge>{' '}
-        <Badge colorScheme="cyan">CakePHP</Badge>{' '}
-        <Badge colorScheme="cyan">Core Contributor</Badge>{' '}
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <b>Studio Kura curriculum</b> (Studio Kura, 2012-2023)
-        <br />
-        p5.js and web3 activities for kids learning programming in an active
-        learning environment
-        <br />
-        <Badge colorScheme="cyan">p5.js</Badge>{' '}
-        <Badge colorScheme="cyan">Ionic</Badge>{' '}
-        <Badge colorScheme="cyan">Angular</Badge>{' '}
-        <Badge colorScheme="cyan">Core Contributor</Badge>{' '}
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <b>ChallengeHub</b> (Djinn Mentor, 2019-2021)
-        <br />
-        Data-driven active learning solution
-        <br />
-        <Badge colorScheme="cyan">Jekyll</Badge>{' '}
-        <Badge colorScheme="cyan">Ionic</Badge>{' '}
-        <Badge colorScheme="cyan">Angular</Badge>{' '}
-        <Badge colorScheme="cyan">Co-founder</Badge>{' '}
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <ChakraLink
-          isExternal
-          href="https://github.com/RenovoSolutions/ngx-datetimepicker"
-          flexGrow={1}
-          mr={2}
-        >
-          <b>ngx-datetimepicker</b> (Renovo Solutions, 2019) <LinkIcon />
-        </ChakraLink>
-        <br />
-        Angular date and time picker component
-        <br />
-        <Badge colorScheme="cyan">Angular</Badge>{' '}
-        <Badge colorScheme="cyan">Contributor</Badge>{' '}
-        <Badge colorScheme="cyan">Open Source</Badge>
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <ChakraLink
-          isExternal
-          href="https://apps.alecrem.com/koyomito/"
-          flexGrow={1}
-          mr={2}
-        >
-          <b>Koyomito</b> (Alecrem, 2017-2020) <LinkIcon />
-        </ChakraLink>
-        <br />
+        .
+      </ProjectCard>
+      <ProjectCard
+        title="ngx-datetimepicker"
+        url="https://github.com/RenovoSolutions/ngx-datetimepicker"
+        subheading="Renovo Solutions, 2019"
+        tags={['Angular', 'Contributor', 'Open Source']}
+      >
+        Helped improve an existing Angular date and time picker component, due
+        to Djinn Mentor wanting to use it on ChallengeHub.
+      </ProjectCard>
+      <ProjectCard
+        title="Koyomito"
+        url="https://apps.alecrem.com/koyomito/"
+        subheading="Alecrem, 2017-2020"
+        tags={['Ionic', 'Angular', 'Sole Author']}
+      >
         Calendar app for iOS and Android with everything you may want to know
-        about today regarding the Japanese language and culture.
+        about today regarding the Japanese language and culture. Only the
+        Android version is still available, but the cultural content vocabulary
+        and pronunciation samples can still be enjoyed.
+      </ProjectCard>
+      <ProjectCard
+        title="iroiro connect"
+        url="https://iroiro-connect.com/"
+        subheading="Alecrem, 2023"
+        tags={[
+          'Next.js',
+          'React',
+          'Airtable',
+          'Core Contributor',
+          'Open Source'
+        ]}
+      >
+        Website for a sole proprietor with a contact form that uses the Airtable
+        API to store messages, and effectively deliver them as e-mails.
+      </ProjectCard>
+      <ProjectCard
+        title="Middle School Tutor"
+        url="https://middleschooltutor.alecrem.com/"
+        subheading="Alecrem, 2022-2023"
+        tags={['Next.js', 'React', 'Python', 'Sole Author', 'Open Source']}
+      >
+        Gaming tool for Magic The Gathering's Middle School format. Consisting
+        on a Python project that compiles a list of available Magic cards, and a
+        website that searches said list.
+      </ProjectCard>
+      <ProjectCard
+        title="Binguerah"
+        url="https://binguerah.pepinismo.net/"
+        subheading="Alecrem, 2023"
+        tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
+      >
+        Real-time and async interaction tool for podcasts. A personalized meme
+        bingo card that is different for each combination of user and episode.
+        Spaces can be manually marked as the user listens to the podcast, or
+        they can be automatically marked if the user inputs the password shared
+        at the end of each episode.
+      </ProjectCard>
+      <ProjectCard
+        title="Escucha español"
+        url="https://escuchaespanol.com/"
+        subheading="Alecrem, 2009-2016"
+        tags={['CakePHP', 'WordPress', 'Core Contributor']}
+      >
+        Premium membership site and custom podcast feed for a series of videos
+        made to help Japanese speakers the Spanish language.
         <br />
-        <Badge colorScheme="cyan">Ionic</Badge>{' '}
-        <Badge colorScheme="cyan">Angular</Badge>{' '}
-        <Badge colorScheme="cyan">Author</Badge>{' '}
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <ChakraLink
-          isExternal
-          href="https://iroiro-connect.com/"
-          flexGrow={1}
-          mr={2}
-        >
-          <b>iroiro connect</b> (iroiro connect, 2023) <LinkIcon />
+        Featured on{' '}
+        <ChakraLink isExternal href="https://www.nhk.or.jp/gogaku/spanish/">
+          <b>NHK's "TV de Supeingo" in 2012 and 2013</b>
         </ChakraLink>
-        <br />
-        Personal website with a contact form that talks to the Airtable API
-        <br />
-        <Badge colorScheme="cyan">Next.js</Badge>{' '}
-        <Badge colorScheme="cyan">React</Badge>{' '}
-        <Badge colorScheme="cyan">Core Contributor</Badge>{' '}
-        <Badge colorScheme="cyan">Open Source</Badge>
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <ChakraLink
-          isExternal
-          href="https://middleschooltutor.alecrem.com/"
-          flexGrow={1}
-          mr={2}
-        >
-          <b>Middle School Tutor</b> (2022-2023) <LinkIcon />
-        </ChakraLink>
-        <br />
-        Gaming tool for Magic The Gathering's Middle School format
-        <br />
-        <Badge colorScheme="cyan">Next.js</Badge>{' '}
-        <Badge colorScheme="cyan">React</Badge>{' '}
-        <Badge colorScheme="cyan">Python</Badge>{' '}
-        <Badge colorScheme="cyan">Core Contributor</Badge>{' '}
-        <Badge colorScheme="cyan">Open Source</Badge>
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <ChakraLink
-          isExternal
-          href="https://binguerah.pepinismo.net/"
-          flexGrow={1}
-          mr={2}
-        >
-          <b>Binguerah</b> (2023) <LinkIcon />
-        </ChakraLink>
-        <br />
-        Real-time interaction tool for podcasts
-        <br />
-        <Badge colorScheme="cyan">Next.js</Badge>{' '}
-        <Badge colorScheme="cyan">React</Badge>{' '}
-        <Badge colorScheme="cyan">p5.js</Badge>{' '}
-        <Badge colorScheme="cyan">Core Contributor</Badge>{' '}
-        <Badge colorScheme="cyan">Open Source</Badge>
-        <Badge colorScheme="cyan">Podcasting</Badge>{' '}
-      </ListItem>
-      <ListItem>
-        <ListIcon as={SmallAddIcon} color="cyan.500" />
-        <ChakraLink
-          isExternal
-          href="https://escuchaespanol.com/"
-          flexGrow={1}
-          mr={2}
-        >
-          <b>Escucha español</b> (2009-2016) <LinkIcon />
-        </ChakraLink>
-        <br />
-        Premium site and custom podcast feed
-        <br />
-        <Badge colorScheme="cyan">CakePHP</Badge>{' '}
-        <Badge colorScheme="cyan">Core Contributor</Badge>{' '}
-        <Badge colorScheme="cyan">Podcasting</Badge>{' '}
-      </ListItem>
-    </List>
+        .
+      </ProjectCard>
+    </SimpleGrid>
   </Layout>
 )
 
