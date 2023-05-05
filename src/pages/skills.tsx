@@ -1,4 +1,14 @@
-import { Heading, List, ListIcon, ListItem } from '@chakra-ui/react'
+import {
+  Heading,
+  List,
+  ListIcon,
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  ListItem,
+  Wrap,
+  WrapItem
+} from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import { Layout } from '@/components/Layout'
 
@@ -31,114 +41,162 @@ const Skills = () => (
     <Heading as="h4" size="md" color="text">
       Web
     </Heading>
-    <List spacing={3} my={0} color="text">
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Next.js
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        React
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        TypeScript
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Chakra
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        p5.js
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Pyodide
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Airtable
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        API
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        MySQL
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        PostgreSQL
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Ionic
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Angular
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        CakePHP
-      </ListItem>
-    </List>
+    <Wrap>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>Next.js</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>React</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>TypeScript</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>Chakra</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>p5.js</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>Pyodide</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>Airtable</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>API</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>MySQL</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>PostgreSQL</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>Ionic</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>Angular</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel>CakePHP</TagLabel>
+        </Tag>
+      </WrapItem>
+    </Wrap>
     <Heading as="h4" size="md" color="text">
       Web3
     </Heading>
-    <List spacing={3} my={0} color="text">
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Wagmi
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Pinata API
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        OpenSea API
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Solidity
-      </ListItem>
-    </List>
+    <Wrap>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> Wagmi</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> Pinata API</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> OpenSea API</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> Solidity</TagLabel>
+        </Tag>
+      </WrapItem>
+    </Wrap>
     <Heading as="h4" size="md" color="text">
       Data and ML
     </Heading>
-    <List spacing={3} my={0} color="text">
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Python
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Pandas
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        PyPi
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        TensorFlow
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        PyTorch
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Computer vision
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Natural Language Processing
-      </ListItem>
-    </List>
+    <Wrap>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> Python</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> Pandas</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> PyPi</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> TensorFlow</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> PyTorch</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> Computer vision</TagLabel>
+        </Tag>
+      </WrapItem>
+      <WrapItem>
+        <Tag size="lg">
+          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
+          <TagLabel> Natural Language Processing</TagLabel>
+        </Tag>
+      </WrapItem>
+    </Wrap>
   </Layout>
 )
 
