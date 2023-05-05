@@ -11,6 +11,33 @@ import {
 } from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import { Layout } from '@/components/Layout'
+import { SkillTag } from '@/components/SkillTag'
+
+const skillList = {
+  web: [
+    'Next.js',
+    'React',
+    'TypeScript',
+    'Chakra',
+    'p5.js',
+    'Pyodide',
+    'Airtable API',
+    'MySQL',
+    'PostgreSQL',
+    'Ionic',
+    'Angular',
+    'CakePHP'
+  ],
+  web3: ['Wagmi', 'Pinata', 'OpenSea API', 'Solidity'],
+  dataMl: [
+    'Python',
+    'Pandas',
+    'PyPI',
+    'TensorFlow',
+    'Computer vision',
+    ' Natural Language Processing'
+  ]
+}
 
 const Skills = () => (
   <Layout title="Skills | alecrem">
@@ -42,160 +69,25 @@ const Skills = () => (
       Web
     </Heading>
     <Wrap>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>Next.js</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>React</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>TypeScript</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>Chakra</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>p5.js</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>Pyodide</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>Airtable</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>API</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>MySQL</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>PostgreSQL</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>Ionic</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>Angular</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel>CakePHP</TagLabel>
-        </Tag>
-      </WrapItem>
+      {skillList.web.map((skill, idx) => (
+        <SkillTag key={'web-' + idx}>{skill}</SkillTag>
+      ))}
     </Wrap>
     <Heading as="h4" size="md" color="text">
       Web3
     </Heading>
     <Wrap>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> Wagmi</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> Pinata API</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> OpenSea API</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> Solidity</TagLabel>
-        </Tag>
-      </WrapItem>
+      {skillList.web3.map((skill, idx) => (
+        <SkillTag key={'web3-' + idx}>{skill}</SkillTag>
+      ))}
     </Wrap>
     <Heading as="h4" size="md" color="text">
       Data and ML
     </Heading>
     <Wrap>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> Python</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> Pandas</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> PyPi</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> TensorFlow</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> PyTorch</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> Computer vision</TagLabel>
-        </Tag>
-      </WrapItem>
-      <WrapItem>
-        <Tag size="lg">
-          <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-          <TagLabel> Natural Language Processing</TagLabel>
-        </Tag>
-      </WrapItem>
+      {skillList.dataMl.map((skill, idx) => (
+        <SkillTag key={'data-ml-' + idx}>{skill}</SkillTag>
+      ))}
     </Wrap>
   </Layout>
 )
