@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation'
 const Footer: React.FC = (props: FlexProps) => {
   const { t } = useTranslation('common')
   return (
-    <Flex as="footer" py="8rem" {...props}>
+    <Flex as="footer" pt="8rem" pb="4rem" {...props}>
       <Text>
         {t('footer.year')}{' '}
         <ChakraLink href="https://github.com/alecrem/">
