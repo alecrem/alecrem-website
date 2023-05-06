@@ -1,0 +1,26 @@
+{
+  "header": {
+    "title": "alecrem",
+    "fullname": "Alejandro Cremades Rocamora",
+    "tagline": "Software Engineer",
+    "tagline2": "Front end, web3, data analysis, machine learning",
+    "nav": {
+      "index": "Home",
+      "projects": "Project",
+      "skills": "Skills",
+      "contact": "Contact"
+    }
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "footer": {
+    "copyright": "2008-2023 alecrem"
+  }
+}
