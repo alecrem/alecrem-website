@@ -15,7 +15,11 @@
     "title": "Projects"
   },
   "skills": {
-    "title": "Skills"
+    "title": "Skills",
+    "natural-languages": "Natural Languages",
+    "web": "Web",
+    "web3": "web3",
+    "data-ml": "Data and Machine Learning"
   },
   "contact": {
     "title": "Contact"

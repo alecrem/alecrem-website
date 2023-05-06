@@ -15,7 +15,11 @@
     "title": "Proyectos"
   },
   "skills": {
-    "title": "Habilidades"
+    "title": "Habilidades",
+    "natural-languages": "Idiomas",
+    "web": "Web",
+    "web3": "web3",
+    "data-ml": "Datos y aprendizaje automático"
   },
   "contact": {
     "title": "Contacto"

@@ -15,7 +15,11 @@
     "title": "プロジェクト"
   },
   "skills": {
-    "title": "特技"
+    "title": "特技",
+    "natural-languages": "自然言語",
+    "web": "ウェブ",
+    "web3": "web3",
+    "data-ml": "データと機械学習"
   },
   "contact": {
     "title": "お問い合わせ"
