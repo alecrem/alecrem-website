@@ -17,16 +17,16 @@ const NavLinksDesktop: FC = () => {
         </NextLink>
       </Box>
       <Box mr={4}>
-        <NextLink passHref href="/skills" locale={router.locale}>
-          <Button variant="solid" aria-label="Skills" w="100%">
-            {t('header.nav.skills')}
+        <NextLink passHref href="/projects" locale={router.locale}>
+          <Button variant="solid" aria-label="Projects" w="100%">
+            {t('header.nav.projects')}
           </Button>
         </NextLink>
       </Box>
       <Box mr={4}>
-        <NextLink passHref href="/projects" locale={router.locale}>
-          <Button variant="solid" aria-label="Projects" w="100%">
-            {t('header.nav.projects')}
+        <NextLink passHref href="/skills" locale={router.locale}>
+          <Button variant="solid" aria-label="Skills" w="100%">
+            {t('header.nav.skills')}
           </Button>
         </NextLink>
       </Box>

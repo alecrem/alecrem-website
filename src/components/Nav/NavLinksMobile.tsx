@@ -14,14 +14,14 @@ const NavLinksMobile: FC = () => {
           {t('header.nav.index')}
         </Button>
       </NextLink>
-      <NextLink passHref href="/skills" locale={router.locale}>
-        <Button variant="solid" aria-label="Skills" my={2} w="100%">
-          {t('header.nav.skills')}
-        </Button>
-      </NextLink>
       <NextLink passHref href="/projects" locale={router.locale}>
         <Button variant="solid" aria-label="Projects" my={2} w="100%">
           {t('header.nav.projects')}
+        </Button>
+      </NextLink>
+      <NextLink passHref href="/skills" locale={router.locale}>
+        <Button variant="solid" aria-label="Skills" my={2} w="100%">
+          {t('header.nav.skills')}
         </Button>
       </NextLink>
       <NextLink passHref href="/contact" locale={router.locale}>
