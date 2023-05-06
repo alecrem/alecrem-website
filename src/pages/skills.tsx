@@ -8,11 +8,11 @@ import { skillList } from '@/data/skills'
 
 const Skills: React.FC = () => {
   const { t, lang } = useTranslation('common')
-  type SkillListKey = keyof typeof skillList
-  const [langIndex, setLangIndex] = useState<SkillListKey>('en')
+  type SupportedLanguageIndex = keyof typeof skillList
+  const [langIndex, setLangIndex] = useState<SupportedLanguageIndex>('en')
   useEffect(() => {
     if (!['en', 'ja', 'es'].includes(lang)) return
-    setLangIndex(lang as SkillListKey)
+    setLangIndex(lang as SupportedLanguageIndex)
   }, [lang])
   return (
     <Layout title="Skills | alecrem">
