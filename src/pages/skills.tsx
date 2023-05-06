@@ -14,6 +14,24 @@ import { Layout } from '@/components/Layout'
 import { SkillTag } from '@/components/SkillTag'
 
 const skillList = {
+  naturalLanguages: [
+    {
+      language: 'Spanish',
+      level: 'native'
+    },
+    {
+      language: 'English',
+      level: 'fluent'
+    },
+    {
+      language: 'Japanese',
+      level: 'fluent'
+    },
+    {
+      language: 'Catalan',
+      level: 'fluent'
+    }
+  ],
   web: [
     'Next.js',
     'React',
@@ -48,22 +66,12 @@ const Skills = () => (
       Natural Languages
     </Heading>
     <List spacing={3} my={0} color="text">
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Spanish: native
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        English: fluent
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Japanese: fluent
-      </ListItem>
-      <ListItem>
-        <ListIcon as={CheckCircleIcon} color="cyan.500" />
-        Catalan: fluent
-      </ListItem>
+      {skillList.naturalLanguages.map((language, idx) => (
+        <ListItem key={'languages-' + idx}>
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          {language.language}: {language.level}
+        </ListItem>
+      ))}
     </List>
     <Heading as="h4" size="md" color="text">
       Web
