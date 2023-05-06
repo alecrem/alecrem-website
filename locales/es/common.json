@@ -11,6 +11,25 @@
       "contact": "Contacto"
     }
   },
+  "home": {
+    "occupations": {
+      "title": "Empleos actuales",
+      "limu": "Kyushu University Laboratory for Image and Media Understanding",
+      "limu-url": "https://limu.ait.kyushu-u.ac.jp/e/",
+      "kura": "Studio Kura",
+      "kura-url": "https://studiokura.info/en/"
+    },
+    "memberships": {
+      "title": "Membresías",
+      "henkaku": "Chiba Institute of Technology Henkaku Community",
+      "henkaku-url": "https://henkaku.org/ja/henkaku-community/"
+    },
+    "publications": {
+      "title": "Publicaciones",
+      "dondon": "Don-don Hanaseru Supeingo Sakubun Training (2016)",
+      "dondon-url": "https://amzn.to/3V7imAm"
+    }
+  },
   "projects": {
     "title": "Proyectos"
   },
