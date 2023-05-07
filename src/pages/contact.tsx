@@ -12,7 +12,7 @@ import useTranslation from 'next-translate/useTranslation'
 const Contact: React.FC = () => {
   const { t } = useTranslation('common')
   return (
-    <Layout title="Contact | alecrem">
+    <Layout title={t('contact.title') + ' | alecrem'}>
       <Heading as="h3" size="lg" color="text" mt={16}>
         {t('contact.title')}
       </Heading>
