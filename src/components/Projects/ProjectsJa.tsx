@@ -13,31 +13,31 @@ const ProjectsJa: React.FC = () => {
         subheading="九州大学 イメージ・メディア理解研究室, 2022-2023"
         tags={['Python', 'PyPI', 'Maintainer', 'Open Source']}
       >
-        Developed and maintained a Python module to help with learning
-        analytics, including the introduction of unit tests to the project.
+        ラーニング・アナリティクス（学習の分析）で役立つPythonモジュールの、
+        ユニットテストの導入も含めての開発・メンテナンス。
         <br />
-        Nominated to the{' '}
+        2023年度
         <ChakraLink
           isExternal
           href="https://www.imsglobal.org/lili/awards.html"
         >
-          <b>Learning Impact Awards in 2023</b>
+          <b>Learning Impact Awards</b>
         </ChakraLink>
-        .
+        にノミネートされました。
       </ProjectCard>
       <ProjectCard
         title="Photovoice"
-        subheading="Kyushu University Laboratory for Image and Media Understanding, 2021-2022"
+        subheading="九州大学 イメージ・メディア理解研究室, 2021-2022"
         tags={['Python', 'ML', 'DL', 'Core Contributor']}
       >
-        Machine learning applied to learning analytics. Classified and k-means
-        clustered text entries, and used deep learning techniques to caption
-        images.
+        ラーニング・アナリティクス（学習の分析）に機械学習を適用しました。
+        投稿される文章をk平均法を使って分類して、ディープラーニング（深層学習）
+        を使って画像キャプショニングを行いました。
       </ProjectCard>
       <ProjectCard
         title="Henkaku Nengajo"
         url="https://nengajo.henkaku.org/"
-        subheading="Chiba Institute of Technology Henkaku Community, 2022"
+        subheading="千葉工業大学 Henkakuコミュニティ, 2022"
         tags={[
           'Next.js',
           'React',
@@ -47,14 +47,14 @@ const ProjectsJa: React.FC = () => {
           'Open Source'
         ]}
       >
-        Developed a web3 frontend to Polygon blockchain and other APIs. A
-        platform for community members to make Free-to-mint NFTs available to
-        other community members.
+        Polygonブロックチェーンやその他のAPIに対応したweb3フロントエンドを開発しましました。
+        コミュニティメンバーが、他のメンバーのために無料受取可能のNFTを発行できる
+        プラットフォームを提供しました。
       </ProjectCard>
       <ProjectCard
         title="Henkaku Omise"
         url="https://omise.henkaku.org/"
-        subheading="Chiba Institute of Technology Henkaku Community, 2022"
+        subheading="千葉工業大学 Henkakuコミュニティ, 2022"
         tags={[
           'Next.js',
           'React',
@@ -64,10 +64,9 @@ const ProjectsJa: React.FC = () => {
           'Open Source'
         ]}
       >
-        Contributed to both the development of a web3 frontend and a number of
-        smart contracts it interacts with. The site enables podcast listeners to
-        interact and earn community tokens that can only be earned by
-        contributing or interacting.
+        いくつかのスマートコントラクトと、それに対応したweb3フロントエンドの開発に貢献しました。
+        サイトでは、ポッドキャストのリスナーが定期的にやり取りしながらコミュニティ
+        トークンを獲得できます（コミュニティへの貢献でしか得られないトークンです）。
       </ProjectCard>
       <ProjectCard
         title="Studio Kura intranet"
@@ -163,7 +162,7 @@ const ProjectsJa: React.FC = () => {
         at the end of each episode.
       </ProjectCard>
       <ProjectCard
-        title="Escucha español"
+        title="聞くスペイン語"
         url="https://escuchaespanol.com/"
         subheading="Alecrem, 2009-2016"
         tags={['CakePHP', 'WordPress', 'Core Contributor']}
@@ -173,7 +172,7 @@ const ProjectsJa: React.FC = () => {
         <br />
         Featured on{' '}
         <ChakraLink isExternal href="https://www.nhk.or.jp/gogaku/spanish/">
-          <b>NHK's "TV de Supeingo" in 2012 and 2013</b>
+          <b>NHK「テレビでスペイン語」</b> in 2012 and 2013
         </ChakraLink>
         .
       </ProjectCard>
