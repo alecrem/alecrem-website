@@ -73,17 +73,16 @@ const ProjectsJa: React.FC = () => {
         subheading="Studio Kura, 2012-2023"
         tags={['Ionic', 'Angular', 'CakePHP', 'Core Contributor']}
       >
-        Developed the intranet for a business as it grew from 1 person and 1
-        location to dozens of people, a handful of locations, and a number of
-        business lines.
+        本社に1人いる企業が、多数の従業員、複数の事業と事業所の段階まで成長するとともに
+        社内ネットワークを開発しました。
       </ProjectCard>
       <ProjectCard
         title="Studio Kura curriculum"
         subheading="Studio Kura, 2012-2023"
         tags={['p5.js', 'Next.js', 'React', 'web3', 'Core Contributor']}
       >
-        Designed and developed p5.js and web3 activities for kids learning
-        programming in an active learning environment.
+        アクティブラーニングの文脈でプログラミングを習う子どもたちのためのp5.jsや
+        web3カリキュラムを設計・実装しました。
       </ProjectCard>
       <ProjectCard
         title="ChallengeHub"
@@ -91,18 +90,17 @@ const ProjectsJa: React.FC = () => {
         subheading="Djinn Mentor, 2019-2021"
         tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder']}
       >
-        Helped develop a data-driven active learning solution with features such
-        as sharing of teaching materials, real-time learning monitoring, and a
-        chatbot for students to answer challenges.
+        教材の共有、リアルタイム学習モニタリング、
+        学生の課題の回答を受け付けるチャットボットなどの機能を備えた、
+        データ駆動型のアクティブラーニングソリューションの開発に貢献しました。
         <br />
-        One of the 24 startups to participate in{' '}
         <ChakraLink
           isExternal
           href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s"
         >
           <b>techstars Founder Catalyst Japan 2021</b>
         </ChakraLink>
-        .
+        に参加した24社のひとつでした。
       </ProjectCard>
       <ProjectCard
         title="ngx-datetimepicker"
@@ -110,8 +108,8 @@ const ProjectsJa: React.FC = () => {
         subheading="Renovo Solutions, 2019"
         tags={['Angular', 'Contributor', 'Open Source']}
       >
-        Helped improve an existing Angular date and time picker component, due
-        to Djinn Mentor wanting to use it on ChallengeHub.
+        Djinn Mentor社がChallengeHubで使用できるように、
+        既存のAngularの日時選択用コンポーネントを改善するのに貢献しました。
       </ProjectCard>
       <ProjectCard
         title="Koyomito"
