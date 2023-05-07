@@ -14,7 +14,7 @@ const ProjectsPage: React.FC = () => {
   }, [lang])
 
   return (
-    <Layout title="Projects | alecrem">
+    <Layout title={t('projects.title') + ' | alecrem'}>
       <Heading as="h3" size="lg" color="text" mt={16}>
         {t('projects.title')}
       </Heading>

@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
     setLangIndex(lang as SupportedLanguageIndex)
   }, [lang])
   return (
-    <Layout title="Skills | alecrem">
+    <Layout title={t('skills.title') + ' | alecrem'}>
       <Heading as="h3" size="lg" color="text" mt={16}>
         {t('skills.title')}
       </Heading>
