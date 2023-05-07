@@ -1,103 +1,61 @@
-import {
-  Heading,
-  List,
-  ListIcon,
-  Tag,
-  TagLabel,
-  TagLeftIcon,
-  ListItem,
-  Wrap,
-  WrapItem
-} from '@chakra-ui/react'
+import { useState, useEffect } from 'react'
+import { Heading, List, ListIcon, ListItem, Wrap } from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
+import useTranslation from 'next-translate/useTranslation'
 import { Layout } from '@/components/Layout'
 import { SkillTag } from '@/components/SkillTag'
+import { skillList } from '@/data/skills'
 
-const skillList = {
-  naturalLanguages: [
-    {
-      language: 'Spanish',
-      level: 'native'
-    },
-    {
-      language: 'English',
-      level: 'fluent'
-    },
-    {
-      language: 'Japanese',
-      level: 'fluent'
-    },
-    {
-      language: 'Catalan',
-      level: 'fluent'
-    }
-  ],
-  web: [
-    'Next.js',
-    'React',
-    'TypeScript',
-    'Chakra',
-    'p5.js',
-    'Pyodide',
-    'Airtable API',
-    'MySQL',
-    'PostgreSQL',
-    'Ionic',
-    'Angular',
-    'CakePHP'
-  ],
-  web3: ['Wagmi', 'Pinata', 'OpenSea API', 'Solidity'],
-  dataMl: [
-    'Python',
-    'Pandas',
-    'PyPI',
-    'TensorFlow',
-    'Computer vision',
-    ' Natural Language Processing'
-  ]
+const Skills: React.FC = () => {
+  const { t, lang } = useTranslation('common')
+  type SupportedLanguageIndex = keyof typeof skillList
+  const [langIndex, setLangIndex] = useState<SupportedLanguageIndex>('en')
+  useEffect(() => {
+    if (!['en', 'ja', 'es'].includes(lang)) return
+    setLangIndex(lang as SupportedLanguageIndex)
+  }, [lang])
+  return (
+    <Layout title="Skills | alecrem">
+      <Heading as="h3" size="lg" color="text" mt={16}>
+        {t('skills.title')}
+      </Heading>
+      <Heading as="h4" size="md" color="text">
+        {t('skills.natural-languages')}
+      </Heading>
+      <List spacing={3} my={0} color="text">
+        {skillList[langIndex].naturalLanguages.map((language, idx) => (
+          <ListItem key={'languages-' + idx}>
+            <ListIcon as={CheckCircleIcon} color="cyan.500" />
+            {language.language}: {language.level}
+          </ListItem>
+        ))}
+      </List>
+      <Heading as="h4" size="md" color="text">
+        {t('skills.web')}
+      </Heading>
+      <Wrap>
+        {skillList[langIndex].web.map((skill, idx) => (
+          <SkillTag key={'web-' + idx}>{skill}</SkillTag>
+        ))}
+      </Wrap>
+      <Heading as="h4" size="md" color="text">
+        {t('skills.web3')}
+      </Heading>
+      <Wrap>
+        {skillList[langIndex].web3.map((skill, idx) => (
+          <SkillTag key={'web3-' + idx}>{skill}</SkillTag>
+        ))}
+      </Wrap>
+      <Heading as="h4" size="md" color="text">
+        {t('skills.data-ml')}
+      </Heading>
+      <Wrap>
+        {skillList[langIndex].dataMl.map((skill, idx) => (
+          <SkillTag key={'data-ml-' + idx}>{skill}</SkillTag>
+        ))}
+      </Wrap>
+    </Layout>
+  )
 }
-
-const Skills = () => (
-  <Layout title="Skills | alecrem">
-    <Heading as="h3" size="lg" color="text" mt={16}>
-      Skills
-    </Heading>
-    <Heading as="h4" size="md" color="text">
-      Natural Languages
-    </Heading>
-    <List spacing={3} my={0} color="text">
-      {skillList.naturalLanguages.map((language, idx) => (
-        <ListItem key={'languages-' + idx}>
-          <ListIcon as={CheckCircleIcon} color="cyan.500" />
-          {language.language}: {language.level}
-        </ListItem>
-      ))}
-    </List>
-    <Heading as="h4" size="md" color="text">
-      Web
-    </Heading>
-    <Wrap>
-      {skillList.web.map((skill, idx) => (
-        <SkillTag key={'web-' + idx}>{skill}</SkillTag>
-      ))}
-    </Wrap>
-    <Heading as="h4" size="md" color="text">
-      Web3
-    </Heading>
-    <Wrap>
-      {skillList.web3.map((skill, idx) => (
-        <SkillTag key={'web3-' + idx}>{skill}</SkillTag>
-      ))}
-    </Wrap>
-    <Heading as="h4" size="md" color="text">
-      Data and ML
-    </Heading>
-    <Wrap>
-      {skillList.dataMl.map((skill, idx) => (
-        <SkillTag key={'data-ml-' + idx}>{skill}</SkillTag>
-      ))}
-    </Wrap>
-  </Layout>
-)
 
 export default Skills

@@ -1,0 +1,50 @@
+{
+  "header": {
+    "title": "alecrem",
+    "fullname": "Alejandro Cremades Rocamora",
+    "tagline": "システムエンジニア",
+    "tagline2": "Front end、web3、データ分析、機械学習",
+    "nav": {
+      "index": "トップ",
+      "projects": "プロジェクト",
+      "skills": "特技",
+      "contact": "お問い合わせ"
+    }
+  },
+  "home": {
+    "occupations": {
+      "title": "現在の勤務先",
+      "limu": "九州大学 イメージ・メディア理解研究室",
+      "limu-url": "https://limu.ait.kyushu-u.ac.jp/",
+      "kura": "Studio Kura",
+      "kura-url": "https://studiokura.info/"
+    },
+    "memberships": {
+      "title": "加入団体",
+      "henkaku": "千葉工業大学 Henkakuコミュニティ",
+      "henkaku-url": "https://henkaku.org/ja/henkaku-community/"
+    },
+    "publications": {
+      "title": "著書",
+      "dondon": "どんどん話せるスペイン語 作文トレーニング (2016)",
+      "dondon-url": "https://amzn.to/3V7imAm"
+    }
+  },
+  "projects": {
+    "title": "プロジェクト"
+  },
+  "skills": {
+    "title": "特技",
+    "natural-languages": "自然言語",
+    "web": "ウェブ",
+    "web3": "web3",
+    "data-ml": "データと機械学習"
+  },
+  "contact": {
+    "title": "お問い合わせ"
+  },
+  "footer": {
+    "year": "2008-2023",
+    "author": "alecrem"
+  }
+}

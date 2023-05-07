@@ -1,8 +1,9 @@
 import { FC, useState } from 'react'
-import { IconButton, Flex } from '@chakra-ui/react'
+import { IconButton, Flex, Box } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import NavLinksMobile from '@/components/Nav/NavLinksMobile'
 import NavLinksDesktop from '@/components/Nav/NavLinksDesktop'
+import NavLanguageButtons from '@/components/Nav/NavLanguageButtons'
 
 const Nav: FC = () => {
   const [display, changeDisplay] = useState('none')
@@ -45,6 +46,7 @@ const Nav: FC = () => {
           </Flex>
           <Flex flexDir="column" align="center">
             <NavLinksMobile />
+            <NavLanguageButtons mobile={true} />
           </Flex>
         </Flex>
       </Flex>
@@ -55,6 +57,8 @@ const Nav: FC = () => {
         direction="row"
       >
         <NavLinksDesktop />
+        <Box pl={4}></Box>
+        <NavLanguageButtons />
       </Flex>
     </>
   )

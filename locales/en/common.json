@@ -1,0 +1,50 @@
+{
+  "header": {
+    "title": "alecrem",
+    "fullname": "Alejandro Cremades Rocamora",
+    "tagline": "Software Engineer",
+    "tagline2": "Front end, web3, data analysis, machine learning",
+    "nav": {
+      "index": "Home",
+      "projects": "Project",
+      "skills": "Skills",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "occupations": {
+      "title": "Current occupations",
+      "limu": "Kyushu University Laboratory for Image and Media Understanding",
+      "limu-url": "https://limu.ait.kyushu-u.ac.jp/e/",
+      "kura": "Studio Kura",
+      "kura-url": "https://studiokura.info/en/"
+    },
+    "memberships": {
+      "title": "Memberships",
+      "henkaku": "Chiba Institute of Technology Henkaku Community",
+      "henkaku-url": "https://henkaku.org/ja/henkaku-community/"
+    },
+    "publications": {
+      "title": "Publications",
+      "dondon": "Don-don Hanaseru Supeingo Sakubun Training (2016)",
+      "dondon-url": "https://amzn.to/3V7imAm"
+    }
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "skills": {
+    "title": "Skills",
+    "natural-languages": "Natural Languages",
+    "web": "Web",
+    "web3": "web3",
+    "data-ml": "Data and Machine Learning"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "footer": {
+    "year": "2008-2023",
+    "author": "alecrem"
+  }
+}
