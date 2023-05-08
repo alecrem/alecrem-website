@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/alecrem
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://alecrem.com
+  * I am alecrem (https://keybase.io/alecrem) on keybase.
+  * I have a public key ASADfV4JDrdrmx5XF9wShSPDML6iF51zXn59dp0jidrGpgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012076c80b2e4087bcbe4e812dc2b27a0892c8f422c81e532d378c98933395985b9c0a",
+      "host": "keybase.io",
+      "kid": "0120037d5e090eb76b9b1e5717dc128523c330bea2179d735e7e7d769d2389dac6a60a",
+      "uid": "ad2c7be450ee01dd0b449049de23d919",
+      "username": "alecrem"
+    },
+    "merkle_root": {
+      "ctime": 1683557596,
+      "hash": "2ab1afd055e2edbb730386f1343e28211615c2493c3c490654b17b472e5badbe7f21cf1b5bca4f180a431dd8fdfa68f8a207324925f8edd92df6634c27a21b14",
+      "hash_meta": "1f5c296b93187edcefb06e9ed4fa39b95edaa705dc8f46629e5f5adb6acb7e43",
+      "seqno": 24426380
+    },
+    "service": {
+      "entropy": "t7Xk1vfRWLvRFKmbZk3uh5dr",
+      "hostname": "alecrem.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.4"
+  },
+  "ctime": 1683557603,
+  "expire_in": 504576000,
+  "prev": "0622d7676dd9d2689f77b7e0548ed6dd800789a249e8b831dab8209e419390bb",
+  "seqno": 60,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgA31eCQ63a5seVxfcEoUjwzC+ohedc15+fXadI4naxqYKp3BheWxvYWTESpcCPMQgBiLXZ23Z0mifd7fgVI7W3YAHiaJJ6Lgx2rggnkGTkLvEILofw3pJllI4EXJWnrvGHr4eO41oD6BbYtiBM2xsENNdAgHCo3NpZ8RA0IzGInxPeU0W1wSu7DlY4MNbRNfWOAJbFtF/8+KhVgvtDZb2grp31rMcm5U2ZIHXdbC6h4fTjhENiRx+h5oADKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIExOnf8+gnbUDPEeulrlz8sRJ4gd8v+LEiwskbgngvLPo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/alecrem
+
+==================================================================
