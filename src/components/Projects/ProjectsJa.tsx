@@ -117,10 +117,10 @@ const ProjectsJa: React.FC = () => {
         subheading="Alecrem, 2017-2020"
         tags={['Ionic', 'Angular', 'Sole Author']}
       >
-        Calendar app for iOS and Android with everything you may want to know
-        about today regarding the Japanese language and culture. Only the
-        Android version is still available, but the cultural content vocabulary
-        and pronunciation samples can still be enjoyed.
+        iOS・Android向けのカレンダーアプリを作りました。
+        日本語と文化に関する、毎日「今日」の情報がすべてわかります。
+        現在はAndroid版のみが利用可能ですが、
+        語彙、発音のサンプルなど文化コンテンツは引き続き楽しめます。
       </ProjectCard>
       <ProjectCard
         title="iroiro connect"
@@ -134,8 +134,9 @@ const ProjectsJa: React.FC = () => {
           'Open Source'
         ]}
       >
-        Website for a sole proprietor with a contact form that uses the Airtable
-        API to store messages, and effectively deliver them as e-mails.
+        個人事業主の公式ウェブサイトで、Airtable
+        APIを使用したお問い合わせフォームが付いています。
+        お問い合わせ内容を保存して、Airtableによりメールとして配信されます。
       </ProjectCard>
       <ProjectCard
         title="Middle School Tutor"
