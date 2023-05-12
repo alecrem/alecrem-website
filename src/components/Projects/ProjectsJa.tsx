@@ -144,9 +144,10 @@ const ProjectsJa: React.FC = () => {
         subheading="Alecrem, 2022-2023"
         tags={['Next.js', 'React', 'Python', 'Sole Author', 'Open Source']}
       >
-        Gaming tool for Magic The Gathering's Middle School format. Consisting
-        on a Python project that compiles a list of available Magic cards, and a
-        website that searches said list.
+        マジック：ザ・ギャザリングのフォーマット「ミドルスクール」のための
+        ゲーミング・ツールを開発しました。
+        二つの部品で構成されています：利用可能なMTGカードのリストをまとめるPythonプロジェクトと、
+        そのリストを検索するNext.jsでできたウェブサイト。
       </ProjectCard>
       <ProjectCard
         title="Binguerah"
@@ -154,11 +155,10 @@ const ProjectsJa: React.FC = () => {
         subheading="Alecrem, 2023"
         tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
       >
-        Real-time and async interaction tool for podcasts. A personalized meme
-        bingo card that is different for each combination of user and episode.
-        Spaces can be manually marked as the user listens to the podcast, or
-        they can be automatically marked if the user inputs the password shared
-        at the end of each episode.
+        ポッドキャストのリスナーがリアルタイムでも非同期にでも使うインタラクションツール。
+        各ユーザーのためにカスタマイズされたお楽しみビンゴカードが提供されます。
+        ユーザーはポッドキャストを聴きながら手動でチェックしていっても良いですし、
+        各エピソードの最後に共有されるパスワードを入力すると自動的にチェックされます。
       </ProjectCard>
       <ProjectCard
         title="聞くスペイン語"
@@ -166,14 +166,14 @@ const ProjectsJa: React.FC = () => {
         subheading="Alecrem, 2009-2016"
         tags={['CakePHP', 'WordPress', 'Core Contributor']}
       >
-        Premium membership site and custom podcast feed for a series of videos
-        made to help Japanese speakers the Spanish language.
+        スペイン語を学びたい日本語話者のために制作したビデオポッドキャストに対応する、
+        プレミアム会員サイトおよびカスタムポッドキャストフィード。
         <br />
-        Featured on{' '}
+        2012〜2013年度の{' '}
         <ChakraLink isExternal href="https://www.nhk.or.jp/gogaku/spanish/">
-          <b>NHK「テレビでスペイン語」</b> in 2012 and 2013
+          <b>NHK「テレビでスペイン語」</b>
         </ChakraLink>
-        .
+        に出演しました。
       </ProjectCard>
     </SimpleGrid>
   )

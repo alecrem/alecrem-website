@@ -148,7 +148,7 @@ const ProjectsEn: React.FC = () => {
       >
         Gaming tool for Magic The Gathering's Middle School format. Consisting
         on a Python project that compiles a list of available Magic cards, and a
-        website that searches said list.
+        Next.js website that searches said list.
       </ProjectCard>
       <ProjectCard
         title="Binguerah"
@@ -169,7 +169,7 @@ const ProjectsEn: React.FC = () => {
         tags={['CakePHP', 'WordPress', 'Core Contributor']}
       >
         Premium membership site and custom podcast feed for a series of videos
-        made to help Japanese speakers the Spanish language.
+        made to help Japanese speakers learn the Spanish language.
         <br />
         Featured on{' '}
         <ChakraLink isExternal href="https://www.nhk.or.jp/gogaku/spanish/">
