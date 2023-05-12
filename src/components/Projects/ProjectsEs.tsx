@@ -92,11 +92,12 @@ const ProjectsEs: React.FC = () => {
         subheading="Djinn Mentor, 2019-2021"
         tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder']}
       >
-        Helped develop a data-driven active learning solution with features such
-        as sharing of teaching materials, real-time learning monitoring, and a
-        chatbot for students to answer challenges.
+        Ayudé a desarrollar una solución de aprendizaje activo basada en datos,
+        con funcionalidades como compartir materiales de enseñanza,
+        monitorización del aprendizaje en tiempo real, y un chatbot para que los
+        estudiantes resuelvan retos.
         <br />
-        One of the 24 startups to participate in{' '}
+        Una de las 24 startups que participó en{' '}
         <ChakraLink
           isExternal
           href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s"
@@ -111,8 +112,8 @@ const ProjectsEs: React.FC = () => {
         subheading="Renovo Solutions, 2019"
         tags={['Angular', 'Contributor', 'Open Source']}
       >
-        Helped improve an existing Angular date and time picker component, due
-        to Djinn Mentor wanting to use it on ChallengeHub.
+        Ayudé a mejorar un componente de Angular para selección de fecha y hora,
+        porque Djinn Mentor lo quería usar en ChallengeHub.
       </ProjectCard>
       <ProjectCard
         title="Koyomito"
@@ -120,10 +121,11 @@ const ProjectsEs: React.FC = () => {
         subheading="Alecrem, 2017-2020"
         tags={['Ionic', 'Angular', 'Sole Author']}
       >
-        Calendar app for iOS and Android with everything you may want to know
-        about today regarding the Japanese language and culture. Only the
-        Android version is still available, but the cultural content vocabulary
-        and pronunciation samples can still be enjoyed.
+        Aplicación de calendario para iOS y Android que te enseña todo lo que
+        podrías querer saber sobre el día de hoy, en el contexto del idioma y la
+        cultura japoneses. Actualmente solo está disponible la versión para
+        Android, pero el contenido cultural, voculario, y muestras de
+        pronunciación siguen vigentes.
       </ProjectCard>
       <ProjectCard
         title="iroiro connect"
@@ -137,8 +139,9 @@ const ProjectsEs: React.FC = () => {
           'Open Source'
         ]}
       >
-        Website for a sole proprietor with a contact form that uses the Airtable
-        API to store messages, and effectively deliver them as e-mails.
+        Sitio web para una trabajadora autónoma con un formulario de contacto
+        que usa la API de Airtable para almacenar los mensajes, y que finalmente
+        se envíen por correo electrónico.
       </ProjectCard>
       <ProjectCard
         title="Middle School Tutor"
@@ -146,9 +149,10 @@ const ProjectsEs: React.FC = () => {
         subheading="Alecrem, 2022-2023"
         tags={['Next.js', 'React', 'Python', 'Sole Author', 'Open Source']}
       >
-        Gaming tool for Magic The Gathering's Middle School format. Consisting
-        on a Python project that compiles a list of available Magic cards, and a
-        website that searches said list.
+        Herramienta para jugadores del formato Middle School de Magic: El
+        encuentro. Consiste en un proyecto en Python que compila la lista de
+        cartas que están permitidas en el formato, y un sitio web hecho con
+        Next.js en el que se puede buscar cartas en dicha lista.
       </ProjectCard>
       <ProjectCard
         title="Binguerah"
@@ -156,11 +160,12 @@ const ProjectsEs: React.FC = () => {
         subheading="Alecrem, 2023"
         tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
       >
-        Real-time and async interaction tool for podcasts. A personalized meme
-        bingo card that is different for each combination of user and episode.
-        Spaces can be manually marked as the user listens to the podcast, or
-        they can be automatically marked if the user inputs the password shared
-        at the end of each episode.
+        Herramienta para interacción tanto en tiempo real como asíncrona para
+        podcasts que genera una tarjeta de bingo meme personalizada para cada
+        combinación de nombre de usuario y número de episodio. Las casillas se
+        pueden marcar manualmente mientras se escucha el episodio, o
+        automáticamente al introducir la palabra clave del episodio que se
+        escucha al final del programa.
       </ProjectCard>
       <ProjectCard
         title="Escucha español"
@@ -168,14 +173,15 @@ const ProjectsEs: React.FC = () => {
         subheading="Alecrem, 2009-2016"
         tags={['CakePHP', 'WordPress', 'Core Contributor']}
       >
-        Premium membership site and custom podcast feed for a series of videos
-        made to help Japanese speakers the Spanish language.
+        Sitio web de membresía premium y feed de podcast personalizado para una
+        serie de vídeos hechos para ayudar a los hablantes japoneses a aprender
+        español.
         <br />
-        Featured on{' '}
+        Aparecimos en el programa{' '}
         <ChakraLink isExternal href="https://www.nhk.or.jp/gogaku/spanish/">
-          <b>NHK's "TV de Supeingo" in 2012 and 2013</b>
+          <b>"TV de Supeingo" de la NHK</b>
         </ChakraLink>
-        .
+        en 2012 y 2013.
       </ProjectCard>
     </SimpleGrid>
   )
