@@ -122,7 +122,7 @@ const ProjectsEn: React.FC = () => {
       >
         Calendar app for iOS and Android with everything you may want to know
         about today regarding the Japanese language and culture. Only the
-        Android version is still available, but the cultural content vocabulary
+        Android version is still available, but the cultural content, vocabulary
         and pronunciation samples can still be enjoyed.
       </ProjectCard>
       <ProjectCard
@@ -156,11 +156,11 @@ const ProjectsEn: React.FC = () => {
         subheading="Alecrem, 2023"
         tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
       >
-        Real-time and async interaction tool for podcasts. A personalized meme
-        bingo card that is different for each combination of user and episode.
-        Spaces can be manually marked as the user listens to the podcast, or
-        they can be automatically marked if the user inputs the password shared
-        at the end of each episode.
+        Real-time and async interaction tool for podcasts that generates a
+        personalized meme bingo card that is different for each combination of
+        user and episode. Spaces can be manually marked as the user listens to
+        the podcast, or they can be automatically marked if the user inputs the
+        password shared at the end of each episode.
       </ProjectCard>
       <ProjectCard
         title="Escucha español"
@@ -173,9 +173,9 @@ const ProjectsEn: React.FC = () => {
         <br />
         Featured on{' '}
         <ChakraLink isExternal href="https://www.nhk.or.jp/gogaku/spanish/">
-          <b>NHK's "TV de Supeingo" in 2012 and 2013</b>
-        </ChakraLink>
-        .
+          <b>NHK's "TV de Supeingo"</b>
+        </ChakraLink>{' '}
+        in 2012 and 2013.
       </ProjectCard>
     </SimpleGrid>
   )
