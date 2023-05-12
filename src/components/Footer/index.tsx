@@ -10,6 +10,10 @@ const Footer: React.FC = (props: FlexProps) => {
         <ChakraLink href="https://github.com/alecrem/">
           {t('footer.author')}
         </ChakraLink>
+        {' | '}
+        <ChakraLink href="https://github.com/alecrem/alecrem-website/">
+          {t('footer.source')}
+        </ChakraLink>
       </Text>
     </Flex>
   )
