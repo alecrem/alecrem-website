@@ -13,7 +13,7 @@ const ProjectsEs: React.FC = () => {
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2022-2023"
         tags={['Python', 'PyPI', 'Maintainer', 'Open Source']}
       >
-        Desarrollo y mantenimiento de un módulo Python para ayudar en análisis
+        Desarrollo y mantenimiento de un módulo Python para acelerar el análisis
         del aprendizaje, incluyendo introducir pruebas unitarias al proyecto.
         <br />
         Nominado a los{' '}
@@ -92,8 +92,8 @@ const ProjectsEs: React.FC = () => {
         subheading="Djinn Mentor, 2019-2021"
         tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder']}
       >
-        Ayudé a desarrollar una solución de aprendizaje activo basada en datos,
-        con funcionalidades como compartir materiales de enseñanza,
+        Participé en el desarrollo de una solución de aprendizaje activo basada
+        en datos, con funcionalidades como compartir materiales de enseñanza,
         monitorización del aprendizaje en tiempo real, y un chatbot para que los
         estudiantes resuelvan retos.
         <br />
@@ -112,8 +112,8 @@ const ProjectsEs: React.FC = () => {
         subheading="Renovo Solutions, 2019"
         tags={['Angular', 'Contributor', 'Open Source']}
       >
-        Ayudé a mejorar un componente de Angular para selección de fecha y hora,
-        porque Djinn Mentor lo quería usar en ChallengeHub.
+        Contribuí mejoras a un componente de Angular para selección de fecha y
+        hora, porque Djinn Mentor lo quería usar en ChallengeHub.
       </ProjectCard>
       <ProjectCard
         title="Koyomito"

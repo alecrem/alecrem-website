@@ -13,7 +13,7 @@ const ProjectsEn: React.FC = () => {
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2022-2023"
         tags={['Python', 'PyPI', 'Maintainer', 'Open Source']}
       >
-        Developed and maintained a Python module to help with learning
+        Developed and maintained a Python module to accelerate learning
         analytics, including the introduction of unit tests to the project.
         <br />
         Nominated to the{' '}
@@ -92,9 +92,9 @@ const ProjectsEn: React.FC = () => {
         subheading="Djinn Mentor, 2019-2021"
         tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder']}
       >
-        Helped develop a data-driven active learning solution with features such
-        as sharing of teaching materials, real-time learning monitoring, and a
-        chatbot for students to answer challenges.
+        I took part on the development of a data-driven active learning solution
+        with features such as sharing of teaching materials, real-time learning
+        monitoring, and a chatbot for students to answer challenges.
         <br />
         One of the 24 startups to participate in{' '}
         <ChakraLink
@@ -111,8 +111,8 @@ const ProjectsEn: React.FC = () => {
         subheading="Renovo Solutions, 2019"
         tags={['Angular', 'Contributor', 'Open Source']}
       >
-        Helped improve an existing Angular date and time picker component, due
-        to Djinn Mentor wanting to use it on ChallengeHub.
+        Contributed improvements to an existing Angular date and time picker
+        component, due to Djinn Mentor wanting to use it on ChallengeHub.
       </ProjectCard>
       <ProjectCard
         title="Koyomito"
