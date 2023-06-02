@@ -12,7 +12,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
   return (
     <>
       {lang !== 'en' && (
-        <Box pr={4}>
+        <Box pr={2}>
           <Button
             size={size}
             my={mobile ? 2 : undefined}
@@ -23,7 +23,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
         </Box>
       )}
       {lang !== 'es' && (
-        <Box pr={4}>
+        <Box pr={2}>
           <Button
             size={size}
             my={mobile ? 2 : undefined}
@@ -34,7 +34,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
         </Box>
       )}
       {lang !== 'ja' && (
-        <Box pr={4}>
+        <Box pr={2}>
           <Button
             size={size}
             my={mobile ? 2 : undefined}
@@ -48,7 +48,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
   )
 }
 
-export default NavLanguageButtons
+export { NavLanguageButtons }
 NavLanguageButtons.defaultProps = {
   mobile: false,
   size: 'md'
