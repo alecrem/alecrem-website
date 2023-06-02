@@ -1,5 +1,6 @@
 import {
   Heading,
+  Text,
   Link as ChakraLink,
   List,
   ListIcon,
@@ -12,7 +13,12 @@ import useTranslation from 'next-translate/useTranslation'
 const Index: React.FC = () => {
   const { t } = useTranslation('common')
   return (
-    <Layout tagline={true} title="alecrem | Alejandro Cremades Rocamora">
+    <Layout title="alecrem | Alejandro Cremades Rocamora">
+      <Text color="text" mt={16}>
+        {t('header.tagline')}
+        <br />
+        {t('header.tagline2')}
+      </Text>
       <Heading as="h4" size="md" color="text">
         {t('home.occupations.title')}
       </Heading>
