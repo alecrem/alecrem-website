@@ -1,3 +1,4 @@
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
 import { extendTheme } from '@chakra-ui/react'
 
 const fonts = { mono: `'Menlo', monospace` }
@@ -42,6 +43,15 @@ const theme = extendTheme({
     }
   },
   fonts,
+  styles: {
+    global: (props: StyleFunctionProps) => ({
+      'html, body, Container': {
+        bg: mode('gray.50', 'gray.900')(props)
+        // bg: 'gray.900'
+        // bg: 'cyan.100'
+      }
+    })
+  },
   breakpoints
 })
 
