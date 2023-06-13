@@ -19,7 +19,7 @@ const Layout: React.FC<Props> = ({ children, title, tagline }) => {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <Container>
+      <Container height="100vh">
         <Main>
           <Header tagline={tagline} />
           {children}
