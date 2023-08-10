@@ -9,7 +9,7 @@ export const Hero = ({ title }: { title: string }) => (
     bgClip="text"
     mb="-20vh"
   >
-    <Heading as="h1" fontSize={{ base: '12vw', md: '10vw', lg: '8vw' }}>
+    <Heading as="h1" fontSize={{ base: '12vw', md: '10vw', lg: '7em' }}>
       {title}
     </Heading>
   </Flex>
