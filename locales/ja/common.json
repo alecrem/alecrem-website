@@ -7,7 +7,7 @@
     "nav": {
       "index": "トップ",
       "projects": "プロジェクト",
-      "skills": "特技",
+      "skills": "スキル",
       "contact": "お問い合わせ"
     }
   },
@@ -34,7 +34,7 @@
     "title": "プロジェクト"
   },
   "skills": {
-    "title": "特技",
+    "title": "スキル",
     "natural-languages": "自然言語",
     "web": "ウェブ",
     "web3": "web3",

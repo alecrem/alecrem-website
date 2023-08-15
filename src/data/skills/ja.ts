@@ -22,6 +22,7 @@ export const skillListJa = {
     'React',
     'TypeScript',
     'Chakra',
+    'Docker',
     'p5.js',
     'Pyodide',
     'Airtable API',
@@ -36,6 +37,7 @@ export const skillListJa = {
     'Python',
     'Pandas',
     'PyPI',
+    'Streamlit',
     'TensorFlow',
     'コンピュータビジョン',
     '自然言語処理'
