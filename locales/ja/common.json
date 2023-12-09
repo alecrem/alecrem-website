@@ -14,8 +14,8 @@
   "home": {
     "occupations": {
       "title": "現在の勤務先",
-      "limu": "九州大学 イメージ・メディア理解研究室",
-      "limu-url": "https://limu.ait.kyushu-u.ac.jp/",
+      "shiftbase": "shiftbase, inc.",
+      "shiftbase-url": "https://shiftbase.xyz/",
       "kura": "Studio Kura",
       "kura-url": "https://studiokura.info/"
     },
@@ -24,10 +24,18 @@
       "henkaku": "千葉工業大学 Henkakuコミュニティ",
       "henkaku-url": "https://henkaku.org/ja/henkaku-community/"
     },
+    "conferences": {
+      "title": "学会での発表",
+      "openla": "\"OpenLA: Open Source Library for Educational Data Analysis,\" Learning Impact 2023 Conference. アナハイム、カリフォルニア州、米国、2023年。",
+      "openla-url": "https://www.1edtech.org/li/awards/2023"
+    },
     "publications": {
       "title": "著書",
-      "dondon": "どんどん話せるスペイン語 作文トレーニング (2016)",
-      "dondon-url": "https://amzn.to/3V7imAm"
+      "preview": "立ち読み",
+      "buy": "購入",
+      "dondon": "どんどん話せるスペイン語 作文トレーニング (2016年三修社)",
+      "dondon-preview-url": "https://www.google.co.jp/books/edition/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93%E8%A9%B1%E3%81%9B%E3%82%8B%E3%82%B9%E3%83%9A%E3%82%A4%E3%83%B3%E8%AA%9E_%E4%BD%9C/1SrDDAAAQBAJ",
+      "dondon-buy-url": "https://amzn.to/3V7imAm"
     }
   },
   "projects": {

@@ -2,6 +2,7 @@ import {
   Heading,
   Text,
   Link as ChakraLink,
+  Button,
   List,
   ListIcon,
   ListItem
@@ -27,11 +28,11 @@ const Index: React.FC = () => {
           <ListIcon as={CheckCircleIcon} color="cyan.500" />
           <ChakraLink
             isExternal
-            href={t('home.occupations.limu-url')}
+            href={t('home.occupations.shiftbase-url')}
             flexGrow={1}
             mr={2}
           >
-            {t('home.occupations.limu')} <LinkIcon />
+            {t('home.occupations.shiftbase')} <LinkIcon />
           </ChakraLink>
         </ListItem>
         <ListItem>
@@ -63,6 +64,22 @@ const Index: React.FC = () => {
         </ListItem>
       </List>
       <Heading as="h4" size="md" color="text">
+        {t('home.conferences.title')}
+      </Heading>
+      <List spacing={3} my={0} color="text">
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          <ChakraLink
+            isExternal
+            href={t('home.conferences.openla-url')}
+            flexGrow={1}
+            mr={2}
+          >
+            {t('home.conferences.openla')} <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
+      <Heading as="h4" size="md" color="text">
         {t('home.publications.title')}
       </Heading>
       <List spacing={3} my={0} color="text">
@@ -70,11 +87,27 @@ const Index: React.FC = () => {
           <ListIcon as={CheckCircleIcon} color="cyan.500" />
           <ChakraLink
             isExternal
-            href={t('home.publications.dondon-url')}
+            href={t('home.publications.dondon-preview-url')}
             flexGrow={1}
             mr={2}
           >
             {t('home.publications.dondon')} <LinkIcon />
+          </ChakraLink>
+          <ChakraLink
+            isExternal
+            href={t('home.publications.dondon-buy-url')}
+            flexGrow={1}
+            mr={2}
+          >
+            <Button size={'xs'}>{t('home.publications.buy')}</Button>
+          </ChakraLink>
+          <ChakraLink
+            isExternal
+            href={t('home.publications.dondon-preview-url')}
+            flexGrow={1}
+            mr={2}
+          >
+            <Button size={'xs'}>{t('home.publications.preview')}</Button>
           </ChakraLink>
         </ListItem>
       </List>
