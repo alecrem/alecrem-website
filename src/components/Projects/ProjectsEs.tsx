@@ -16,11 +16,8 @@ const ProjectsEs: React.FC = () => {
         Desarrollo y mantenimiento de un módulo Python para acelerar el análisis
         del aprendizaje, incluyendo introducir pruebas unitarias al proyecto.
         <br />
-        Nominado a los{' '}
-        <ChakraLink
-          isExternal
-          href="https://www.imsglobal.org/lili/awards.html"
-        >
+        Mención de honor en los{' '}
+        <ChakraLink isExternal href="https://www.1edtech.org/li/awards/2023">
           <b>Learning Impact Awards in 2023</b>
         </ChakraLink>
         .

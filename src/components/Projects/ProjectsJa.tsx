@@ -17,13 +17,10 @@ const ProjectsJa: React.FC = () => {
         ユニットテストの導入も含めての開発・メンテナンス。
         <br />
         2023年度
-        <ChakraLink
-          isExternal
-          href="https://www.imsglobal.org/lili/awards.html"
-        >
+        <ChakraLink isExternal href="https://www.1edtech.org/li/awards/2023">
           <b>Learning Impact Awards</b>
         </ChakraLink>
-        にノミネートされました。
+        で特別賞を受賞しました。
       </ProjectCard>
       <ProjectCard
         title="Photovoice"

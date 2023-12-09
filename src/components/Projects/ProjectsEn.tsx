@@ -16,11 +16,8 @@ const ProjectsEn: React.FC = () => {
         Developed and maintained a Python module to accelerate learning
         analytics, including the introduction of unit tests to the project.
         <br />
-        Nominated to the{' '}
-        <ChakraLink
-          isExternal
-          href="https://www.imsglobal.org/lili/awards.html"
-        >
+        Honorable mention at the{' '}
+        <ChakraLink isExternal href="https://www.1edtech.org/li/awards/2023">
           <b>Learning Impact Awards in 2023</b>
         </ChakraLink>
         .
