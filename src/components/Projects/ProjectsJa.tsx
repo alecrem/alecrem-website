@@ -8,6 +8,46 @@ const ProjectsJa: React.FC = () => {
       templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
     >
       <ProjectCard
+        title="UNCHAIN"
+        url="https://app.unchain.tech/learn/"
+        subheading="shiftbase, inc."
+        tags={['Next.js', 'React', 'web3', 'figma', 'Contributor']}
+      >
+        コミュニティーのメンバーがweb3技術を学べるWebサイトのフロントエンドの、UIデザインと実装。
+        企業がメンバーの中にエンジニアを見つけて採用することができるサブスクリプション制ポータルも。
+      </ProjectCard>
+      <ProjectCard
+        title="Mint Rally"
+        url="https://www.mintrally.xyz/"
+        subheading="Hackdays Project (Code for Japan), 2023"
+        tags={[
+          'Next.js',
+          'React',
+          'web3',
+          'Localization',
+          'Contributor',
+          'Open Source'
+        ]}
+      >
+        ありとあらゆるイベントへの参加証明となるNFTを無料で提供できるオープンソース
+        web3 プロジェクトの開発・ローカライゼーションに貢献.
+      </ProjectCard>
+      <ProjectCard
+        title="OpenLA Streamlit Web UI"
+        subheading="Kyushu University Laboratory for Image and Media Understanding, 2023"
+        tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
+      >
+        <ChakraLink isExternal href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
+          <b>OpenLA</b>
+        </ChakraLink>
+        を使いやくすべく、データ駆動ウェブアプリケーションの実装・メンテナンス・デプロイ。
+        TornadoサーバーとReactフロントエンドを使う
+        <ChakraLink isExternal href="https://docs.streamlit.io/">
+          Streamlit
+        </ChakraLink>
+        というPythonライブラリを導入しての開発でした。
+      </ProjectCard>
+      <ProjectCard
         title="OpenLA"
         url="https://limu.ait.kyushu-u.ac.jp/~openLA/"
         subheading="九州大学 イメージ・メディア理解研究室, 2022-2023"
