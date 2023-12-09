@@ -8,6 +8,49 @@ const ProjectsEn: React.FC = () => {
       templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
     >
       <ProjectCard
+        title="UNCHAIN"
+        url="https://app.unchain.tech/learn/"
+        subheading="shiftbase, inc."
+        tags={['Next.js', 'React', 'web3', 'figma', 'Contributor']}
+      >
+        Designed the UI and developed the frontend for a website for community
+        members to learn web3 development techniques. As well as a subscription
+        portal for companies to find and hire engineers among the community
+        members.
+      </ProjectCard>
+      <ProjectCard
+        title="Mint Rally"
+        url="https://www.mintrally.xyz/"
+        subheading="Hackdays Project (Code for Japan), 2023"
+        tags={[
+          'Next.js',
+          'React',
+          'web3',
+          'Localization',
+          'Contributor',
+          'Open Source'
+        ]}
+      >
+        Contributed to the development and localization for an open source web3
+        project which can provide free NFTs as proof of attendance to all sorts
+        of events.
+      </ProjectCard>
+      <ProjectCard
+        title="OpenLA Streamlit Web UI"
+        subheading="Kyushu University Laboratory for Image and Media Understanding, 2023"
+        tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
+      >
+        Developed, maintained and deployed a data-based web application to make{' '}
+        <ChakraLink isExternal href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
+          <b>OpenLA</b>
+        </ChakraLink>{' '}
+        more accessible. The tool of choice was{' '}
+        <ChakraLink isExternal href="https://docs.streamlit.io/">
+          Streamlit
+        </ChakraLink>
+        , a Python library that uses a Tornado server and a React frontend.
+      </ProjectCard>
+      <ProjectCard
         title="OpenLA"
         url="https://limu.ait.kyushu-u.ac.jp/~openLA/"
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2022-2023"
@@ -16,11 +59,8 @@ const ProjectsEn: React.FC = () => {
         Developed and maintained a Python module to accelerate learning
         analytics, including the introduction of unit tests to the project.
         <br />
-        Nominated to the{' '}
-        <ChakraLink
-          isExternal
-          href="https://www.imsglobal.org/lili/awards.html"
-        >
+        Honorable mention at the{' '}
+        <ChakraLink isExternal href="https://www.1edtech.org/li/awards/2023">
           <b>Learning Impact Awards in 2023</b>
         </ChakraLink>
         .

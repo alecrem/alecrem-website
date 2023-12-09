@@ -8,6 +8,51 @@ const ProjectsEs: React.FC = () => {
       templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
     >
       <ProjectCard
+        title="UNCHAIN"
+        url="https://app.unchain.tech/learn/"
+        subheading="shiftbase, inc."
+        tags={['Next.js', 'React', 'web3', 'figma', 'Contributor']}
+      >
+        Diseño de interfaz de usuario y desarrollo del frontend de un sitio web
+        en el que los miembros de la comunidad aprenden técnicas de desarrollo
+        de web3. Además de un portal de suscripción donde diversas empresas
+        pueden encontrar desarrolladores en la comunidad y contratarlos.
+      </ProjectCard>
+      <ProjectCard
+        title="Mint Rally"
+        url="https://www.mintrally.xyz/"
+        subheading="Hackdays Project (Code for Japan), 2023"
+        tags={[
+          'Next.js',
+          'React',
+          'web3',
+          'Localization',
+          'Contributor',
+          'Open Source'
+        ]}
+      >
+        Contribuciones al desarrollo y la localización de un proyecto de web3 de
+        código abierto que ofrece NFT gratuitos como prueba de participación en
+        todo tipo de eventos.
+      </ProjectCard>
+      <ProjectCard
+        title="OpenLA Streamlit Web UI"
+        subheading="Kyushu University Laboratory for Image and Media Understanding, 2023"
+        tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
+      >
+        Desarrollo, mantenimiento y despliegue de una aplicación web basada en
+        datos para hacer{' '}
+        <ChakraLink isExternal href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
+          <b>OpenLA</b>
+        </ChakraLink>{' '}
+        más accesible. La herramienta elegida fue{' '}
+        <ChakraLink isExternal href="https://docs.streamlit.io/">
+          Streamlit
+        </ChakraLink>
+        , una librería de Python que usa un servidor Tornado y un frontend
+        React.
+      </ProjectCard>
+      <ProjectCard
         title="OpenLA"
         url="https://limu.ait.kyushu-u.ac.jp/~openLA/"
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2022-2023"
@@ -16,11 +61,8 @@ const ProjectsEs: React.FC = () => {
         Desarrollo y mantenimiento de un módulo Python para acelerar el análisis
         del aprendizaje, incluyendo introducir pruebas unitarias al proyecto.
         <br />
-        Nominado a los{' '}
-        <ChakraLink
-          isExternal
-          href="https://www.imsglobal.org/lili/awards.html"
-        >
+        Mención de honor en los{' '}
+        <ChakraLink isExternal href="https://www.1edtech.org/li/awards/2023">
           <b>Learning Impact Awards in 2023</b>
         </ChakraLink>
         .

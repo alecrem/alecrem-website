@@ -30,7 +30,8 @@ export const skillListEs = {
     'PostgreSQL',
     'Ionic',
     'Angular',
-    'CakePHP'
+    'CakePHP',
+    'figma'
   ],
   web3: ['Wagmi', 'Solidity', 'Pinata API', 'OpenSea API'],
   dataMl: [

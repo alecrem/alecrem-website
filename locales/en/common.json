@@ -3,7 +3,7 @@
     "title": "alecrem",
     "fullname": "Alejandro Cremades Rocamora",
     "tagline": "Software Engineer",
-    "tagline2": "Front end, web3, data analysis, machine learning",
+    "tagline2": "Frontend, web3, data analysis, machine learning",
     "nav": {
       "index": "Home",
       "projects": "Projects",
@@ -14,8 +14,8 @@
   "home": {
     "occupations": {
       "title": "Current occupations",
-      "limu": "Kyushu University Laboratory for Image and Media Understanding",
-      "limu-url": "https://limu.ait.kyushu-u.ac.jp/e/",
+      "shiftbase": "shiftbase, inc.",
+      "shiftbase-url": "https://shiftbase.xyz/",
       "kura": "Studio Kura",
       "kura-url": "https://studiokura.info/en/"
     },
@@ -24,10 +24,18 @@
       "henkaku": "Chiba Institute of Technology Henkaku Community",
       "henkaku-url": "https://henkaku.org/ja/henkaku-community/"
     },
+    "conferences": {
+      "title": "Conference presentations",
+      "openla": "\"OpenLA: Open Source Library for Educational Data Analysis,\" Learning Impact 2023 Conference. Anaheim, California, USA, 2023.",
+      "openla-url": "https://www.1edtech.org/li/awards/2023"
+    },
     "publications": {
       "title": "Publications",
-      "dondon": "Don-don Hanaseru Supeingo Sakubun Training (2016)",
-      "dondon-url": "https://amzn.to/3V7imAm"
+      "preview": "Preview",
+      "buy": "Buy",
+      "dondon": "Don-don Hanaseru Supeingo Sakubun Training (Sanshusha 2016)",
+      "dondon-preview-url": "https://www.google.co.jp/books/edition/%E3%81%A9%E3%82%93%E3%81%A9%E3%82%93%E8%A9%B1%E3%81%9B%E3%82%8B%E3%82%B9%E3%83%9A%E3%82%A4%E3%83%B3%E8%AA%9E_%E4%BD%9C/1SrDDAAAQBAJ",
+      "dondon-buy-url": "https://amzn.to/3V7imAm"
     }
   },
   "projects": {
