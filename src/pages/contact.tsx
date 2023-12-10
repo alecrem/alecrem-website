@@ -41,6 +41,18 @@ const Contact: React.FC = () => {
             @karawapo@mastodon.social <LinkIcon />
           </ChakraLink>
         </ListItem>
+        <ListItem>
+          <ListIcon as={EmailIcon} color="cyan.500" />
+          Bluesky:{' '}
+          <ChakraLink
+            isExternal
+            href="https://bsky.app/profile/karawapo.bsky.social"
+            flexGrow={1}
+            mr={2}
+          >
+            @karawapo.bsky.social <LinkIcon />
+          </ChakraLink>
+        </ListItem>
       </List>
     </Layout>
   )
