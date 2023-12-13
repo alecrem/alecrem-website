@@ -10,10 +10,18 @@ const ProjectsJa: React.FC = () => {
       <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
-        subheading="shiftbase, inc."
-        tags={['Next.js', 'React', 'web3', 'figma', 'Contributor']}
+        subheading="shiftbase, inc., 2023"
+        tags={[
+          'Next.js',
+          'React',
+          'web3',
+          'figma',
+          'Contributor',
+          'Team of 59'
+        ]}
       >
-        コミュニティーのメンバーがweb3技術を学べるWebサイトのフロントエンドの、UIデザインと実装。
+        コミュニティーのメンバーがweb3技術を学べるWebサイトのコンテンツへの貢献とフロントエンドの、
+        UIデザインと実装。
         企業がメンバーの中にエンジニアを見つけて採用することができるサブスクリプション制ポータルも。
       </ProjectCard>
       <ProjectCard
@@ -26,6 +34,7 @@ const ProjectsJa: React.FC = () => {
           'web3',
           'Localization',
           'Contributor',
+          'Team of 19',
           'Open Source'
         ]}
       >
@@ -51,7 +60,13 @@ const ProjectsJa: React.FC = () => {
         title="OpenLA"
         url="https://limu.ait.kyushu-u.ac.jp/~openLA/"
         subheading="九州大学 イメージ・メディア理解研究室, 2022-2023"
-        tags={['Python', 'PyPI', 'Maintainer', 'Open Source']}
+        tags={[
+          'Python',
+          'PyPI',
+          'Core Contributor',
+          'Team of 5',
+          'Open Source'
+        ]}
       >
         ラーニング・アナリティクス（学習の分析）で役立つPythonモジュールの、
         ユニットテストの導入も含めての開発・メンテナンス。
@@ -65,7 +80,7 @@ const ProjectsJa: React.FC = () => {
       <ProjectCard
         title="Photovoice"
         subheading="九州大学 イメージ・メディア理解研究室, 2021-2022"
-        tags={['Python', 'ML', 'DL', 'Core Contributor']}
+        tags={['Python', 'ML', 'DL', 'Core Contributor', 'Team of 4']}
       >
         ラーニング・アナリティクス（学習の分析）に機械学習を適用しました。
         投稿される文章をk平均法を使って分類して、ディープラーニング（深層学習）
@@ -81,6 +96,7 @@ const ProjectsJa: React.FC = () => {
           'Pinata API',
           'web3',
           'Core Contributor',
+          'Team of 12',
           'Open Source'
         ]}
       >
@@ -98,6 +114,7 @@ const ProjectsJa: React.FC = () => {
           'Solidity',
           'web3',
           'Contributor',
+          'Team of 9',
           'Open Source'
         ]}
       >
@@ -108,7 +125,7 @@ const ProjectsJa: React.FC = () => {
       <ProjectCard
         title="Studio Kura intranet"
         subheading="Studio Kura, 2012-2023"
-        tags={['Ionic', 'Angular', 'CakePHP', 'Core Contributor']}
+        tags={['Ionic', 'Angular', 'CakePHP', 'Core Contributor', 'Team of 3']}
       >
         本社に1人いる企業が、多数の従業員、複数の事業と事業所の段階まで成長するとともに
         社内ネットワークを開発しました。
@@ -116,7 +133,14 @@ const ProjectsJa: React.FC = () => {
       <ProjectCard
         title="Studio Kura curriculum"
         subheading="Studio Kura, 2012-2023"
-        tags={['p5.js', 'Next.js', 'React', 'web3', 'Core Contributor']}
+        tags={[
+          'p5.js',
+          'Next.js',
+          'React',
+          'web3',
+          'Core Contributor',
+          'Team of 2'
+        ]}
       >
         アクティブラーニングの文脈でプログラミングを習う子どもたちのためのp5.jsや
         web3カリキュラムを設計・実装しました。
@@ -125,7 +149,7 @@ const ProjectsJa: React.FC = () => {
         title="ChallengeHub"
         url="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s"
         subheading="Djinn Mentor, 2019-2021"
-        tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder']}
+        tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder', 'Team of 3']}
       >
         教材の共有、リアルタイム学習モニタリング、
         学生の課題の回答を受け付けるチャットボットなどの機能を備えた、
@@ -143,7 +167,7 @@ const ProjectsJa: React.FC = () => {
         title="ngx-datetimepicker"
         url="https://github.com/RenovoSolutions/ngx-datetimepicker"
         subheading="Renovo Solutions, 2019"
-        tags={['Angular', 'Contributor', 'Open Source']}
+        tags={['Angular', 'Contributor', 'Team of 14', 'Open Source']}
       >
         Djinn Mentor社がChallengeHubで使用できるように、
         既存のAngularの日時選択用コンポーネントを改善するのに貢献しました。
@@ -168,6 +192,7 @@ const ProjectsJa: React.FC = () => {
           'React',
           'Airtable',
           'Core Contributor',
+          'Team of 2',
           'Open Source'
         ]}
       >
@@ -201,7 +226,7 @@ const ProjectsJa: React.FC = () => {
         title="聞くスペイン語"
         url="https://escuchaespanol.com/"
         subheading="Alecrem, 2009-2016"
-        tags={['CakePHP', 'WordPress', 'Core Contributor']}
+        tags={['CakePHP', 'WordPress', 'Core Contributor', 'Team of 2']}
       >
         スペイン語を学びたい日本語話者のために制作したビデオポッドキャストに対応する、
         プレミアム会員サイトおよびカスタムポッドキャストフィード。
