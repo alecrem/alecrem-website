@@ -10,13 +10,20 @@ const ProjectsEn: React.FC = () => {
       <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
-        subheading="shiftbase, inc."
-        tags={['Next.js', 'React', 'web3', 'figma', 'Contributor']}
+        subheading="shiftbase, inc., 2023"
+        tags={[
+          'Next.js',
+          'React',
+          'web3',
+          'figma',
+          'Contributor',
+          'Team of 59'
+        ]}
       >
-        Designed the UI and developed the frontend for a website for community
-        members to learn web3 development techniques. As well as a subscription
-        portal for companies to find and hire engineers among the community
-        members.
+        Developed contents for, as well as designed the UI and developed the
+        frontend for a website where community members learn web3 development
+        techniques. As well as a subscription portal for companies to find and
+        hire engineers among the community members.
       </ProjectCard>
       <ProjectCard
         title="Mint Rally"
@@ -28,6 +35,7 @@ const ProjectsEn: React.FC = () => {
           'web3',
           'Localization',
           'Contributor',
+          'Team of 19',
           'Open Source'
         ]}
       >
@@ -54,7 +62,13 @@ const ProjectsEn: React.FC = () => {
         title="OpenLA"
         url="https://limu.ait.kyushu-u.ac.jp/~openLA/"
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2022-2023"
-        tags={['Python', 'PyPI', 'Maintainer', 'Open Source']}
+        tags={[
+          'Python',
+          'PyPI',
+          'Core Contributor',
+          'Team of 5',
+          'Open Source'
+        ]}
       >
         Developed and maintained a Python module to accelerate learning
         analytics, including the introduction of unit tests to the project.
@@ -68,7 +82,7 @@ const ProjectsEn: React.FC = () => {
       <ProjectCard
         title="Photovoice"
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2021-2022"
-        tags={['Python', 'ML', 'DL', 'Core Contributor']}
+        tags={['Python', 'ML', 'DL', 'Core Contributor', 'Team of 4']}
       >
         Machine learning applied to learning analytics. Classified and k-means
         clustered text entries, and used deep learning techniques to caption
@@ -84,6 +98,7 @@ const ProjectsEn: React.FC = () => {
           'Pinata API',
           'web3',
           'Core Contributor',
+          'Team of 12',
           'Open Source'
         ]}
       >
@@ -101,6 +116,7 @@ const ProjectsEn: React.FC = () => {
           'Solidity',
           'web3',
           'Contributor',
+          'Team of 9',
           'Open Source'
         ]}
       >
@@ -112,7 +128,7 @@ const ProjectsEn: React.FC = () => {
       <ProjectCard
         title="Studio Kura intranet"
         subheading="Studio Kura, 2012-2023"
-        tags={['Ionic', 'Angular', 'CakePHP', 'Core Contributor']}
+        tags={['Ionic', 'Angular', 'CakePHP', 'Core Contributor', 'Team of 3']}
       >
         Developed the intranet for a business as it grew from 1 person and 1
         location to dozens of people, a handful of locations, and a number of
@@ -121,7 +137,14 @@ const ProjectsEn: React.FC = () => {
       <ProjectCard
         title="Studio Kura curriculum"
         subheading="Studio Kura, 2012-2023"
-        tags={['p5.js', 'Next.js', 'React', 'web3', 'Core Contributor']}
+        tags={[
+          'p5.js',
+          'Next.js',
+          'React',
+          'web3',
+          'Core Contributor',
+          'Team of 2'
+        ]}
       >
         Designed and developed p5.js and web3 activities for kids learning
         programming in an active learning environment.
@@ -130,7 +153,7 @@ const ProjectsEn: React.FC = () => {
         title="ChallengeHub"
         url="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s"
         subheading="Djinn Mentor, 2019-2021"
-        tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder']}
+        tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder', 'Team of 3']}
       >
         I took part on the development of a data-driven active learning solution
         with features such as sharing of teaching materials, real-time learning
@@ -149,7 +172,7 @@ const ProjectsEn: React.FC = () => {
         title="ngx-datetimepicker"
         url="https://github.com/RenovoSolutions/ngx-datetimepicker"
         subheading="Renovo Solutions, 2019"
-        tags={['Angular', 'Contributor', 'Open Source']}
+        tags={['Angular', 'Contributor', 'Team of 14', 'Open Source']}
       >
         Contributed improvements to an existing Angular date and time picker
         component, due to Djinn Mentor wanting to use it on ChallengeHub.
@@ -174,6 +197,7 @@ const ProjectsEn: React.FC = () => {
           'React',
           'Airtable',
           'Core Contributor',
+          'Team of 2',
           'Open Source'
         ]}
       >
@@ -206,7 +230,7 @@ const ProjectsEn: React.FC = () => {
         title="Escucha español"
         url="https://escuchaespanol.com/"
         subheading="Alecrem, 2009-2016"
-        tags={['CakePHP', 'WordPress', 'Core Contributor']}
+        tags={['CakePHP', 'WordPress', 'Core Contributor', 'Team of 2']}
       >
         Premium membership site and custom podcast feed for a series of videos
         made to help Japanese speakers learn the Spanish language.
