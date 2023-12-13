@@ -43,7 +43,7 @@ const ProjectsJa: React.FC = () => {
       </ProjectCard>
       <ProjectCard
         title="OpenLA Streamlit Web UI"
-        subheading="Kyushu University Laboratory for Image and Media Understanding, 2023"
+        subheading="九州大学 イメージ・メディア理解研究室, 2023"
         tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
       >
         <ChakraLink isExternal href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
