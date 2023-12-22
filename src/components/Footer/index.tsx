@@ -1,5 +1,12 @@
-import { Text, Link as ChakraLink, Flex, FlexProps } from '@chakra-ui/react'
+import {
+  Text,
+  Link as ChakraLink,
+  Flex,
+  Button,
+  FlexProps
+} from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
+import { FaGithub } from 'react-icons/fa'
 
 const Footer: React.FC = (props: FlexProps) => {
   const { t } = useTranslation('common')
@@ -12,7 +19,15 @@ const Footer: React.FC = (props: FlexProps) => {
         </ChakraLink>
         {' | '}
         <ChakraLink href="https://github.com/alecrem/alecrem-website/">
-          {t('footer.source')}
+          <Button
+            variant={'link'}
+            size={'sm'}
+            color={'text'}
+            fontWeight={'normal'}
+          >
+            <FaGithub display={'inline'} />
+            {t('footer.source')}
+          </Button>
         </ChakraLink>
       </Text>
     </Flex>

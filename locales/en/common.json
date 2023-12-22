@@ -39,7 +39,8 @@
     }
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "source": "See repository"
   },
   "skills": {
     "title": "Skills",

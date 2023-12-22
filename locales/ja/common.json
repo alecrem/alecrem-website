@@ -39,7 +39,8 @@
     }
   },
   "projects": {
-    "title": "プロジェクト"
+    "title": "プロジェクト",
+    "source": "レポジトリを見る"
   },
   "skills": {
     "title": "スキル",

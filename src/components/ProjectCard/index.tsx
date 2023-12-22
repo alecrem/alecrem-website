@@ -9,15 +9,21 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
+  Button,
   Text
 } from '@chakra-ui/react'
 import { LinkIcon } from '@chakra-ui/icons'
+import { FaGithub, FaPython } from 'react-icons/fa'
+import useTranslation from 'next-translate/useTranslation'
 
 interface Props {
   children?: ReactElement | ReactNode
   title: string
   url?: string
   subheading?: string
+  buttonLink?: string
+  buttonText?: string
+  buttonIcon?: string
   tags?: string[]
 }
 
@@ -26,8 +32,13 @@ const ProjectCard: React.FC<Props> = ({
   title,
   url,
   subheading,
+  buttonLink,
+  buttonText,
+  buttonIcon,
   tags
 }) => {
+  const { t } = useTranslation('common')
+
   return (
     <Card>
       <CardHeader>
@@ -42,7 +53,31 @@ const ProjectCard: React.FC<Props> = ({
         </Heading>
         <Text>{subheading}</Text>
       </CardHeader>
-      <CardBody>{children}</CardBody>
+      <CardBody>
+        {children}
+        {buttonLink && (
+          <>
+            <br />
+            <ChakraLink href={buttonLink}>
+              <Button
+                mt={2}
+                variant={'outline'}
+                size={'xs'}
+                color={'text'}
+                fontWeight={'normal'}
+              >
+                {buttonIcon == 'python' ? (
+                  <FaPython display={'inline'} />
+                ) : (
+                  <FaGithub display={'inline'} />
+                )}
+                &nbsp;
+                {buttonText ?? t('projects.source')}
+              </Button>
+            </ChakraLink>
+          </>
+        )}
+      </CardBody>
       {tags && tags.length > 0 && (
         <CardFooter>
           <Wrap>
