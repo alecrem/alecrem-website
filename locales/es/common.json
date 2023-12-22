@@ -39,7 +39,8 @@
     }
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Proyectos",
+    "source": "Ver repositorio"
   },
   "skills": {
     "title": "Habilidades",

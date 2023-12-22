@@ -11,6 +11,8 @@ const ProjectsEn: React.FC = () => {
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
         subheading="shiftbase, inc., 2023"
+        buttonLink={'https://github.com/unchain-tech/UNCHAIN-projects/'}
+        buttonText={'See repository (content)'}
         tags={[
           'Next.js',
           'React',
@@ -29,6 +31,7 @@ const ProjectsEn: React.FC = () => {
         title="Mint Rally"
         url="https://www.mintrally.xyz/"
         subheading="Hackdays Project (Code for Japan), 2023"
+        buttonLink={'https://github.com/hackdays-io/mint-rally/'}
         tags={[
           'Next.js',
           'React',
@@ -62,6 +65,9 @@ const ProjectsEn: React.FC = () => {
         title="OpenLA"
         url="https://limu.ait.kyushu-u.ac.jp/~openLA/"
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2022-2023"
+        buttonLink={'https://pypi.org/project/openla/'}
+        buttonText={'See on PyPI'}
+        buttonIcon={'python'}
         tags={[
           'Python',
           'PyPI',

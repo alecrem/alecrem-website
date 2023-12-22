@@ -11,6 +11,8 @@ const ProjectsJa: React.FC = () => {
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
         subheading="shiftbase, inc., 2023"
+        buttonLink={'https://github.com/unchain-tech/UNCHAIN-projects/'}
+        buttonText={'コンテンツのレポジトリを見る'}
         tags={[
           'Next.js',
           'React',
@@ -28,6 +30,7 @@ const ProjectsJa: React.FC = () => {
         title="Mint Rally"
         url="https://www.mintrally.xyz/"
         subheading="Hackdays Project (Code for Japan), 2023"
+        buttonLink={'https://github.com/hackdays-io/mint-rally/'}
         tags={[
           'Next.js',
           'React',
@@ -39,7 +42,7 @@ const ProjectsJa: React.FC = () => {
         ]}
       >
         ありとあらゆるイベントへの参加証明となるNFTを無料で提供できるオープンソース
-        web3 プロジェクトの開発・ローカライゼーションに貢献.
+        web3 プロジェクトの開発・ローカライゼーションに貢献。
       </ProjectCard>
       <ProjectCard
         title="OpenLA Streamlit Web UI"
@@ -60,6 +63,9 @@ const ProjectsJa: React.FC = () => {
         title="OpenLA"
         url="https://limu.ait.kyushu-u.ac.jp/~openLA/"
         subheading="九州大学 イメージ・メディア理解研究室, 2022-2023"
+        buttonLink={'https://pypi.org/project/openla/'}
+        buttonText={'PyPIで見る'}
+        buttonIcon={'python'}
         tags={[
           'Python',
           'PyPI',
