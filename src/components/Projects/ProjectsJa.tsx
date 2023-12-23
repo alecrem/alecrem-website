@@ -96,6 +96,9 @@ const ProjectsJa: React.FC = () => {
         title="Henkaku Nengajo"
         url="https://nengajo.henkaku.org/"
         subheading="千葉工業大学 Henkakuコミュニティ, 2022"
+        buttonLink={
+          'https://github.com/henkaku-center/henkaku-nengajo-frontend'
+        }
         tags={[
           'Next.js',
           'React',
@@ -114,6 +117,7 @@ const ProjectsJa: React.FC = () => {
         title="Henkaku Omise"
         url="https://omise.henkaku.org/"
         subheading="千葉工業大学 Henkakuコミュニティ, 2022"
+        buttonLink={'https://github.com/henkaku-center/omise-interface/'}
         tags={[
           'Next.js',
           'React',
@@ -173,6 +177,7 @@ const ProjectsJa: React.FC = () => {
         title="ngx-datetimepicker"
         url="https://github.com/RenovoSolutions/ngx-datetimepicker"
         subheading="Renovo Solutions, 2019"
+        buttonLink={'https://github.com/RenovoSolutions/ngx-datetimepicker'}
         tags={['Angular', 'Contributor', 'Team of 14', 'Open Source']}
       >
         Djinn Mentor社がChallengeHubで使用できるように、
@@ -193,6 +198,7 @@ const ProjectsJa: React.FC = () => {
         title="iroiro connect"
         url="https://iroiro-connect.com/"
         subheading="Alecrem, 2023"
+        buttonLink={'https://github.com/alecrem/iroiro-connect/'}
         tags={[
           'Next.js',
           'React',
@@ -210,6 +216,7 @@ const ProjectsJa: React.FC = () => {
         title="Middle School Tutor"
         url="https://middleschooltutor.alecrem.com/"
         subheading="Alecrem, 2022-2023"
+        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
         tags={['Next.js', 'React', 'Python', 'Sole Author', 'Open Source']}
       >
         マジック：ザ・ギャザリングのフォーマット「ミドルスクール」のための
@@ -221,6 +228,7 @@ const ProjectsJa: React.FC = () => {
         title="Binguerah"
         url="https://binguerah.pepinismo.net/"
         subheading="Alecrem, 2023"
+        buttonLink={'https://github.com/gamerah/bingo-card'}
         tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
       >
         ポッドキャストのリスナーがリアルタイムでも非同期にでも使うインタラクションツール。
