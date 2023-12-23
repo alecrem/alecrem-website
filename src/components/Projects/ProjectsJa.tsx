@@ -217,12 +217,19 @@ const ProjectsJa: React.FC = () => {
         url="https://middleschooltutor.alecrem.com/"
         subheading="Alecrem, 2022-2023"
         buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
-        tags={['Next.js', 'React', 'Python', 'Sole Author', 'Open Source']}
+        tags={[
+          'Python',
+          'Streamlit',
+          'Next.js',
+          'React',
+          'Sole Author',
+          'Open Source'
+        ]}
       >
         マジック：ザ・ギャザリングのフォーマット「ミドルスクール」のための
         ゲーミング・ツールを開発しました。
         二つの部品で構成されています：利用可能なMTGカードのリストをまとめるPythonプロジェクトと、
-        そのリストを検索するNext.jsでできたウェブサイト。
+        そのリストを検索するStreamlitでできたウェブサイト（旧サイトはNext.js）。
       </ProjectCard>
       <ProjectCard
         title="Binguerah"

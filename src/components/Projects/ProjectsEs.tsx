@@ -227,12 +227,20 @@ const ProjectsEs: React.FC = () => {
         url="https://middleschooltutor.alecrem.com/"
         subheading="Alecrem, 2022-2023"
         buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
-        tags={['Next.js', 'React', 'Python', 'Sole Author', 'Open Source']}
+        tags={[
+          'Python',
+          'Streamlit',
+          'Next.js',
+          'React',
+          'Sole Author',
+          'Open Source'
+        ]}
       >
         Herramienta para jugadores del formato Middle School de Magic: El
         encuentro. Consiste en un proyecto en Python que compila la lista de
         cartas que están permitidas en el formato, y un sitio web hecho con
-        Next.js en el que se puede buscar cartas en dicha lista.
+        Streamlit (anteriormente Next.js) en el que se puede buscar cartas en
+        dicha lista.
       </ProjectCard>
       <ProjectCard
         title="Binguerah"
