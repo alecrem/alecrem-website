@@ -98,6 +98,9 @@ const ProjectsEn: React.FC = () => {
         title="Henkaku Nengajo"
         url="https://nengajo.henkaku.org/"
         subheading="Chiba Institute of Technology Henkaku Community, 2022"
+        buttonLink={
+          'https://github.com/henkaku-center/henkaku-nengajo-frontend'
+        }
         tags={[
           'Next.js',
           'React',
@@ -116,6 +119,7 @@ const ProjectsEn: React.FC = () => {
         title="Henkaku Omise"
         url="https://omise.henkaku.org/"
         subheading="Chiba Institute of Technology Henkaku Community, 2022"
+        buttonLink={'https://github.com/henkaku-center/omise-interface/'}
         tags={[
           'Next.js',
           'React',
@@ -178,6 +182,7 @@ const ProjectsEn: React.FC = () => {
         title="ngx-datetimepicker"
         url="https://github.com/RenovoSolutions/ngx-datetimepicker"
         subheading="Renovo Solutions, 2019"
+        buttonLink={'https://github.com/RenovoSolutions/ngx-datetimepicker'}
         tags={['Angular', 'Contributor', 'Team of 14', 'Open Source']}
       >
         Contributed improvements to an existing Angular date and time picker
@@ -198,6 +203,7 @@ const ProjectsEn: React.FC = () => {
         title="iroiro connect"
         url="https://iroiro-connect.com/"
         subheading="Alecrem, 2023"
+        buttonLink={'https://github.com/alecrem/iroiro-connect/'}
         tags={[
           'Next.js',
           'React',
@@ -214,16 +220,25 @@ const ProjectsEn: React.FC = () => {
         title="Middle School Tutor"
         url="https://middleschooltutor.alecrem.com/"
         subheading="Alecrem, 2022-2023"
-        tags={['Next.js', 'React', 'Python', 'Sole Author', 'Open Source']}
+        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
+        tags={[
+          'Python',
+          'Streamlit',
+          'Next.js',
+          'React',
+          'Sole Author',
+          'Open Source'
+        ]}
       >
         Gaming tool for Magic The Gathering's Middle School format. Consisting
         on a Python project that compiles a list of available Magic cards, and a
-        Next.js website that searches said list.
+        Streamlit website (formerly Next.js) that enables searching said list.
       </ProjectCard>
       <ProjectCard
         title="Binguerah"
         url="https://binguerah.pepinismo.net/"
         subheading="Alecrem, 2023"
+        buttonLink={'https://github.com/gamerah/bingo-card'}
         tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
       >
         Real-time and async interaction tool for podcasts that generates a
