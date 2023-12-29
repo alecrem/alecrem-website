@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from 'react'
+import { ReactElement, ReactNode, useEffect, useState } from 'react'
 import {
   Heading,
   Link as ChakraLink,
@@ -10,9 +10,11 @@ import {
   CardBody,
   CardFooter,
   Button,
+  Spinner,
+  Stack,
   Text
 } from '@chakra-ui/react'
-import { LinkIcon } from '@chakra-ui/icons'
+import { LinkIcon, StarIcon } from '@chakra-ui/icons'
 import { FaGithub, FaPython } from 'react-icons/fa'
 import useTranslation from 'next-translate/useTranslation'
 
@@ -38,9 +40,37 @@ const ProjectCard: React.FC<Props> = ({
   tags
 }) => {
   const { t } = useTranslation('common')
+  const [showsStargazers, setShowsStargazers] = useState(false)
+  const [stargazerCount, setStargazerCount] = useState<number | null>()
+  const [stargazerCountFetched, setStargazerCountFetched] = useState(false)
+  useEffect(() => {
+    if (showsStargazers == false || buttonLink == undefined) return
+    let repoUrl = buttonLink
+    if (buttonLink.lastIndexOf('/') == buttonLink.length - 1)
+      repoUrl = buttonLink.substring(0, buttonLink.length - 1)
+    const urlPieces = repoUrl.split('/')
+    const repo = [urlPieces[3], urlPieces[4]]
+    console.log(repo)
+    const fetchStargazers = async (repo: string[]) => {
+      const repoURI = `/api/stargazers/${repo[0]}/${repo[1]}`
+      const ghresponse = await fetch(repoURI)
+      if (!ghresponse.ok) {
+        setShowsStargazers(false)
+        return
+      }
+      const data = await ghresponse.json()
+      setStargazerCount(data.message)
+      setStargazerCountFetched(true)
+    }
+    fetchStargazers(repo)
+  }, [showsStargazers])
+  const handleMouseEnter = () => {
+    if (buttonLink?.indexOf('github.com') == -1) return
+    setShowsStargazers(buttonLink !== undefined && buttonLink.length > 0)
+  }
 
   return (
-    <Card>
+    <Card onMouseEnter={handleMouseEnter}>
       <CardHeader>
         <Heading size="md">
           {url ? (
@@ -56,7 +86,7 @@ const ProjectCard: React.FC<Props> = ({
       <CardBody>
         {children}
         {buttonLink && (
-          <>
+          <Stack direction={'row'}>
             <br />
             <ChakraLink href={buttonLink}>
               <Button
@@ -75,7 +105,18 @@ const ProjectCard: React.FC<Props> = ({
                 {buttonText ?? t('projects.source')}
               </Button>
             </ChakraLink>
-          </>
+            {showsStargazers && (
+              <Tag borderRadius={100}>
+                {!stargazerCountFetched && <Spinner size={'xs'} />}
+                {stargazerCountFetched && (
+                  <>
+                    <StarIcon />
+                    &nbsp;{stargazerCount}
+                  </>
+                )}
+              </Tag>
+            )}
+          </Stack>
         )}
       </CardBody>
       {tags && tags.length > 0 && (
