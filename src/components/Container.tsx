@@ -9,7 +9,7 @@ export const Container = (props: FlexProps) => (
     color="black"
     _dark={{
       bg: 'gray.900',
-      color: 'white',
+      color: 'white'
     }}
     transition="all 0.15s ease-out"
     {...props}
