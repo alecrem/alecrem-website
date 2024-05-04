@@ -28,11 +28,11 @@ const Index: React.FC = () => {
           <ListIcon as={CheckCircleIcon} color="cyan.500" />
           <ChakraLink
             isExternal
-            href={t('home.occupations.shiftbase-url')}
+            href={t('home.occupations.yayoi-url')}
             flexGrow={1}
             mr={2}
           >
-            {t('home.occupations.shiftbase')} <LinkIcon />
+            {t('home.occupations.yayoi')} <LinkIcon />
           </ChakraLink>
         </ListItem>
         <ListItem>
