@@ -13,10 +13,10 @@
   },
   "home": {
     "occupations": {
-      "title": "Current occupations",
-      "shiftbase": "shiftbase, inc.",
-      "shiftbase-url": "https://shiftbase.xyz/",
-      "kura": "Studio Kura",
+      "title": "Current employer",
+      "yayoi": "Yayoi Co., Ltd.",
+      "yayoi-url": "https://www.yayoi-kk.co.jp/",
+      "kura": "Studio Kura Co., Ltd.",
       "kura-url": "https://studiokura.info/en/"
     },
     "memberships": {
