@@ -18,9 +18,14 @@ export const skillListEn = {
     }
   ],
   web: [
+    'Remix',
+    'Prisma',
+    'Playwright',
+    'Vitest',
     'Next.js',
     'React',
     'TypeScript',
+    'Ark UI',
     'Chakra',
     'Docker',
     'p5.js',
