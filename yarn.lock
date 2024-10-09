@@ -51,11 +51,6 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@chakra-ui/anatomy@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-2.3.2.tgz#66c50d05847a81fed93f804fd0dfbc229b24cd47"
-  integrity sha512-YRezCngYKigfIOLVszAL21lv1h+61pgxVGRu2rcsVGCbbvGSTkMhoML2/Yw2c03sEkrhBIVx1RtX+7550njaoA==
-
 "@chakra-ui/anatomy@2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-2.3.4.tgz#f671dae1dab5fa05e7184fc44521c58ce30a4182"
@@ -101,22 +96,13 @@
     "@chakra-ui/utils" "2.2.1"
     csstype "^3.1.2"
 
-"@chakra-ui/theme-tools@2.2.5":
+"@chakra-ui/theme-tools@2.2.5", "@chakra-ui/theme-tools@^2.2.5":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-2.2.5.tgz#8ca1429e0d6d7a4de544a5f32ab3dbcd62e60d19"
   integrity sha512-tUIv04Pzm2W8v5Iugei15qREIFX2mslI3fEouIVih8vHzwY821neCfspxOsAhvYSLNX+1kzk6ArBo9WzUpqn+Q==
   dependencies:
     "@chakra-ui/anatomy" "2.3.4"
     "@chakra-ui/utils" "2.2.1"
-    color2k "^2.0.2"
-
-"@chakra-ui/theme-tools@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-2.2.2.tgz#4a6bf459351d60598099d5494c5b5f1ece724b1d"
-  integrity sha512-iK9xoIEnEO3mXSDUsnCNigFifgRU3K8fhuIrN+q20V7YxenrifqJ7wAbbALHxy7Awrfe3NOqdVca2lnsQ2L4Ig==
-  dependencies:
-    "@chakra-ui/anatomy" "2.3.2"
-    "@chakra-ui/utils" "2.1.2"
     color2k "^2.0.2"
 
 "@chakra-ui/theme@3.4.5":
@@ -127,14 +113,6 @@
     "@chakra-ui/anatomy" "2.3.4"
     "@chakra-ui/theme-tools" "2.2.5"
     "@chakra-ui/utils" "2.2.1"
-
-"@chakra-ui/utils@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-2.1.2.tgz#9ea9e1510530ca052ada9a314c254e5418d68338"
-  integrity sha512-zByY3e1SUjNJ8jLjpOEaM2r+j6fPyh2XxPFHKDwbuzgSRrsJX+5BGozXfh8ZhmIJmSuByOWnWvGDSWxl3gCqag==
-  dependencies:
-    "@types/lodash.mergewith" "4.6.9"
-    lodash.mergewith "4.6.2"
 
 "@chakra-ui/utils@2.2.1":
   version "2.2.1"
