@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/node": "^22.7.6",
     "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "^18.3.1",
     "next-translate-plugin": "^2.6.2",
     "typescript": "^5.6.3"
   }
