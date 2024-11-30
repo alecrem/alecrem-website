@@ -46,11 +46,11 @@ const Contact: React.FC = () => {
           Bluesky:{' '}
           <ChakraLink
             isExternal
-            href="https://bsky.app/profile/karawapo.bsky.social"
+            href="https://bsky.app/profile/karawapo.alecrem.com"
             flexGrow={1}
             mr={2}
           >
-            @karawapo.bsky.social <LinkIcon />
+            @karawapo.alecrem.com <LinkIcon />
           </ChakraLink>
         </ListItem>
       </List>
