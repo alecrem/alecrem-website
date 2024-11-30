@@ -19,6 +19,18 @@ const Contact: React.FC = () => {
       <List spacing={3} my={0} color="text">
         <ListItem>
           <ListIcon as={EmailIcon} color="cyan.500" />
+          Bluesky:{' '}
+          <ChakraLink
+            isExternal
+            href="https://bsky.app/profile/karawapo.alecrem.com"
+            flexGrow={1}
+            mr={2}
+          >
+            @karawapo.alecrem.com <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={EmailIcon} color="cyan.500" />
           Twitter:{' '}
           <ChakraLink
             isExternal
@@ -39,18 +51,6 @@ const Contact: React.FC = () => {
             mr={2}
           >
             @karawapo@mastodon.social <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={EmailIcon} color="cyan.500" />
-          Bluesky:{' '}
-          <ChakraLink
-            isExternal
-            href="https://bsky.app/profile/karawapo.alecrem.com"
-            flexGrow={1}
-            mr={2}
-          >
-            @karawapo.alecrem.com <LinkIcon />
           </ChakraLink>
         </ListItem>
       </List>
