@@ -6,15 +6,12 @@ import {
   Wrap,
   WrapItem,
   Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
   Button,
   Spinner,
   Stack,
   Text
 } from '@chakra-ui/react'
-import { LinkIcon, StarIcon } from '@chakra-ui/icons'
+import { LuStar, LuExternalLink } from 'react-icons/lu'
 import { FaGithub, FaPython } from 'react-icons/fa'
 import useTranslation from 'next-translate/useTranslation'
 
@@ -70,20 +67,20 @@ const ProjectCard: React.FC<Props> = ({
   }
 
   return (
-    <Card onMouseEnter={handleMouseEnter}>
-      <CardHeader>
+    <Card.Root onMouseEnter={handleMouseEnter}>
+      <Card.Header>
         <Heading size="md">
           {url ? (
-            <ChakraLink isExternal href={url} flexGrow={1} mr={2}>
-              <b>{title}</b> <LinkIcon />
+            <ChakraLink href={url} flexGrow={1} mr={2}>
+              <b>{title}</b> <LuExternalLink />
             </ChakraLink>
           ) : (
             <b>{title}</b>
           )}
         </Heading>
         <Text>{subheading}</Text>
-      </CardHeader>
-      <CardBody>
+      </Card.Header>
+      <Card.Body>
         {children}
         {buttonLink && (
           <Stack direction={'row'}>
@@ -106,33 +103,33 @@ const ProjectCard: React.FC<Props> = ({
               </Button>
             </ChakraLink>
             {showsStargazers && (
-              <Tag borderRadius={100}>
+              <Tag.Root borderRadius={100}>
                 {!stargazerCountFetched && <Spinner size={'xs'} />}
                 {stargazerCountFetched && (
                   <>
-                    <StarIcon />
+                    <LuStar />
                     &nbsp;{stargazerCount}
                   </>
                 )}
-              </Tag>
+              </Tag.Root>
             )}
           </Stack>
         )}
-      </CardBody>
+      </Card.Body>
       {tags && tags.length > 0 && (
-        <CardFooter>
+        <Card.Footer>
           <Wrap>
             {tags.map((tag, idx) => (
               <WrapItem key={idx}>
-                <Tag size="sm" colorScheme="cyan">
+                <Tag.Root size="sm" colorScheme="cyan">
                   {tag}
-                </Tag>
+                </Tag.Root>
               </WrapItem>
             ))}
           </Wrap>
-        </CardFooter>
+        </Card.Footer>
       )}
-    </Card>
+    </Card.Root>
   )
 }
 

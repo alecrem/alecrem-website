@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation'
 import setLanguage from 'next-translate/setLanguage'
 
 interface Props {
-  size?: string
+  size: 'md' | 'sm' | 'lg' | 'xl' | '2xl' | '2xs' | 'xs'
   mobile?: boolean
 }
 

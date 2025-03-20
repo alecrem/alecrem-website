@@ -3,10 +3,7 @@ import { ProjectCard } from '@/components/ProjectCard'
 
 const ProjectsEn: React.FC = () => {
   return (
-    <SimpleGrid
-      spacing={4}
-      templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
-    >
+    <SimpleGrid gap={4} templateColumns="repeat(auto-fill, minmax(300px, 1fr))">
       <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
@@ -52,14 +49,12 @@ const ProjectsEn: React.FC = () => {
         tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
       >
         Developed, maintained and deployed a data-based web application to make{' '}
-        <ChakraLink isExternal href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
+        <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
           <b>OpenLA</b>
         </ChakraLink>{' '}
         more accessible. The tool of choice was{' '}
-        <ChakraLink isExternal href="https://docs.streamlit.io/">
-          Streamlit
-        </ChakraLink>
-        , a Python library that uses a Tornado server and a React frontend.
+        <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>, a
+        Python library that uses a Tornado server and a React frontend.
       </ProjectCard>
       <ProjectCard
         title="OpenLA"
@@ -80,7 +75,7 @@ const ProjectsEn: React.FC = () => {
         analytics, including the introduction of unit tests to the project.
         <br />
         Honorable mention at the{' '}
-        <ChakraLink isExternal href="https://www.1edtech.org/li/awards/2023">
+        <ChakraLink href="https://www.1edtech.org/li/awards/2023">
           <b>Learning Impact Awards in 2023</b>
         </ChakraLink>
         .
@@ -170,10 +165,7 @@ const ProjectsEn: React.FC = () => {
         monitoring, and a chatbot for students to answer challenges.
         <br />
         One of the 24 startups to participate in{' '}
-        <ChakraLink
-          isExternal
-          href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s"
-        >
+        <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
           <b>techstars Founder Catalyst Japan 2021</b>
         </ChakraLink>
         .
@@ -257,7 +249,7 @@ const ProjectsEn: React.FC = () => {
         made to help Japanese speakers learn the Spanish language.
         <br />
         Featured on{' '}
-        <ChakraLink isExternal href="https://www.nhk.or.jp/gogaku/spanish/">
+        <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
           <b>NHK's "TV de Supeingo"</b>
         </ChakraLink>{' '}
         in 2012 and 2013.

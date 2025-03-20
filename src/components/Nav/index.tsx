@@ -8,10 +8,11 @@ import {
   Link,
   IconButton,
   useDisclosure,
-  useColorModeValue,
   Stack
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { useColorModeValue } from '@/components/ui/color-mode'
+
+import { LuMenu, LuX } from 'react-icons/lu'
 import { NavLanguageButtons } from '@/components/Nav/NavLanguageButtons'
 
 const Links = ['index', 'projects', 'skills', 'contact']
@@ -49,24 +50,21 @@ const NavLink: React.FC<Props> = ({ href }) => {
 }
 
 const Nav = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { open, onOpen, onClose } = useDisclosure()
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
-            onClick={isOpen ? onClose : onOpen}
-          />
-          <HStack spacing={8} alignItems={'center'}>
-            <HStack
-              as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}
-            >
+            onClick={open ? onClose : onOpen}
+          >
+            {open ? <LuX /> : <LuMenu />}
+          </IconButton>
+          <HStack gap={8} alignItems={'center'}>
+            <HStack as={'nav'} gap={4} display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
                 <NavLink key={link} href={link} />
               ))}
@@ -77,9 +75,9 @@ const Nav = () => {
           </Flex>
         </Flex>
 
-        {isOpen ? (
+        {open ? (
           <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
+            <Stack as={'nav'} gap={4}>
               {Links.map((link) => (
                 <NavLink key={link} href={link} />
               ))}

@@ -1,6 +1,6 @@
 import { ReactElement, ReactNode } from 'react'
-import { Tag, TagLeftIcon, TagLabel, WrapItem } from '@chakra-ui/react'
-import { CheckCircleIcon } from '@chakra-ui/icons'
+import { Tag, WrapItem } from '@chakra-ui/react'
+import { LuCircleCheck } from 'react-icons/lu'
 
 interface Props {
   children?: ReactElement | ReactNode
@@ -9,10 +9,10 @@ interface Props {
 const SkillTag: React.FC<Props> = ({ children }) => {
   return (
     <WrapItem>
-      <Tag size="lg">
-        <TagLeftIcon as={CheckCircleIcon} color="cyan.500" />
-        <TagLabel>{children}</TagLabel>
-      </Tag>
+      <Tag.Root size="lg">
+        <Tag.StartElement as={LuCircleCheck} color="cyan.500" />
+        <Tag.Label>{children}</Tag.Label>
+      </Tag.Root>
     </WrapItem>
   )
 }

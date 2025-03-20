@@ -3,10 +3,7 @@ import { ProjectCard } from '@/components/ProjectCard'
 
 const ProjectsJa: React.FC = () => {
   return (
-    <SimpleGrid
-      spacing={4}
-      templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
-    >
+    <SimpleGrid gap={4} templateColumns="repeat(auto-fill, minmax(300px, 1fr))">
       <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
@@ -49,14 +46,12 @@ const ProjectsJa: React.FC = () => {
         subheading="九州大学 イメージ・メディア理解研究室, 2023"
         tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
       >
-        <ChakraLink isExternal href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
+        <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
           <b>OpenLA</b>
         </ChakraLink>
         を使いやくすべく、データ駆動ウェブアプリケーションの実装・メンテナンス・デプロイ。
         TornadoサーバーとReactフロントエンドを使う
-        <ChakraLink isExternal href="https://docs.streamlit.io/">
-          Streamlit
-        </ChakraLink>
+        <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>
         というPythonライブラリを導入しての開発でした。
       </ProjectCard>
       <ProjectCard
@@ -78,7 +73,7 @@ const ProjectsJa: React.FC = () => {
         ユニットテストの導入も含めての開発・メンテナンス。
         <br />
         2023年度
-        <ChakraLink isExternal href="https://www.1edtech.org/li/awards/2023">
+        <ChakraLink href="https://www.1edtech.org/li/awards/2023">
           <b>Learning Impact Awards</b>
         </ChakraLink>
         で特別賞を受賞しました。
@@ -165,10 +160,7 @@ const ProjectsJa: React.FC = () => {
         学生の課題の回答を受け付けるチャットボットなどの機能を備えた、
         データ駆動型のアクティブラーニングソリューションの開発に貢献しました。
         <br />
-        <ChakraLink
-          isExternal
-          href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s"
-        >
+        <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
           <b>techstars Founder Catalyst Japan 2021</b>
         </ChakraLink>
         に参加した24社のひとつでした。
@@ -253,7 +245,7 @@ const ProjectsJa: React.FC = () => {
         プレミアム会員サイトおよびカスタムポッドキャストフィード。
         <br />
         2012〜2013年度の{' '}
-        <ChakraLink isExternal href="https://www.nhk.or.jp/gogaku/spanish/">
+        <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
           <b>NHK「テレビでスペイン語」</b>
         </ChakraLink>
         に出演しました。
