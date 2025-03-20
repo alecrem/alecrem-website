@@ -34,15 +34,7 @@ const NavLink: React.FC<Props> = ({ href }) => {
         href={actualHref}
         locale={router.locale}
       >
-        <Link
-          variant={'underline'}
-          px={2}
-          py={1}
-          rounded={'md'}
-          _hover={{
-            bg: colorMode === 'dark' ? 'gray.800' : 'gray.100'
-          }}
-        >
+        <Link variant={'underline'} px={2} py={1} rounded={'md'}>
           {t('header.nav.' + href)}
         </Link>
       </NextLink>
