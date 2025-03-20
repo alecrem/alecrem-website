@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
       <Heading as="h3" size="lg" color="text" mt={16}>
         {t('contact.title')}
       </Heading>
-      <List.Root gap={3} my={0} color="text">
+      <List.Root listStyle="none" gap={3} my={0} color="text">
         <List.Item>
           <List.Indicator asChild color="cyan.500">
             <LuMail />

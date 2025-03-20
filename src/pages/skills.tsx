@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
       <Heading as="h4" size="md" color="text">
         {t('skills.natural-languages')}
       </Heading>
-      <List.Root gap={3} my={0} color="text">
+      <List.Root listStyle="none" gap={3} my={0} color="text">
         {skillList[langIndex].naturalLanguages.map((language, idx) => (
           <List.Item key={'languages-' + idx}>
             <List.Indicator asChild color="cyan.500">

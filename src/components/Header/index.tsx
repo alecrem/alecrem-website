@@ -13,7 +13,7 @@ const Header: FC<Props> = ({ tagline }) => {
   return (
     <>
       <Hero title="{ alecrem }" />
-      <Heading as="h2" color="text" mt={16}>
+      <Heading as="h2" color="text" mt={16} size="3xl">
         {t('header.fullname')}
       </Heading>
       {tagline && (

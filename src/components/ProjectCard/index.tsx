@@ -9,7 +9,8 @@ import {
   Button,
   Spinner,
   Stack,
-  Text
+  Text,
+  Icon
 } from '@chakra-ui/react'
 import { LuStar, LuExternalLink } from 'react-icons/lu'
 import { FaGithub, FaPython } from 'react-icons/fa'
@@ -69,7 +70,7 @@ const ProjectCard: React.FC<Props> = ({
   return (
     <Card.Root onMouseEnter={handleMouseEnter}>
       <Card.Header>
-        <Heading size="md">
+        <Heading size="xl">
           {url ? (
             <ChakraLink href={url} flexGrow={1} mr={2}>
               <b>{title}</b> <LuExternalLink />
@@ -103,14 +104,17 @@ const ProjectCard: React.FC<Props> = ({
               </Button>
             </ChakraLink>
             {showsStargazers && (
-              <Tag.Root borderRadius={100}>
-                {!stargazerCountFetched && <Spinner size={'xs'} />}
-                {stargazerCountFetched && (
-                  <>
+              <Tag.Root size="sm" borderRadius={'full'}>
+                <>
+                  <Icon size="sm">
                     <LuStar />
-                    &nbsp;{stargazerCount}
-                  </>
-                )}
+                  </Icon>
+                  {stargazerCountFetched ? (
+                    stargazerCount
+                  ) : (
+                    <Spinner size={'xs'} />
+                  )}
+                </>
               </Tag.Root>
             )}
           </Stack>
@@ -121,7 +125,7 @@ const ProjectCard: React.FC<Props> = ({
           <Wrap>
             {tags.map((tag, idx) => (
               <WrapItem key={idx}>
-                <Tag.Root size="sm" colorScheme="cyan">
+                <Tag.Root size="sm" colorPalette="cyan">
                   {tag}
                 </Tag.Root>
               </WrapItem>

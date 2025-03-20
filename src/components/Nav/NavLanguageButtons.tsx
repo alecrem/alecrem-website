@@ -14,6 +14,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
       {lang !== 'en' && (
         <Box pr={2}>
           <Button
+            variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
             onClick={async () => await setLanguage('en')}
@@ -25,6 +26,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
       {lang !== 'es' && (
         <Box pr={2}>
           <Button
+            variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
             onClick={async () => await setLanguage('es')}
@@ -36,6 +38,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
       {lang !== 'ja' && (
         <Box pr={2}>
           <Button
+            variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
             onClick={async () => await setLanguage('ja')}

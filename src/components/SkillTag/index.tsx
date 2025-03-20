@@ -9,7 +9,7 @@ interface Props {
 const SkillTag: React.FC<Props> = ({ children }) => {
   return (
     <WrapItem>
-      <Tag.Root size="lg">
+      <Tag.Root size="xl">
         <Tag.StartElement as={LuCircleCheck} color="cyan.500" />
         <Tag.Label>{children}</Tag.Label>
       </Tag.Root>

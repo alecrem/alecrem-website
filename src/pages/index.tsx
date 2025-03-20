@@ -21,7 +21,7 @@ const Index: React.FC = () => {
       <Heading as="h4" size="md" color="text">
         {t('home.occupations.title')}
       </Heading>
-      <List.Root gap={3} my={0} color="text">
+      <List.Root listStyle={'none'} gap={3} my={0} color="text">
         <List.Item>
           <List.Indicator asChild color="cyan.500">
             <LuCircleCheck />
@@ -38,7 +38,6 @@ const Index: React.FC = () => {
           <List.Indicator asChild color="cyan.500">
             <LuCircleCheck />
           </List.Indicator>
-
           <ChakraLink href={t('home.occupations.kura-url')} flexGrow={1} mr={2}>
             {t('home.occupations.kura')} <LuExternalLink />
           </ChakraLink>
@@ -47,12 +46,11 @@ const Index: React.FC = () => {
       <Heading as="h4" size="md" color="text">
         {t('home.memberships.title')}
       </Heading>
-      <List.Root gap={3} my={0} color="text">
+      <List.Root listStyle={'none'} gap={3} my={0} color="text">
         <List.Item>
           <List.Indicator asChild color="cyan.500">
             <LuCircleCheck />
           </List.Indicator>
-
           <ChakraLink
             href={t('home.memberships.henkaku-url')}
             flexGrow={1}
@@ -65,12 +63,12 @@ const Index: React.FC = () => {
       <Heading as="h4" size="md" color="text">
         {t('home.conferences.title')}
       </Heading>
-      <List.Root gap={3} my={0} color="text">
+      <List.Root listStyle={'none'} gap={3} my={0} color="text">
         <List.Item>
           <List.Indicator asChild color="cyan.500">
             <LuCircleCheck />
           </List.Indicator>
-
+          {t('home.conferences.openla-presentation')}
           <ChakraLink
             href={t('home.conferences.openla-url')}
             flexGrow={1}
@@ -78,17 +76,17 @@ const Index: React.FC = () => {
           >
             {t('home.conferences.openla')} <LuExternalLink />
           </ChakraLink>
+          {t('home.conferences.openla-description')}
         </List.Item>
       </List.Root>
       <Heading as="h4" size="md" color="text">
         {t('home.publications.title')}
       </Heading>
-      <List.Root gap={3} my={0} color="text">
+      <List.Root listStyle={'none'} gap={3} my={0} color="text">
         <List.Item>
           <List.Indicator asChild color="cyan.500">
             <LuCircleCheck />
           </List.Indicator>
-
           <ChakraLink
             href={t('home.publications.dondon-preview-url')}
             flexGrow={1}
@@ -101,14 +99,18 @@ const Index: React.FC = () => {
             flexGrow={1}
             mr={2}
           >
-            <Button size={'xs'}>{t('home.publications.buy')}</Button>
+            <Button variant={'surface'} size={'2xs'}>
+              {t('home.publications.buy')}
+            </Button>
           </ChakraLink>
           <ChakraLink
             href={t('home.publications.dondon-preview-url')}
             flexGrow={1}
             mr={2}
           >
-            <Button size={'xs'}>{t('home.publications.preview')}</Button>
+            <Button variant={'surface'} size={'2xs'}>
+              {t('home.publications.preview')}
+            </Button>
           </ChakraLink>
         </List.Item>
       </List.Root>

@@ -1,7 +1,5 @@
 import { createSystem, defaultConfig } from '@chakra-ui/react'
 
-// import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
-
 export const system = createSystem(defaultConfig, {
   theme: {
     tokens: {
@@ -10,14 +8,6 @@ export const system = createSystem(defaultConfig, {
         text: {
           default: { value: '#222' },
           _dark: { value: '#cff' }
-        },
-        heroGradientStart: {
-          default: { value: '#0dd' },
-          _dark: { value: '#0ff' }
-        },
-        heroGradientEnd: {
-          default: { value: '#0dd' },
-          _dark: { value: '#0ff' }
         },
         black: { value: '#222' },
         cyan: {
@@ -43,15 +33,3 @@ export const system = createSystem(defaultConfig, {
     }
   }
 })
-
-// const theme = extendTheme({
-//   styles: {
-//     global: (props: StyleFunctionProps) => ({
-//       'html, body, Container': {
-//         bg: mode('gray.50', 'gray.900')(props)
-//       }
-//     })
-//   }
-// })
-
-// export default theme
