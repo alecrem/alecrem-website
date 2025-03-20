@@ -1,13 +1,11 @@
-import { ColorModeProvider } from '@/components/ui/color-mode'
-import { ChakraProvider } from '@chakra-ui/react'
-import { system } from '@/theme'
 import { AppProps } from 'next/app'
+import { Provider } from '@/components/ui/provider'
 
-function MyApp({ pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider value={system}>
-      <ColorModeProvider {...pageProps} />
-    </ChakraProvider>
+    <Provider>
+      <Component {...pageProps} />
+    </Provider>
   )
 }
 
