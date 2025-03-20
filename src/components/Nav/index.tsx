@@ -10,7 +10,7 @@ import {
   useDisclosure,
   Stack
 } from '@chakra-ui/react'
-import { useColorModeValue } from '@/components/ui/color-mode'
+import { useColorMode } from '@/components/ui/color-mode'
 
 import { LuMenu, LuX } from 'react-icons/lu'
 import { NavLanguageButtons } from '@/components/Nav/NavLanguageButtons'
@@ -25,6 +25,7 @@ const NavLink: React.FC<Props> = ({ href }) => {
   const { t } = useTranslation('common')
   const router = useRouter()
   console.log('href', href, 'actualHref', actualHref)
+  const { colorMode } = useColorMode()
   return (
     <>
       <NextLink
@@ -39,7 +40,7 @@ const NavLink: React.FC<Props> = ({ href }) => {
           py={1}
           rounded={'md'}
           _hover={{
-            bg: useColorModeValue('gray.100', 'gray.800')
+            bg: colorMode === 'dark' ? 'gray.800' : 'gray.100'
           }}
         >
           {t('header.nav.' + href)}
