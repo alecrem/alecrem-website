@@ -3,11 +3,9 @@ import {
   Text,
   Link as ChakraLink,
   Button,
-  List,
-  ListIcon,
-  ListItem
+  List
 } from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+import { LuCircleCheck, LuExternalLink } from 'react-icons/lu'
 import { Layout } from '@/components/Layout'
 import useTranslation from 'next-translate/useTranslation'
 
@@ -23,94 +21,99 @@ const Index: React.FC = () => {
       <Heading as="h4" size="md" color="text">
         {t('home.occupations.title')}
       </Heading>
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+      <List.Root listStyle={'none'} gap={3} my={0} color="text">
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuCircleCheck />
+          </List.Indicator>
           <ChakraLink
-            isExternal
             href={t('home.occupations.yayoi-url')}
             flexGrow={1}
             mr={2}
           >
-            {t('home.occupations.yayoi')} <LinkIcon />
+            {t('home.occupations.yayoi')} <LuExternalLink />
           </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="cyan.500" />
-          <ChakraLink
-            isExternal
-            href={t('home.occupations.kura-url')}
-            flexGrow={1}
-            mr={2}
-          >
-            {t('home.occupations.kura')} <LinkIcon />
+        </List.Item>
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuCircleCheck />
+          </List.Indicator>
+          <ChakraLink href={t('home.occupations.kura-url')} flexGrow={1} mr={2}>
+            {t('home.occupations.kura')} <LuExternalLink />
           </ChakraLink>
-        </ListItem>
-      </List>
+        </List.Item>
+      </List.Root>
       <Heading as="h4" size="md" color="text">
         {t('home.memberships.title')}
       </Heading>
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+      <List.Root listStyle={'none'} gap={3} my={0} color="text">
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuCircleCheck />
+          </List.Indicator>
           <ChakraLink
-            isExternal
             href={t('home.memberships.henkaku-url')}
             flexGrow={1}
             mr={2}
           >
-            {t('home.memberships.henkaku')} <LinkIcon />
+            {t('home.memberships.henkaku')} <LuExternalLink />
           </ChakraLink>
-        </ListItem>
-      </List>
+        </List.Item>
+      </List.Root>
       <Heading as="h4" size="md" color="text">
         {t('home.conferences.title')}
       </Heading>
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+      <List.Root listStyle={'none'} gap={3} my={0} color="text">
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuCircleCheck />
+          </List.Indicator>
+          {t('home.conferences.openla-presentation')}
           <ChakraLink
-            isExternal
             href={t('home.conferences.openla-url')}
             flexGrow={1}
             mr={2}
           >
-            {t('home.conferences.openla')} <LinkIcon />
+            {t('home.conferences.openla')} <LuExternalLink />
           </ChakraLink>
-        </ListItem>
-      </List>
+          {t('home.conferences.openla-description')}
+        </List.Item>
+      </List.Root>
       <Heading as="h4" size="md" color="text">
         {t('home.publications.title')}
       </Heading>
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="cyan.500" />
+      <List.Root listStyle={'none'} gap={3} my={0} color="text">
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuCircleCheck />
+          </List.Indicator>
           <ChakraLink
-            isExternal
             href={t('home.publications.dondon-preview-url')}
             flexGrow={1}
             mr={2}
           >
-            {t('home.publications.dondon')} <LinkIcon />
+            {t('home.publications.dondon')} <LuExternalLink />
           </ChakraLink>
           <ChakraLink
-            isExternal
             href={t('home.publications.dondon-buy-url')}
             flexGrow={1}
             mr={2}
           >
-            <Button size={'xs'}>{t('home.publications.buy')}</Button>
+            <Button variant={'surface'} size={'2xs'}>
+              {t('home.publications.buy')}
+            </Button>
           </ChakraLink>
           <ChakraLink
-            isExternal
             href={t('home.publications.dondon-preview-url')}
             flexGrow={1}
             mr={2}
           >
-            <Button size={'xs'}>{t('home.publications.preview')}</Button>
+            <Button variant={'surface'} size={'2xs'}>
+              {t('home.publications.preview')}
+            </Button>
           </ChakraLink>
-        </ListItem>
-      </List>
+        </List.Item>
+      </List.Root>
     </Layout>
   )
 }

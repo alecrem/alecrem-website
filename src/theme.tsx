@@ -1,58 +1,35 @@
-import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
-import { extendTheme } from '@chakra-ui/react'
+import { createSystem, defaultConfig } from '@chakra-ui/react'
 
-const fonts = { mono: `'Menlo', monospace` }
-
-const breakpoints = {
-  sm: '40em',
-  md: '52em',
-  lg: '64em',
-  xl: '80em'
-}
-
-const theme = extendTheme({
-  semanticTokens: {
-    colors: {
-      text: {
-        default: '#222',
-        _dark: '#cff'
+export const system = createSystem(defaultConfig, {
+  theme: {
+    tokens: {
+      fonts: { mono: { value: `'Menlo', monospace` } },
+      colors: {
+        text: {
+          default: { value: '#222' },
+          _dark: { value: '#cff' }
+        },
+        black: { value: '#222' },
+        cyan: {
+          DEFAULT: { value: '#0dd' },
+          100: { value: '#cff' },
+          300: { value: '#8ff' },
+          500: { value: '#0dd' },
+          600: { value: '#0aa' },
+          700: { value: '#088' },
+          800: { value: '#066' },
+          900: { value: '#044' }
+        }
       },
-      heroGradientStart: {
-        default: '#0dd',
-        _dark: '#0ff'
+      radii: {
+        button: { value: '12px' }
       },
-      heroGradientEnd: {
-        default: '#0dd',
-        _dark: '#0ff'
+      breakpoints: {
+        sm: { value: '40em' },
+        md: { value: '52em' },
+        lg: { value: '64em' },
+        xl: { value: '80em' }
       }
-    },
-    radii: {
-      button: '12px'
     }
-  },
-  colors: {
-    black: '#222',
-    cyan: {
-      100: '#cff',
-      300: '#8ff',
-      500: '#0dd',
-      600: '#0aa',
-      700: '#088',
-      800: '#066',
-      900: '#044'
-    }
-  },
-  fonts,
-  styles: {
-    global: (props: StyleFunctionProps) => ({
-      'html, body, Container': {
-        bg: mode('gray.50', 'gray.900')(props)
-        // bg: 'gray.900'
-        // bg: 'cyan.100'
-      }
-    })
-  },
-  breakpoints
+  }
 })
-
-export default theme

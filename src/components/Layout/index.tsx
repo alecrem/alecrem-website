@@ -4,8 +4,7 @@ import { Container } from '@/components/Container'
 import { Main } from '@/components/Main'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { DarkModeSwitch } from '@/components/DarkModeSwitch'
-
+import { ColorModeButton } from '@/components/ui/color-mode'
 interface Props {
   title: string
   children: ReactElement | ReactNode
@@ -19,12 +18,12 @@ const Layout: React.FC<Props> = ({ children, title, tagline }) => {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <Container height="100vh">
+      <Container minH="100vh">
         <Main>
           <Header tagline={tagline} />
           {children}
         </Main>
-        <DarkModeSwitch />
+        <ColorModeButton />
         <Footer />
       </Container>
     </>

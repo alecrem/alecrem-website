@@ -3,7 +3,7 @@ import useTranslation from 'next-translate/useTranslation'
 import setLanguage from 'next-translate/setLanguage'
 
 interface Props {
-  size?: string
+  size: 'md' | 'sm' | 'lg' | 'xl' | '2xl' | '2xs' | 'xs'
   mobile?: boolean
 }
 
@@ -14,6 +14,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
       {lang !== 'en' && (
         <Box pr={2}>
           <Button
+            variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
             onClick={async () => await setLanguage('en')}
@@ -25,6 +26,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
       {lang !== 'es' && (
         <Box pr={2}>
           <Button
+            variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
             onClick={async () => await setLanguage('es')}
@@ -36,6 +38,7 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
       {lang !== 'ja' && (
         <Box pr={2}>
           <Button
+            variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
             onClick={async () => await setLanguage('ja')}

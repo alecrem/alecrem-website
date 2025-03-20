@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Heading, List, ListIcon, ListItem, Wrap } from '@chakra-ui/react'
-import { CheckCircleIcon } from '@chakra-ui/icons'
+import { Heading, List, Wrap } from '@chakra-ui/react'
+import { LuCircleCheck } from 'react-icons/lu'
 import useTranslation from 'next-translate/useTranslation'
 import { Layout } from '@/components/Layout'
 import { SkillTag } from '@/components/SkillTag'
@@ -22,14 +22,16 @@ const Skills: React.FC = () => {
       <Heading as="h4" size="md" color="text">
         {t('skills.natural-languages')}
       </Heading>
-      <List spacing={3} my={0} color="text">
+      <List.Root listStyle="none" gap={3} my={0} color="text">
         {skillList[langIndex].naturalLanguages.map((language, idx) => (
-          <ListItem key={'languages-' + idx}>
-            <ListIcon as={CheckCircleIcon} color="cyan.500" />
+          <List.Item key={'languages-' + idx}>
+            <List.Indicator asChild color="cyan.500">
+              <LuCircleCheck />
+            </List.Indicator>
             {language.language}: {language.level}
-          </ListItem>
+          </List.Item>
         ))}
-      </List>
+      </List.Root>
       <Heading as="h4" size="md" color="text">
         {t('skills.web')}
       </Heading>

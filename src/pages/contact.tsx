@@ -1,11 +1,5 @@
-import {
-  Heading,
-  Link as ChakraLink,
-  List,
-  ListIcon,
-  ListItem
-} from '@chakra-ui/react'
-import { EmailIcon, LinkIcon } from '@chakra-ui/icons'
+import { Heading, Link as ChakraLink, List } from '@chakra-ui/react'
+import { LuMail, LuExternalLink } from 'react-icons/lu'
 import { Layout } from '@/components/Layout'
 import useTranslation from 'next-translate/useTranslation'
 
@@ -16,44 +10,43 @@ const Contact: React.FC = () => {
       <Heading as="h3" size="lg" color="text" mt={16}>
         {t('contact.title')}
       </Heading>
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={EmailIcon} color="cyan.500" />
+      <List.Root listStyle="none" gap={3} my={0} color="text">
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuMail />
+          </List.Indicator>
           Bluesky:{' '}
           <ChakraLink
-            isExternal
             href="https://bsky.app/profile/karawapo.alecrem.com"
             flexGrow={1}
             mr={2}
           >
-            @karawapo.alecrem.com <LinkIcon />
+            @karawapo.alecrem.com <LuExternalLink />
           </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={EmailIcon} color="cyan.500" />
+        </List.Item>
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuMail />
+          </List.Indicator>
           Twitter:{' '}
-          <ChakraLink
-            isExternal
-            href="https://twitter.com/karawapo"
-            flexGrow={1}
-            mr={2}
-          >
-            @karawapo <LinkIcon />
+          <ChakraLink href="https://twitter.com/karawapo" flexGrow={1} mr={2}>
+            @karawapo <LuExternalLink />
           </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={EmailIcon} color="cyan.500" />
+        </List.Item>
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuMail />
+          </List.Indicator>
           Mastodon:{' '}
           <ChakraLink
-            isExternal
             href="https://mastodon.social/@karawapo"
             flexGrow={1}
             mr={2}
           >
-            @karawapo@mastodon.social <LinkIcon />
+            @karawapo@mastodon.social <LuExternalLink />
           </ChakraLink>
-        </ListItem>
-      </List>
+        </List.Item>
+      </List.Root>
     </Layout>
   )
 }

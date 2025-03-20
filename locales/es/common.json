@@ -26,8 +26,10 @@
     },
     "conferences": {
       "title": "Presentaciones en congresos",
-      "openla": "\"OpenLA: Open Source Library for Educational Data Analysis,\" Learning Impact 2023 Conference. Anaheim, California, EEUU, 2023.",
-      "openla-url": "https://www.1edtech.org/li/awards/2023"
+      "openla-presentation": "\"OpenLA: Open Source Library for Educational Data Analysis,\"",
+      "openla": "Learning Impact 2023 Conference.",
+      "openla-url": "https://www.1edtech.org/li/awards/2023",
+      "openla-description": "Anaheim, California, EEUU, 2023."
     },
     "publications": {
       "title": "Publicaciones",

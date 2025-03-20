@@ -20,7 +20,7 @@ const Footer: React.FC = (props: FlexProps) => {
         {' | '}
         <ChakraLink href="https://github.com/alecrem/alecrem-website/">
           <Button
-            variant={'link'}
+            variant={'plain'}
             size={'sm'}
             color={'text'}
             fontWeight={'normal'}

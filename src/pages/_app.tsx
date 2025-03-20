@@ -1,13 +1,11 @@
-import { ChakraProvider } from '@chakra-ui/react'
-
-import theme from '@/theme'
 import { AppProps } from 'next/app'
+import { Provider } from '@/components/ui/provider'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
+    <Provider>
       <Component {...pageProps} />
-    </ChakraProvider>
+    </Provider>
   )
 }
 
