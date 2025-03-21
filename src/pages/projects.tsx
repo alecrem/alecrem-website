@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, ReactNode, FC } from 'react'
 import { Heading } from '@chakra-ui/react'
 import { Layout } from '@/components/Layout'
 import { Projects } from '@/components/Projects'
@@ -18,7 +18,7 @@ const ProjectsPage: React.FC = () => {
       <Heading as="h3" size="lg" color="text" mt={16}>
         {t('projects.title')}
       </Heading>
-      {Projects[langIndex]({})}
+      {Projects[langIndex]()}
     </Layout>
   )
 }

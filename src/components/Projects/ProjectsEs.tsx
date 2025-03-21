@@ -1,7 +1,7 @@
 import { SimpleGrid, Link as ChakraLink } from '@chakra-ui/react'
 import { ProjectCard } from '@/components/ProjectCard'
 
-const ProjectsEs: React.FC = () => {
+const ProjectsEs = () => {
   return (
     <SimpleGrid gap={4} templateColumns="repeat(auto-fill, minmax(300px, 1fr))">
       <ProjectCard
