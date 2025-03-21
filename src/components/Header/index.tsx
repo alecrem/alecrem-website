@@ -8,7 +8,7 @@ interface Props {
   tagline?: boolean
 }
 
-const Header: FC<Props> = ({ tagline }) => {
+const Header: FC<Props> = ({ tagline = false }) => {
   const { t } = useTranslation('common')
   return (
     <>
@@ -29,7 +29,3 @@ const Header: FC<Props> = ({ tagline }) => {
 }
 
 export { Header }
-
-Header.defaultProps = {
-  tagline: false
-}

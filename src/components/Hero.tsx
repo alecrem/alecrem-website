@@ -1,7 +1,7 @@
 import { Flex, Heading } from '@chakra-ui/react'
 import { useColorMode } from '@/components/ui/color-mode'
 
-export const Hero = ({ title }: { title: string }) => {
+export const Hero = ({ title = 'alecrem' }: { title: string }) => {
   const { colorMode } = useColorMode()
   return (
     <Flex justifyContent="center" alignItems="center" my="4rem">
@@ -14,8 +14,4 @@ export const Hero = ({ title }: { title: string }) => {
       </Heading>
     </Flex>
   )
-}
-
-Hero.defaultProps = {
-  title: 'alecrem'
 }

@@ -11,7 +11,11 @@ interface Props {
   tagline?: boolean
 }
 
-const Layout: React.FC<Props> = ({ children, title, tagline }) => {
+const Layout: React.FC<Props> = ({
+  children,
+  title = 'alecrem',
+  tagline = false
+}) => {
   return (
     <>
       <Head>
@@ -31,8 +35,3 @@ const Layout: React.FC<Props> = ({ children, title, tagline }) => {
 }
 
 export { Layout }
-
-Layout.defaultProps = {
-  title: 'alecrem',
-  tagline: false
-}
