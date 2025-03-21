@@ -7,7 +7,10 @@ interface Props {
   mobile?: boolean
 }
 
-const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
+const NavLanguageButtons: React.FC<Props> = ({
+  size = 'md',
+  mobile = false
+}) => {
   const { lang } = useTranslation('common')
   return (
     <>
@@ -52,7 +55,3 @@ const NavLanguageButtons: React.FC<Props> = ({ size, mobile }) => {
 }
 
 export { NavLanguageButtons }
-NavLanguageButtons.defaultProps = {
-  mobile: false,
-  size: 'md'
-}
