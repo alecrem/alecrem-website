@@ -15,7 +15,7 @@ const ProjectsJa = () => {
           'SaaS',
           'e2e',
           'cdk',
-          'docker',
+          'Docker',
           'Contributor',
           'Team of 10'
         ]}
