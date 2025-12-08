@@ -30,7 +30,6 @@ export const skillListEn = {
     'Docker',
     'p5.js',
     'Pyodide',
-    'Airtable API',
     'MySQL',
     'PostgreSQL',
     'Ionic',
@@ -38,7 +37,7 @@ export const skillListEn = {
     'CakePHP',
     'figma'
   ],
-  web3: ['Wagmi', 'Solidity', 'Pinata API', 'OpenSea API'],
+  web3: ['Wagmi', 'Solidity', 'Pinata API'],
   dataMl: [
     'Python',
     'Pandas',

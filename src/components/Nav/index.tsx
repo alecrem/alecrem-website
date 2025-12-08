@@ -24,7 +24,6 @@ const NavLink: React.FC<Props> = ({ href }) => {
   const actualHref = href === 'index' ? '/' : href
   const { t } = useTranslation('common')
   const router = useRouter()
-  console.log('href', href, 'actualHref', actualHref)
   const { colorMode } = useColorMode()
   return (
     <>
