@@ -30,13 +30,12 @@ export const skillListJa = {
     'Docker',
     'p5.js',
     'Pyodide',
-    'Airtable API',
     'Ionic',
     'Angular',
     'CakePHP',
     'figma'
   ],
-  web3: ['Wagmi', 'Solidity', 'Pinata API', 'OpenSea API'],
+  web3: ['Wagmi', 'Solidity', 'Pinata API'],
   dataMl: [
     'Python',
     'Pandas',

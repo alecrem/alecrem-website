@@ -48,7 +48,6 @@ const ProjectCard: React.FC<Props> = ({
       repoUrl = buttonLink.substring(0, buttonLink.length - 1)
     const urlPieces = repoUrl.split('/')
     const repo = [urlPieces[3], urlPieces[4]]
-    console.log(repo)
     const fetchStargazers = async (repo: string[]) => {
       const repoURI = `/api/stargazers/${repo[0]}/${repo[1]}`
       const ghresponse = await fetch(repoURI)

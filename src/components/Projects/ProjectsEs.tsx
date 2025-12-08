@@ -5,6 +5,29 @@ const ProjectsEs = () => {
   return (
     <SimpleGrid gap={4} templateColumns="repeat(auto-fill, minmax(300px, 1fr))">
       <ProjectCard
+        title="Yayoi Seikyu Next"
+        url="https://www.yayoi-kk.co.jp/kaikei/kaikei-next/"
+        subheading="Yayoi Co., Ltd."
+        tags={[
+          'Remix.js',
+          'React',
+          'hono',
+          'SaaS',
+          'e2e',
+          'cdk',
+          'docker',
+          'Contributor',
+          'Team of 10'
+        ]}
+      >
+        Desarrollo y mantenimiento de la aplicación de facturación para el
+        software de contabilidad Yayoi Kaikei Nex como ingeniero web full stack.
+        Experiencia valiosa trabajando con Remix.js, hono, AWS CDK, Vitest y
+        pruebas end-to-end con Playwright. Además de integración con varios
+        servicios dentro del mismo paquete contable y gestión de auditorías de
+        seguridad y alertas de seguridad.
+      </ProjectCard>
+      <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
         subheading="shiftbase, inc., 2023"
@@ -14,7 +37,7 @@ const ProjectsEs = () => {
           'Next.js',
           'React',
           'web3',
-          'figma',
+          'Figma',
           'Contributor',
           'Team of 59'
         ]}

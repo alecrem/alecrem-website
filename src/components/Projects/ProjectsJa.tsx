@@ -5,6 +5,27 @@ const ProjectsJa = () => {
   return (
     <SimpleGrid gap={4} templateColumns="repeat(auto-fill, minmax(300px, 1fr))">
       <ProjectCard
+        title="弥生請求 Next"
+        url="https://www.yayoi-kk.co.jp/kaikei/kaikei-next/"
+        subheading="弥生株式会社"
+        tags={[
+          'Remix.js',
+          'React',
+          'hono',
+          'SaaS',
+          'e2e',
+          'cdk',
+          'docker',
+          'Contributor',
+          'Team of 10'
+        ]}
+      >
+        フルスタックWebエンジニアとして弥生会計
+        Nextの請求書アプリをリリース・保守しました。Remix.js、hono、AWS
+        CDK、Vitest、Playwrightを使用したエンドツーエンドテストなど、貴重な経験を積みました。また、弥生会計
+        Next内の様々なサービスとの連携や、セキュリティ診断およびセキュリティアラートへの対応も行いました。
+      </ProjectCard>
+      <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
         subheading="shiftbase, inc., 2023"
@@ -14,7 +35,7 @@ const ProjectsJa = () => {
           'Next.js',
           'React',
           'web3',
-          'figma',
+          'Figma',
           'Contributor',
           'Team of 59'
         ]}
