@@ -34,14 +34,6 @@ const Index: React.FC = () => {
             {t('home.occupations.yayoi')} <LuExternalLink />
           </ChakraLink>
         </List.Item>
-        <List.Item>
-          <List.Indicator asChild color="cyan.500">
-            <LuCircleCheck />
-          </List.Indicator>
-          <ChakraLink href={t('home.occupations.kura-url')} flexGrow={1} mr={2}>
-            {t('home.occupations.kura')} <LuExternalLink />
-          </ChakraLink>
-        </List.Item>
       </List.Root>
       <Heading as="h4" size="md" color="text">
         {t('home.memberships.title')}
