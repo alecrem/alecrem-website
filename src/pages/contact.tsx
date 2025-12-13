@@ -15,6 +15,15 @@ const Contact: React.FC = () => {
           <List.Indicator asChild color="cyan.500">
             <LuMail />
           </List.Indicator>
+          E-mail:{' '}
+          <ChakraLink href="mailto:ale@alecrem.com" flexGrow={1} mr={2}>
+            ale@alecrem.com
+          </ChakraLink>
+        </List.Item>
+        <List.Item>
+          <List.Indicator asChild color="cyan.500">
+            <LuMail />
+          </List.Indicator>
           Bluesky:{' '}
           <ChakraLink
             href="https://bsky.app/profile/karawapo.alecrem.com"
@@ -22,15 +31,6 @@ const Contact: React.FC = () => {
             mr={2}
           >
             @karawapo.alecrem.com <LuExternalLink />
-          </ChakraLink>
-        </List.Item>
-        <List.Item>
-          <List.Indicator asChild color="cyan.500">
-            <LuMail />
-          </List.Indicator>
-          Twitter:{' '}
-          <ChakraLink href="https://twitter.com/karawapo" flexGrow={1} mr={2}>
-            @karawapo <LuExternalLink />
           </ChakraLink>
         </List.Item>
         <List.Item>
