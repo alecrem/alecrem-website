@@ -239,12 +239,14 @@ const ProjectsEs = () => {
       <ProjectCard
         title="Middle School Tutor"
         url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-2023"
+        subheading="Alecrem, 2022-2025"
         buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
         tags={[
           'Python',
-          'Streamlit',
-          'Next.js',
+          'Remix.js',
+          'hono',
+          'GraphQL',
+          'MCP server',
           'React',
           'Sole Author',
           'Open Source'
@@ -252,9 +254,12 @@ const ProjectsEs = () => {
       >
         Herramienta para jugadores del formato Middle School de Magic: El
         encuentro. Consiste en un proyecto en Python que compila la lista de
-        cartas que están permitidas en el formato, y un sitio web hecho con
-        Streamlit (anteriormente Next.js) en el que se puede buscar cartas en
-        dicha lista.
+        cartas disponibles de Magic, una API GraphQL hecha con hono, un servidor
+        MCP, y un sitio web Remix.js que permite buscar en dicha lista. Otras
+        funcionalidades incluyen URLs comprimidas para compartir listas de
+        cartas sin que los usuarios necesiten ninguna cuenta.
+        <br />
+        (Anteriormente se usaba Streamlit y Next.js para la interfaz web.)
       </ProjectCard>
       <ProjectCard
         title="Binguerah"

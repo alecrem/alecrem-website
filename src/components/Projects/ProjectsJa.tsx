@@ -228,21 +228,26 @@ const ProjectsJa = () => {
       <ProjectCard
         title="Middle School Tutor"
         url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-2023"
+        subheading="Alecrem, 2022-2025"
         buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
         tags={[
           'Python',
-          'Streamlit',
-          'Next.js',
+          'Remix.js',
+          'hono',
+          'GraphQL',
+          'MCP server',
           'React',
           'Sole Author',
           'Open Source'
         ]}
       >
         マジック：ザ・ギャザリングのフォーマット「ミドルスクール」のための
-        ゲーミング・ツールを開発しました。
-        二つの部品で構成されています：利用可能なMTGカードのリストをまとめるPythonプロジェクトと、
-        そのリストを検索するStreamlitでできたウェブサイト（旧サイトはNext.js）。
+        ゲーミング・ツールを開発しました。複数の部品で構成されています：
+        利用可能なMagicカードのリストをまとめるPythonプロジェクト、hono GraphQL
+        API、MCPサーバー、そしてそのリストを検索できるRemix.jsウェブサイト。
+        他にも、ユーザーがアカウントを作成せずにカードリストを共有できる圧縮URLなどの機能があります。
+        <br />
+        （以前はWeb UIにStreamlitやNext.jsを使用していました。）
       </ProjectCard>
       <ProjectCard
         title="Binguerah"
