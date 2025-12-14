@@ -1,4 +1,5 @@
 import { SimpleGrid, Link as ChakraLink, Text } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 import { ProjectCard } from '@/components/ProjectCard'
 
 const ProjectsEs = () => {
@@ -101,10 +102,10 @@ const ProjectsEs = () => {
           Desarrollo, mantenimiento y despliegue de una aplicación web basada en
           datos para hacer{' '}
           <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
-            <b>OpenLA</b>
+            <b>OpenLA</b> <FiExternalLink />
           </ChakraLink>{' '}
           más accesible. La herramienta elegida fue{' '}
-          <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>,
+          <ChakraLink href="https://docs.streamlit.io/">Streamlit <FiExternalLink /></ChakraLink>,
           una librería de Python que usa un servidor Tornado y un frontend React.
         </Text>
       </ProjectCard>
@@ -131,7 +132,7 @@ const ProjectsEs = () => {
         <Text as="span">
           Mención de honor en los{' '}
           <ChakraLink href="https://www.1edtech.org/li/awards/2023">
-            <b>Learning Impact Awards in 2023</b>
+            <b>Learning Impact Awards in 2023</b> <FiExternalLink />
           </ChakraLink>
           .
         </Text>
@@ -226,7 +227,7 @@ const ProjectsEs = () => {
         <Text as="span">
           Una de las 24 startups que participó en{' '}
           <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
-            <b>techstars Founder Catalyst Japan 2021</b>
+            <b>techstars Founder Catalyst Japan 2021</b> <FiExternalLink />
           </ChakraLink>
           .
         </Text>
@@ -300,7 +301,7 @@ const ProjectsEs = () => {
         <Text as="span">
           Aparecimos en el programa{' '}
           <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
-            <b>"TV de Supeingo" de la NHK</b>
+            <b>"TV de Supeingo" de la NHK</b> <FiExternalLink />
           </ChakraLink>
           {' '}en 2012 y 2013.
         </Text>

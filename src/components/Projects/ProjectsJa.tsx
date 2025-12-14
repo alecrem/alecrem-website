@@ -1,4 +1,5 @@
 import { SimpleGrid, Link as ChakraLink, Text } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 import { ProjectCard } from '@/components/ProjectCard'
 
 const ProjectsJa = () => {
@@ -93,11 +94,11 @@ const ProjectsJa = () => {
       >
         <Text as="span">
           <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
-            <b>OpenLA</b>
+            <b>OpenLA</b> <FiExternalLink />
           </ChakraLink>
           を使いやくすべく、データ駆動ウェブアプリケーションの実装・メンテナンス・デプロイ。
           TornadoサーバーとReactフロントエンドを使う
-          <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>
+          <ChakraLink href="https://docs.streamlit.io/">Streamlit <FiExternalLink /></ChakraLink>
           というPythonライブラリを導入しての開発でした。
         </Text>
       </ProjectCard>
@@ -124,7 +125,7 @@ const ProjectsJa = () => {
         <Text as="span">
           2023年度
           <ChakraLink href="https://www.1edtech.org/li/awards/2023">
-            <b>Learning Impact Awards</b>
+            <b>Learning Impact Awards</b> <FiExternalLink />
           </ChakraLink>
           で特別賞を受賞しました。
         </Text>
@@ -215,7 +216,7 @@ const ProjectsJa = () => {
         <br />
         <Text as="span">
           <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
-            <b>techstars Founder Catalyst Japan 2021</b>
+            <b>techstars Founder Catalyst Japan 2021</b> <FiExternalLink />
           </ChakraLink>
           に参加した24社のひとつでした。
         </Text>
@@ -285,7 +286,7 @@ const ProjectsJa = () => {
         <Text as="span">
           2012〜2013年度の{' '}
           <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
-            <b>NHK「テレビでスペイン語」</b>
+            <b>NHK「テレビでスペイン語」</b> <FiExternalLink />
           </ChakraLink>
           に出演しました。
         </Text>

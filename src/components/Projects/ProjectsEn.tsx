@@ -1,4 +1,5 @@
 import { SimpleGrid, Link as ChakraLink, Text } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 import { ProjectCard } from '@/components/ProjectCard'
 
 const ProjectsEn = () => {
@@ -96,13 +97,16 @@ const ProjectsEn = () => {
         tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
       >
         <Text as="span">
-          Developed, maintained and deployed a data-based web application to make{' '}
+          Developed, maintained and deployed a data-based web application to
+          make{' '}
           <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
-            <b>OpenLA</b>
+            <b>OpenLA</b> <FiExternalLink />
           </ChakraLink>{' '}
           more accessible. The tool of choice was{' '}
-          <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>, a
-          Python library that uses a Tornado server and a React frontend.
+          <ChakraLink href="https://docs.streamlit.io/">
+            Streamlit <FiExternalLink />
+          </ChakraLink>
+          , a Python library that uses a Tornado server and a React frontend.
         </Text>
       </ProjectCard>
       <ProjectCard
@@ -128,7 +132,7 @@ const ProjectsEn = () => {
         <Text as="span">
           Honorable mention at the{' '}
           <ChakraLink href="https://www.1edtech.org/li/awards/2023">
-            <b>Learning Impact Awards in 2023</b>
+            <b>Learning Impact Awards in 2023</b> <FiExternalLink />
           </ChakraLink>
           .
         </Text>
@@ -214,15 +218,16 @@ const ProjectsEn = () => {
         tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder', 'Team of 3']}
       >
         <Text as="span">
-          I took part on the development of a data-driven active learning solution
-          with features such as sharing of teaching materials, real-time learning
-          monitoring, and a chatbot for students to answer challenges.
+          I took part on the development of a data-driven active learning
+          solution with features such as sharing of teaching materials,
+          real-time learning monitoring, and a chatbot for students to answer
+          challenges.
         </Text>
         <br />
         <Text as="span">
           One of the 24 startups to participate in{' '}
           <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
-            <b>techstars Founder Catalyst Japan 2021</b>
+            <b>techstars Founder Catalyst Japan 2021</b> <FiExternalLink />
           </ChakraLink>
           .
         </Text>
@@ -292,7 +297,7 @@ const ProjectsEn = () => {
         <Text as="span">
           Featured on{' '}
           <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
-            <b>NHK's "TV de Supeingo"</b>
+            <b>NHK's "TV de Supeingo"</b> <FiExternalLink />
           </ChakraLink>{' '}
           in 2012 and 2013.
         </Text>
