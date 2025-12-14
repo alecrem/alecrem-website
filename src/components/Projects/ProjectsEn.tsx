@@ -7,7 +7,7 @@ const ProjectsEn = () => {
       <ProjectCard
         title="Yayoi Seikyu Next"
         url="https://www.yayoi-kk.co.jp/kaikei/kaikei-next/"
-        subheading="Yayoi Co., Ltd."
+        subheading="Yayoi Co., Ltd., 2024-present"
         tags={[
           'Remix.js',
           'React',
@@ -20,12 +20,12 @@ const ProjectsEn = () => {
           'Team of 10'
         ]}
       >
-        Released and maintained the invoicing app for accounting suite Yayoi
-        Kaikei Next as a full stack web engineer. Gained valuable experience
-        working with Remix.js, hono, AWS CDK, Vitest, and end-to-end testing
-        with Playwright. As well as integrating with various services within the
-        same accounting suite, and dealing with security audits and security
-        alerts.
+        Developed, released and maintained the invoicing app for accounting
+        suite Yayoi Kaikei Next as a full stack web engineer. Gained valuable
+        experience working with Remix.js, hono, AWS CDK, Vitest, and end-to-end
+        testing with Playwright. As well as integrating with various services
+        within the same accounting suite, and dealing with security audits and
+        security alerts.
       </ProjectCard>
       <ProjectCard
         title="UNCHAIN"
@@ -234,7 +234,7 @@ const ProjectsEn = () => {
       <ProjectCard
         title="Middle School Tutor"
         url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-2025"
+        subheading="Alecrem, 2022-present"
         buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
         tags={[
           'Python',

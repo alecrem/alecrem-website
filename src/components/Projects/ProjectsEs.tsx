@@ -7,7 +7,7 @@ const ProjectsEs = () => {
       <ProjectCard
         title="Yayoi Seikyu Next"
         url="https://www.yayoi-kk.co.jp/kaikei/kaikei-next/"
-        subheading="Yayoi Co., Ltd."
+        subheading="Yayoi Co., Ltd., 2024-presente"
         tags={[
           'Remix.js',
           'React',
@@ -239,7 +239,7 @@ const ProjectsEs = () => {
       <ProjectCard
         title="Middle School Tutor"
         url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-2025"
+        subheading="Alecrem, 2022-presente"
         buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
         tags={[
           'Python',

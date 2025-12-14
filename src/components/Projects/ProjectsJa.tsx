@@ -7,7 +7,7 @@ const ProjectsJa = () => {
       <ProjectCard
         title="弥生請求 Next"
         url="https://www.yayoi-kk.co.jp/kaikei/kaikei-next/"
-        subheading="弥生株式会社"
+        subheading="弥生株式会社, 2024-現在"
         tags={[
           'Remix.js',
           'React',
@@ -21,7 +21,7 @@ const ProjectsJa = () => {
         ]}
       >
         フルスタックWebエンジニアとして弥生会計
-        Nextの請求書アプリをリリース・保守しました。Remix.js、hono、AWS
+        Nextの請求書アプリを開発・リリース・運用しました。Remix.js、hono、AWS
         CDK、Vitest、Playwrightを使用したエンドツーエンドテストなど、貴重な経験を積みました。また、弥生会計
         Next内の様々なサービスとの連携や、セキュリティ診断およびセキュリティアラートへの対応も行いました。
       </ProjectCard>
@@ -228,7 +228,7 @@ const ProjectsJa = () => {
       <ProjectCard
         title="Middle School Tutor"
         url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-2025"
+        subheading="Alecrem, 2022-現在"
         buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
         tags={[
           'Python',
