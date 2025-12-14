@@ -273,20 +273,6 @@ const ProjectsEs = () => {
         se envíen por correo electrónico.
       </ProjectCard>
       <ProjectCard
-        title="Binguerah"
-        url="https://binguerah.pepinismo.net/"
-        subheading="Alecrem, 2023"
-        buttonLink={'https://github.com/gamerah/bingo-card'}
-        tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
-      >
-        Herramienta para interacción tanto en tiempo real como asíncrona para
-        podcasts que genera una tarjeta de bingo meme personalizada para cada
-        combinación de nombre de usuario y número de episodio. Las casillas se
-        pueden marcar manualmente mientras se escucha el episodio, o
-        automáticamente al introducir la palabra clave del episodio que se
-        escucha al final del programa.
-      </ProjectCard>
-      <ProjectCard
         title="Escucha español"
         url="https://escuchaespanol.com/"
         subheading="Alecrem, 2009-2016"

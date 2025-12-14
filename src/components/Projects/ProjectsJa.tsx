@@ -261,18 +261,6 @@ const ProjectsJa = () => {
         お問い合わせ内容を保存して、Airtableによりメールとして配信されます。
       </ProjectCard>
       <ProjectCard
-        title="Binguerah"
-        url="https://binguerah.pepinismo.net/"
-        subheading="Alecrem, 2023"
-        buttonLink={'https://github.com/gamerah/bingo-card'}
-        tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
-      >
-        ポッドキャストのリスナーがリアルタイムでも非同期にでも使うインタラクションツール。
-        各ユーザーのためにカスタマイズされたお楽しみビンゴカードが提供されます。
-        ユーザーはポッドキャストを聴きながら手動でチェックしていっても良いですし、
-        各エピソードの最後に共有されるパスワードを入力すると自動的にチェックされます。
-      </ProjectCard>
-      <ProjectCard
         title="聞くスペイン語"
         url="https://escuchaespanol.com/"
         subheading="Alecrem, 2009-2016"

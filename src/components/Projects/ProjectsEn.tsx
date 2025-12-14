@@ -271,19 +271,6 @@ const ProjectsEn = () => {
         API to store messages, and effectively deliver them as e-mails.
       </ProjectCard>
       <ProjectCard
-        title="Binguerah"
-        url="https://binguerah.pepinismo.net/"
-        subheading="Alecrem, 2023"
-        buttonLink={'https://github.com/gamerah/bingo-card'}
-        tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
-      >
-        Real-time and async interaction tool for podcasts that generates a
-        personalized meme bingo card that is different for each combination of
-        user and episode. Spaces can be manually marked as the user listens to
-        the podcast, or they can be automatically marked if the user inputs the
-        password shared at the end of each episode.
-      </ProjectCard>
-      <ProjectCard
         title="Escucha español"
         url="https://escuchaespanol.com/"
         subheading="Alecrem, 2009-2016"
