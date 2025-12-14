@@ -1,4 +1,4 @@
-import { SimpleGrid, Link as ChakraLink } from '@chakra-ui/react'
+import { SimpleGrid, Link as ChakraLink, Text } from '@chakra-ui/react'
 import { ProjectCard } from '@/components/ProjectCard'
 
 const ProjectsEn = () => {
@@ -95,13 +95,15 @@ const ProjectsEn = () => {
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2023"
         tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
       >
-        Developed, maintained and deployed a data-based web application to make{' '}
-        <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
-          <b>OpenLA</b>
-        </ChakraLink>{' '}
-        more accessible. The tool of choice was{' '}
-        <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>, a
-        Python library that uses a Tornado server and a React frontend.
+        <Text as="span">
+          Developed, maintained and deployed a data-based web application to make{' '}
+          <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
+            <b>OpenLA</b>
+          </ChakraLink>{' '}
+          more accessible. The tool of choice was{' '}
+          <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>, a
+          Python library that uses a Tornado server and a React frontend.
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="OpenLA"
@@ -118,14 +120,18 @@ const ProjectsEn = () => {
           'Open Source'
         ]}
       >
-        Developed and maintained a Python module to accelerate learning
-        analytics, including the introduction of unit tests to the project.
+        <Text as="span">
+          Developed and maintained a Python module to accelerate learning
+          analytics, including the introduction of unit tests to the project.
+        </Text>
         <br />
-        Honorable mention at the{' '}
-        <ChakraLink href="https://www.1edtech.org/li/awards/2023">
-          <b>Learning Impact Awards in 2023</b>
-        </ChakraLink>
-        .
+        <Text as="span">
+          Honorable mention at the{' '}
+          <ChakraLink href="https://www.1edtech.org/li/awards/2023">
+            <b>Learning Impact Awards in 2023</b>
+          </ChakraLink>
+          .
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="Photovoice"
@@ -207,15 +213,19 @@ const ProjectsEn = () => {
         subheading="Djinn Mentor, 2019-2021"
         tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder', 'Team of 3']}
       >
-        I took part on the development of a data-driven active learning solution
-        with features such as sharing of teaching materials, real-time learning
-        monitoring, and a chatbot for students to answer challenges.
+        <Text as="span">
+          I took part on the development of a data-driven active learning solution
+          with features such as sharing of teaching materials, real-time learning
+          monitoring, and a chatbot for students to answer challenges.
+        </Text>
         <br />
-        One of the 24 startups to participate in{' '}
-        <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
-          <b>techstars Founder Catalyst Japan 2021</b>
-        </ChakraLink>
-        .
+        <Text as="span">
+          One of the 24 startups to participate in{' '}
+          <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
+            <b>techstars Founder Catalyst Japan 2021</b>
+          </ChakraLink>
+          .
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="ngx-datetimepicker"
@@ -274,14 +284,18 @@ const ProjectsEn = () => {
         subheading="Alecrem, 2009-2016"
         tags={['CakePHP', 'WordPress', 'Core Contributor', 'Team of 2']}
       >
-        Premium membership site and custom podcast feed for a series of videos
-        made to help Japanese speakers learn the Spanish language.
+        <Text as="span">
+          Premium membership site and custom podcast feed for a series of videos
+          made to help Japanese speakers learn the Spanish language.
+        </Text>
         <br />
-        Featured on{' '}
-        <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
-          <b>NHK's "TV de Supeingo"</b>
-        </ChakraLink>{' '}
-        in 2012 and 2013.
+        <Text as="span">
+          Featured on{' '}
+          <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
+            <b>NHK's "TV de Supeingo"</b>
+          </ChakraLink>{' '}
+          in 2012 and 2013.
+        </Text>
       </ProjectCard>
     </SimpleGrid>
   )
