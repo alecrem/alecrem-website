@@ -28,6 +28,31 @@ const ProjectsEs = () => {
         seguridad y alertas de seguridad.
       </ProjectCard>
       <ProjectCard
+        title="Middle School Tutor"
+        url="https://middleschooltutor.alecrem.com/"
+        subheading="Alecrem, 2022-presente"
+        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
+        tags={[
+          'Python',
+          'Remix.js',
+          'hono',
+          'GraphQL',
+          'MCP server',
+          'React',
+          'Sole Author',
+          'Open Source'
+        ]}
+      >
+        Herramienta para jugadores del formato Middle School de Magic: El
+        encuentro. Consiste en un proyecto en Python que compila la lista de
+        cartas disponibles de Magic, una API GraphQL hecha con hono, un servidor
+        MCP, y un sitio web Remix.js que permite buscar en dicha lista. Otras
+        funcionalidades incluyen URLs comprimidas para compartir listas de
+        cartas sin que los usuarios necesiten ninguna cuenta.
+        <br />
+        (Anteriormente se usaba Streamlit y Next.js para la interfaz web.)
+      </ProjectCard>
+      <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
         subheading="shiftbase, inc., 2023"
@@ -235,31 +260,6 @@ const ProjectsEs = () => {
         Sitio web para una trabajadora autónoma con un formulario de contacto
         que usa la API de Airtable para almacenar los mensajes, y que finalmente
         se envíen por correo electrónico.
-      </ProjectCard>
-      <ProjectCard
-        title="Middle School Tutor"
-        url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-presente"
-        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
-        tags={[
-          'Python',
-          'Remix.js',
-          'hono',
-          'GraphQL',
-          'MCP server',
-          'React',
-          'Sole Author',
-          'Open Source'
-        ]}
-      >
-        Herramienta para jugadores del formato Middle School de Magic: El
-        encuentro. Consiste en un proyecto en Python que compila la lista de
-        cartas disponibles de Magic, una API GraphQL hecha con hono, un servidor
-        MCP, y un sitio web Remix.js que permite buscar en dicha lista. Otras
-        funcionalidades incluyen URLs comprimidas para compartir listas de
-        cartas sin que los usuarios necesiten ninguna cuenta.
-        <br />
-        (Anteriormente se usaba Streamlit y Next.js para la interfaz web.)
       </ProjectCard>
       <ProjectCard
         title="Binguerah"

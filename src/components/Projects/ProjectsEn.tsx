@@ -28,6 +28,30 @@ const ProjectsEn = () => {
         security alerts.
       </ProjectCard>
       <ProjectCard
+        title="Middle School Tutor"
+        url="https://middleschooltutor.alecrem.com/"
+        subheading="Alecrem, 2022-present"
+        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
+        tags={[
+          'Python',
+          'Remix.js',
+          'hono',
+          'GraphQL',
+          'MCP server',
+          'React',
+          'Sole Author',
+          'Open Source'
+        ]}
+      >
+        Gaming tool for Magic The Gathering's Middle School format. Consisting
+        on a Python project that compiles a list of available Magic cards, a
+        hono GraphQL API, an MCP server, and a Remix.js website that enables
+        searching said list. Other features include compressed URLs for sharing
+        card lists without the users needing any account.
+        <br />
+        (Previously Streamlit and Next.js have been used for the web UI.)
+      </ProjectCard>
+      <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
         subheading="shiftbase, inc., 2023"
@@ -230,30 +254,6 @@ const ProjectsEn = () => {
       >
         Website for a sole proprietor with a contact form that uses the Airtable
         API to store messages, and effectively deliver them as e-mails.
-      </ProjectCard>
-      <ProjectCard
-        title="Middle School Tutor"
-        url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-present"
-        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
-        tags={[
-          'Python',
-          'Remix.js',
-          'hono',
-          'GraphQL',
-          'MCP server',
-          'React',
-          'Sole Author',
-          'Open Source'
-        ]}
-      >
-        Gaming tool for Magic The Gathering's Middle School format. Consisting
-        on a Python project that compiles a list of available Magic cards, a
-        hono GraphQL API, an MCP server, and a Remix.js website that enables
-        searching said list. Other features include compressed URLs for sharing
-        card lists without the users needing any account.
-        <br />
-        (Previously Streamlit and Next.js have been used for the web UI.)
       </ProjectCard>
       <ProjectCard
         title="Binguerah"

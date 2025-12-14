@@ -26,6 +26,30 @@ const ProjectsJa = () => {
         Next内の様々なサービスとの連携や、セキュリティ診断およびセキュリティアラートへの対応も行いました。
       </ProjectCard>
       <ProjectCard
+        title="Middle School Tutor"
+        url="https://middleschooltutor.alecrem.com/"
+        subheading="Alecrem, 2022-現在"
+        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
+        tags={[
+          'Python',
+          'Remix.js',
+          'hono',
+          'GraphQL',
+          'MCP server',
+          'React',
+          'Sole Author',
+          'Open Source'
+        ]}
+      >
+        マジック：ザ・ギャザリングのフォーマット「ミドルスクール」のための
+        ゲーミング・ツールを開発しました。複数の部品で構成されています：
+        利用可能なMagicカードのリストをまとめるPythonプロジェクト、hono GraphQL
+        API、MCPサーバー、そしてそのリストを検索できるRemix.jsウェブサイト。
+        他にも、ユーザーがアカウントを作成せずにカードリストを共有できる圧縮URLなどの機能があります。
+        <br />
+        （以前はWeb UIにStreamlitやNext.jsを使用していました。）
+      </ProjectCard>
+      <ProjectCard
         title="UNCHAIN"
         url="https://app.unchain.tech/learn/"
         subheading="shiftbase, inc., 2023"
@@ -224,30 +248,6 @@ const ProjectsJa = () => {
         個人事業主の公式ウェブサイトで、Airtable
         APIを使用したお問い合わせフォームが付いています。
         お問い合わせ内容を保存して、Airtableによりメールとして配信されます。
-      </ProjectCard>
-      <ProjectCard
-        title="Middle School Tutor"
-        url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-現在"
-        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
-        tags={[
-          'Python',
-          'Remix.js',
-          'hono',
-          'GraphQL',
-          'MCP server',
-          'React',
-          'Sole Author',
-          'Open Source'
-        ]}
-      >
-        マジック：ザ・ギャザリングのフォーマット「ミドルスクール」のための
-        ゲーミング・ツールを開発しました。複数の部品で構成されています：
-        利用可能なMagicカードのリストをまとめるPythonプロジェクト、hono GraphQL
-        API、MCPサーバー、そしてそのリストを検索できるRemix.jsウェブサイト。
-        他にも、ユーザーがアカウントを作成せずにカードリストを共有できる圧縮URLなどの機能があります。
-        <br />
-        （以前はWeb UIにStreamlitやNext.jsを使用していました。）
       </ProjectCard>
       <ProjectCard
         title="Binguerah"
