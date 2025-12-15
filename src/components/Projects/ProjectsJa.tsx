@@ -1,4 +1,5 @@
-import { SimpleGrid, Link as ChakraLink } from '@chakra-ui/react'
+import { SimpleGrid, Link as ChakraLink, Text } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 import { ProjectCard } from '@/components/ProjectCard'
 
 const ProjectsJa = () => {
@@ -7,7 +8,7 @@ const ProjectsJa = () => {
       <ProjectCard
         title="弥生請求 Next"
         url="https://www.yayoi-kk.co.jp/kaikei/kaikei-next/"
-        subheading="弥生株式会社"
+        subheading="弥生株式会社, 2024-現在"
         tags={[
           'Remix.js',
           'React',
@@ -21,9 +22,33 @@ const ProjectsJa = () => {
         ]}
       >
         フルスタックWebエンジニアとして弥生会計
-        Nextの請求書アプリをリリース・保守しました。Remix.js、hono、AWS
+        Nextの請求書アプリを開発・リリース・運用しました。Remix.js、hono、AWS
         CDK、Vitest、Playwrightを使用したエンドツーエンドテストなど、貴重な経験を積みました。また、弥生会計
         Next内の様々なサービスとの連携や、セキュリティ診断およびセキュリティアラートへの対応も行いました。
+      </ProjectCard>
+      <ProjectCard
+        title="Middle School Tutor"
+        url="https://middleschooltutor.alecrem.com/"
+        subheading="Alecrem, 2022-現在"
+        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
+        tags={[
+          'Python',
+          'Remix.js',
+          'hono',
+          'GraphQL',
+          'MCP server',
+          'React',
+          'Sole Author',
+          'Open Source'
+        ]}
+      >
+        マジック：ザ・ギャザリングのフォーマット「ミドルスクール」のための
+        ゲーミング・ツールを開発しました。複数の部品で構成されています：
+        利用可能なMagicカードのリストをまとめるPythonプロジェクト、hono GraphQL
+        API、MCPサーバー、そしてそのリストを検索できるRemix.jsウェブサイト。
+        他にも、ユーザーがアカウントを作成せずにカードリストを共有できる圧縮URLなどの機能があります。
+        <br />
+        （以前はWeb UIにStreamlitやNext.jsを使用していました。）
       </ProjectCard>
       <ProjectCard
         title="UNCHAIN"
@@ -67,13 +92,15 @@ const ProjectsJa = () => {
         subheading="九州大学 イメージ・メディア理解研究室, 2023"
         tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
       >
-        <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
-          <b>OpenLA</b>
-        </ChakraLink>
-        を使いやくすべく、データ駆動ウェブアプリケーションの実装・メンテナンス・デプロイ。
-        TornadoサーバーとReactフロントエンドを使う
-        <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>
-        というPythonライブラリを導入しての開発でした。
+        <Text as="span">
+          <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
+            <b>OpenLA</b> <FiExternalLink />
+          </ChakraLink>
+          を使いやくすべく、データ駆動ウェブアプリケーションの実装・メンテナンス・デプロイ。
+          TornadoサーバーとReactフロントエンドを使う
+          <ChakraLink href="https://docs.streamlit.io/">Streamlit <FiExternalLink /></ChakraLink>
+          というPythonライブラリを導入しての開発でした。
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="OpenLA"
@@ -90,14 +117,18 @@ const ProjectsJa = () => {
           'Open Source'
         ]}
       >
-        ラーニング・アナリティクス（学習の分析）で役立つPythonモジュールの、
-        ユニットテストの導入も含めての開発・メンテナンス。
+        <Text as="span">
+          ラーニング・アナリティクス（学習の分析）で役立つPythonモジュールの、
+          ユニットテストの導入も含めての開発・メンテナンス。
+        </Text>
         <br />
-        2023年度
-        <ChakraLink href="https://www.1edtech.org/li/awards/2023">
-          <b>Learning Impact Awards</b>
-        </ChakraLink>
-        で特別賞を受賞しました。
+        <Text as="span">
+          2023年度
+          <ChakraLink href="https://www.1edtech.org/li/awards/2023">
+            <b>Learning Impact Awards</b> <FiExternalLink />
+          </ChakraLink>
+          で特別賞を受賞しました。
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="Photovoice"
@@ -177,14 +208,18 @@ const ProjectsJa = () => {
         subheading="Djinn Mentor, 2019-2021"
         tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder', 'Team of 3']}
       >
-        教材の共有、リアルタイム学習モニタリング、
-        学生の課題の回答を受け付けるチャットボットなどの機能を備えた、
-        データ駆動型のアクティブラーニングソリューションの開発に貢献しました。
+        <Text as="span">
+          教材の共有、リアルタイム学習モニタリング、
+          学生の課題の回答を受け付けるチャットボットなどの機能を備えた、
+          データ駆動型のアクティブラーニングソリューションの開発に貢献しました。
+        </Text>
         <br />
-        <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
-          <b>techstars Founder Catalyst Japan 2021</b>
-        </ChakraLink>
-        に参加した24社のひとつでした。
+        <Text as="span">
+          <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
+            <b>techstars Founder Catalyst Japan 2021</b> <FiExternalLink />
+          </ChakraLink>
+          に参加した24社のひとつでした。
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="ngx-datetimepicker"
@@ -226,50 +261,23 @@ const ProjectsJa = () => {
         お問い合わせ内容を保存して、Airtableによりメールとして配信されます。
       </ProjectCard>
       <ProjectCard
-        title="Middle School Tutor"
-        url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-2023"
-        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
-        tags={[
-          'Python',
-          'Streamlit',
-          'Next.js',
-          'React',
-          'Sole Author',
-          'Open Source'
-        ]}
-      >
-        マジック：ザ・ギャザリングのフォーマット「ミドルスクール」のための
-        ゲーミング・ツールを開発しました。
-        二つの部品で構成されています：利用可能なMTGカードのリストをまとめるPythonプロジェクトと、
-        そのリストを検索するStreamlitでできたウェブサイト（旧サイトはNext.js）。
-      </ProjectCard>
-      <ProjectCard
-        title="Binguerah"
-        url="https://binguerah.pepinismo.net/"
-        subheading="Alecrem, 2023"
-        buttonLink={'https://github.com/gamerah/bingo-card'}
-        tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
-      >
-        ポッドキャストのリスナーがリアルタイムでも非同期にでも使うインタラクションツール。
-        各ユーザーのためにカスタマイズされたお楽しみビンゴカードが提供されます。
-        ユーザーはポッドキャストを聴きながら手動でチェックしていっても良いですし、
-        各エピソードの最後に共有されるパスワードを入力すると自動的にチェックされます。
-      </ProjectCard>
-      <ProjectCard
         title="聞くスペイン語"
         url="https://escuchaespanol.com/"
         subheading="Alecrem, 2009-2016"
         tags={['CakePHP', 'WordPress', 'Core Contributor', 'Team of 2']}
       >
-        スペイン語を学びたい日本語話者のために制作したビデオポッドキャストに対応する、
-        プレミアム会員サイトおよびカスタムポッドキャストフィード。
+        <Text as="span">
+          スペイン語を学びたい日本語話者のために制作したビデオポッドキャストに対応する、
+          プレミアム会員サイトおよびカスタムポッドキャストフィード。
+        </Text>
         <br />
-        2012〜2013年度の{' '}
-        <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
-          <b>NHK「テレビでスペイン語」</b>
-        </ChakraLink>
-        に出演しました。
+        <Text as="span">
+          2012〜2013年度の{' '}
+          <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
+            <b>NHK「テレビでスペイン語」</b> <FiExternalLink />
+          </ChakraLink>
+          に出演しました。
+        </Text>
       </ProjectCard>
     </SimpleGrid>
   )

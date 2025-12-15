@@ -1,4 +1,5 @@
-import { SimpleGrid, Link as ChakraLink } from '@chakra-ui/react'
+import { SimpleGrid, Link as ChakraLink, Text } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 import { ProjectCard } from '@/components/ProjectCard'
 
 const ProjectsEn = () => {
@@ -7,7 +8,7 @@ const ProjectsEn = () => {
       <ProjectCard
         title="Yayoi Seikyu Next"
         url="https://www.yayoi-kk.co.jp/kaikei/kaikei-next/"
-        subheading="Yayoi Co., Ltd."
+        subheading="Yayoi Co., Ltd., 2024-present"
         tags={[
           'Remix.js',
           'React',
@@ -20,12 +21,36 @@ const ProjectsEn = () => {
           'Team of 10'
         ]}
       >
-        Released and maintained the invoicing app for accounting suite Yayoi
-        Kaikei Next as a full stack web engineer. Gained valuable experience
-        working with Remix.js, hono, AWS CDK, Vitest, and end-to-end testing
-        with Playwright. As well as integrating with various services within the
-        same accounting suite, and dealing with security audits and security
-        alerts.
+        Developed, released and maintained the invoicing app for accounting
+        suite Yayoi Kaikei Next as a full stack web engineer. Gained valuable
+        experience working with Remix.js, hono, AWS CDK, Vitest, and end-to-end
+        testing with Playwright. As well as integrating with various services
+        within the same accounting suite, and dealing with security audits and
+        security alerts.
+      </ProjectCard>
+      <ProjectCard
+        title="Middle School Tutor"
+        url="https://middleschooltutor.alecrem.com/"
+        subheading="Alecrem, 2022-present"
+        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
+        tags={[
+          'Python',
+          'Remix.js',
+          'hono',
+          'GraphQL',
+          'MCP server',
+          'React',
+          'Sole Author',
+          'Open Source'
+        ]}
+      >
+        Gaming tool for Magic The Gathering's Middle School format. Consisting
+        on a Python project that compiles a list of available Magic cards, a
+        hono GraphQL API, an MCP server, and a Remix.js website that enables
+        searching said list. Other features include compressed URLs for sharing
+        card lists without the users needing any account.
+        <br />
+        (Previously Streamlit and Next.js have been used for the web UI.)
       </ProjectCard>
       <ProjectCard
         title="UNCHAIN"
@@ -71,13 +96,18 @@ const ProjectsEn = () => {
         subheading="Kyushu University Laboratory for Image and Media Understanding, 2023"
         tags={['Python', 'Streamlit', 'Docker', 'Sole Author']}
       >
-        Developed, maintained and deployed a data-based web application to make{' '}
-        <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
-          <b>OpenLA</b>
-        </ChakraLink>{' '}
-        more accessible. The tool of choice was{' '}
-        <ChakraLink href="https://docs.streamlit.io/">Streamlit</ChakraLink>, a
-        Python library that uses a Tornado server and a React frontend.
+        <Text as="span">
+          Developed, maintained and deployed a data-based web application to
+          make{' '}
+          <ChakraLink href="https://limu.ait.kyushu-u.ac.jp/~openLA/">
+            <b>OpenLA</b> <FiExternalLink />
+          </ChakraLink>{' '}
+          more accessible. The tool of choice was{' '}
+          <ChakraLink href="https://docs.streamlit.io/">
+            Streamlit <FiExternalLink />
+          </ChakraLink>
+          , a Python library that uses a Tornado server and a React frontend.
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="OpenLA"
@@ -94,14 +124,18 @@ const ProjectsEn = () => {
           'Open Source'
         ]}
       >
-        Developed and maintained a Python module to accelerate learning
-        analytics, including the introduction of unit tests to the project.
+        <Text as="span">
+          Developed and maintained a Python module to accelerate learning
+          analytics, including the introduction of unit tests to the project.
+        </Text>
         <br />
-        Honorable mention at the{' '}
-        <ChakraLink href="https://www.1edtech.org/li/awards/2023">
-          <b>Learning Impact Awards in 2023</b>
-        </ChakraLink>
-        .
+        <Text as="span">
+          Honorable mention at the{' '}
+          <ChakraLink href="https://www.1edtech.org/li/awards/2023">
+            <b>Learning Impact Awards in 2023</b> <FiExternalLink />
+          </ChakraLink>
+          .
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="Photovoice"
@@ -183,15 +217,20 @@ const ProjectsEn = () => {
         subheading="Djinn Mentor, 2019-2021"
         tags={['Ionic', 'Angular', 'Jekyll', 'Co-founder', 'Team of 3']}
       >
-        I took part on the development of a data-driven active learning solution
-        with features such as sharing of teaching materials, real-time learning
-        monitoring, and a chatbot for students to answer challenges.
+        <Text as="span">
+          I took part on the development of a data-driven active learning
+          solution with features such as sharing of teaching materials,
+          real-time learning monitoring, and a chatbot for students to answer
+          challenges.
+        </Text>
         <br />
-        One of the 24 startups to participate in{' '}
-        <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
-          <b>techstars Founder Catalyst Japan 2021</b>
-        </ChakraLink>
-        .
+        <Text as="span">
+          One of the 24 startups to participate in{' '}
+          <ChakraLink href="https://www.youtube.com/watch?v=kncoERjvUUQ&t=1396s">
+            <b>techstars Founder Catalyst Japan 2021</b> <FiExternalLink />
+          </ChakraLink>
+          .
+        </Text>
       </ProjectCard>
       <ProjectCard
         title="ngx-datetimepicker"
@@ -232,50 +271,23 @@ const ProjectsEn = () => {
         API to store messages, and effectively deliver them as e-mails.
       </ProjectCard>
       <ProjectCard
-        title="Middle School Tutor"
-        url="https://middleschooltutor.alecrem.com/"
-        subheading="Alecrem, 2022-2023"
-        buttonLink={'https://github.com/alecrem/middleschool-cardlist'}
-        tags={[
-          'Python',
-          'Streamlit',
-          'Next.js',
-          'React',
-          'Sole Author',
-          'Open Source'
-        ]}
-      >
-        Gaming tool for Magic The Gathering's Middle School format. Consisting
-        on a Python project that compiles a list of available Magic cards, and a
-        Streamlit website (formerly Next.js) that enables searching said list.
-      </ProjectCard>
-      <ProjectCard
-        title="Binguerah"
-        url="https://binguerah.pepinismo.net/"
-        subheading="Alecrem, 2023"
-        buttonLink={'https://github.com/gamerah/bingo-card'}
-        tags={['Next.js', 'React', 'p5.js', 'Sole Author', 'Open Source']}
-      >
-        Real-time and async interaction tool for podcasts that generates a
-        personalized meme bingo card that is different for each combination of
-        user and episode. Spaces can be manually marked as the user listens to
-        the podcast, or they can be automatically marked if the user inputs the
-        password shared at the end of each episode.
-      </ProjectCard>
-      <ProjectCard
         title="Escucha español"
         url="https://escuchaespanol.com/"
         subheading="Alecrem, 2009-2016"
         tags={['CakePHP', 'WordPress', 'Core Contributor', 'Team of 2']}
       >
-        Premium membership site and custom podcast feed for a series of videos
-        made to help Japanese speakers learn the Spanish language.
+        <Text as="span">
+          Premium membership site and custom podcast feed for a series of videos
+          made to help Japanese speakers learn the Spanish language.
+        </Text>
         <br />
-        Featured on{' '}
-        <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
-          <b>NHK's "TV de Supeingo"</b>
-        </ChakraLink>{' '}
-        in 2012 and 2013.
+        <Text as="span">
+          Featured on{' '}
+          <ChakraLink href="https://www.nhk.or.jp/gogaku/spanish/">
+            <b>NHK's "TV de Supeingo"</b> <FiExternalLink />
+          </ChakraLink>{' '}
+          in 2012 and 2013.
+        </Text>
       </ProjectCard>
     </SimpleGrid>
   )
