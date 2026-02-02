@@ -4,7 +4,8 @@
       "WebSearch",
       "WebFetch(domain:github.com)",
       "Bash(npm info:*)",
-      "WebFetch(domain:chakra-ui.com)"
+      "WebFetch(domain:chakra-ui.com)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []
