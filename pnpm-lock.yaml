@@ -24,8 +24,8 @@ importers:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       next-translate:
-        specifier: ^3.0.0
-        version: 3.0.0(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)
+        specifier: ^3.0.2
+        version: 3.0.2(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -47,7 +47,7 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       next-translate-plugin:
         specifier: ^3.0.0
-        version: 3.0.0(next-translate@3.0.0(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4))
+        version: 3.0.0(next-translate@3.0.2(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4))
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -736,8 +736,8 @@ packages:
     peerDependencies:
       next-translate: '>= 2.4.1'
 
-  next-translate@3.0.0:
-    resolution: {integrity: sha512-B7Sdg6DHSZ/MXBph3vU9vGqPvUPO/65fA27A9/nNwGn5iIOLaTD1gN7RjphaplxxfYpmsTIaBuArr7JEE/UkEA==}
+  next-translate@3.0.2:
+    resolution: {integrity: sha512-QrS0bv6BV6XeVbmQFyThjd9T/sRYgBqevxQbJ3fFh1NJCrJHQTAxyvQMJnpbAkyv1/Or2yrec0MkyLT1WrR46w==}
     engines: {node: '>=16.10.0'}
     peerDependencies:
       next: '>= 13.2.5'
@@ -1918,12 +1918,12 @@ snapshots:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
-  next-translate-plugin@3.0.0(next-translate@3.0.0(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)):
+  next-translate-plugin@3.0.0(next-translate@3.0.2(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)):
     dependencies:
-      next-translate: 3.0.0(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)
+      next-translate: 3.0.2(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)
       typescript: 5.9.3
 
-  next-translate@3.0.0(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4):
+  next-translate@3.0.2(next@16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4):
     dependencies:
       next: 16.2.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react: 19.2.4
