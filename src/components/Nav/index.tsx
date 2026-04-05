@@ -21,17 +21,18 @@ interface Props {
   href: string
 }
 const NavLink: React.FC<Props> = ({ href }) => {
-  const actualHref = href === 'index' ? '/' : href
+  const actualPath = href === 'index' ? '' : `/${href}`
   const { t } = useTranslation('common')
   const router = useRouter()
   const { colorMode } = useColorMode()
+  const localizedHref = `/${router.locale}${actualPath}`
   return (
     <>
       <NextLink
         passHref
         legacyBehavior
-        href={actualHref}
-        locale={router.locale}
+        href={localizedHref}
+        locale={false}
       >
         <Link variant={'underline'} px={2} py={1} rounded={'md'}>
           {t('header.nav.' + href)}
