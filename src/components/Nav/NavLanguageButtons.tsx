@@ -1,6 +1,6 @@
 import { Button, Box } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
-import setLanguage from 'next-translate/setLanguage'
+import { useRouter } from 'next/router'
 
 interface Props {
   size: 'md' | 'sm' | 'lg' | 'xl' | '2xl' | '2xs' | 'xs'
@@ -12,6 +12,11 @@ const NavLanguageButtons: React.FC<Props> = ({
   mobile = false
 }) => {
   const { lang } = useTranslation('common')
+  const router = useRouter()
+
+  const switchLanguage = (locale: string) =>
+    router.push(`/${locale}${router.asPath}`, undefined, { locale: false })
+
   return (
     <>
       {lang !== 'en' && (
@@ -20,7 +25,7 @@ const NavLanguageButtons: React.FC<Props> = ({
             variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
-            onClick={async () => await setLanguage('en')}
+            onClick={() => switchLanguage('en')}
           >
             English
           </Button>
@@ -32,7 +37,7 @@ const NavLanguageButtons: React.FC<Props> = ({
             variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
-            onClick={async () => await setLanguage('es')}
+            onClick={() => switchLanguage('es')}
           >
             Español
           </Button>
@@ -44,7 +49,7 @@ const NavLanguageButtons: React.FC<Props> = ({
             variant="surface"
             size={size}
             my={mobile ? 2 : undefined}
-            onClick={async () => await setLanguage('ja')}
+            onClick={() => switchLanguage('ja')}
           >
             日本語
           </Button>
