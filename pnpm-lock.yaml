@@ -46,8 +46,8 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.17)
       next-translate-plugin:
-        specifier: ^3.1.3
-        version: 3.1.3(next-translate@3.2.0(next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7))
+        specifier: ^3.2.0
+        version: 3.2.0(next-translate@3.2.0(next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7))
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -736,8 +736,8 @@ packages:
       react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
       react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
 
-  next-translate-plugin@3.1.3:
-    resolution: {integrity: sha512-HE3n6D+T2rBMB8YguxJEPz/PoY+Lfq6do48MpRMhEfqf3d8ZXUQhe6wcymNO15tSm6jnxGc2yv8EQ4A3zZQImw==}
+  next-translate-plugin@3.2.0:
+    resolution: {integrity: sha512-iMDNaUEMmSIJAXiWCbI+z8kGR2XWAWLmje42T/wnH9eAu063o0Z/lV/ml/fyiW9q/hPFZ9XtEcfqg4BdIeZd5Q==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       next-translate: '>= 2.4.1'
@@ -1942,7 +1942,7 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  next-translate-plugin@3.1.3(next-translate@3.2.0(next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)):
+  next-translate-plugin@3.2.0(next-translate@3.2.0(next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)):
     dependencies:
       next-translate: 3.2.0(next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       typescript: 5.9.3
